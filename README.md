@@ -1,4 +1,4 @@
-# Project Title
+# SUMMARIZE THESE!
 
 This is a Flask application that uses the YouTube Transcript API and Google API client to fetch and process video transcripts. If enabled, it can also use OpenAI for summarization.
 
