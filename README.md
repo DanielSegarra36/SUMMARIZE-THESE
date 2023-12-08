@@ -42,7 +42,7 @@ Add additional notes about how to deploy this on a live system.
 
 ## Authors
 
-- **Your Name** - _Initial work_ - [YourGithubUsername](https://github.com/YourGithubUsername)
+- **Daniel Segarra** - _Initial work_ - [DanielSegarra36](https://github.com/DanielSegarra36)
 
 ## License
 
