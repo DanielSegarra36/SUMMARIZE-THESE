@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Transcript Extractor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+
+  <body>
+    <h1>YouTube Transcript Extractor</h1>
+    <form id="youtubeForm">
+      <label for="youtubeURLs">Enter YouTube Video/Playlist URL:</label>
+      <textarea id="youtubeURLs" name="youtubeURLs" rows="5" cols="33" placeholder="URLs"></textarea>
+      <!-- <input type="text" id="youtubeURLs" name="url" placeholder="Paste URL here" required> -->
+      <button type="submit">Get Transcript</button>
+    </form>
+    <div id="transcriptResult"></div>
+    <script src="static/script.js"></script>
+  </body>
+</html>

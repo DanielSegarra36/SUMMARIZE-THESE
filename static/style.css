@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+textarea {
+  color: white;
+  background-color: #0a0a0a;
+}
+
+textarea::-webkit-input-placeholder {
+   font-style: italic;
+}
+
+textarea:-moz-placeholder {
+   font-style: italic;
+}
+
+textarea::-moz-placeholder {
+   font-style: italic;
+}
+
+textarea:-ms-input-placeholder {  
+   font-style: italic;
+}
+
+form > * {
+  display: block;
+  margin: .5rem auto;
+}
+
+h1, button {
+  text-align: center;
+}
+
+button {
+  width: 150px;
+}
+
+label {
+  width: fit-content;
+}
