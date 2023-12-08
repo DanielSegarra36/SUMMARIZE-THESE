@@ -21,9 +21,12 @@ What things you need to install the software and how to install them:
 A step by step series of examples that tell you how to get a development environment running:
 
 1. Clone the repository
-2. Install the dependencies using pip: pip install -r requirements.txt
-3. Set your YouTube API key as an environment variable: export YOUTUBE_API_KEY=your_api_key
-4. Run the Flask application: python main.py
+2. Install the dependencies using pip:
+   `pip install flask youtube_transcript_api googleapiclient google-api-python-client openai random os re`
+
+3. Set your YouTube API key as an environment variable: `export YOUTUBE_API_KEY=your_api_key`
+4. Set your OpenAI API key as an environment variable: `export OPENAI_API_KEY=your_api_key`
+5. Run the Flask application: `python main.py`
 
 ## Running the tests
 
