@@ -12,7 +12,7 @@ import re
 # https://platform.openai.com/usage
 # SET TO TRUE TO ENABLE SUMMARIZATION
 # THIS WILL REQUIRE A FREE OPENAI API KEY AND TOKENS PURCHASED
-USE_AI = True
+USE_AI = False
 
 app = Flask(  # Create a flask app
   __name__,
@@ -128,8 +128,13 @@ def extract_playlist_id(youtube_link):
 def index():
     return render_template('index.html')
 
-if __name__ == "__main__":  # Makes sure this is the main process
-    app.run( # Starts the site
-      host='0.0.0.0',  # EStablishes the host, required for repl to detect the site
-      port=random.randint(2000, 9000)  # Randomly select the port the machine hosts on.
-    )
+# TOGGLE IF YOU WANT TO RUN ON REPL.IT
+# if __name__ == "__main__":  # Makes sure this is the main process
+#     app.run( # Starts the site
+#       host='0.0.0.0',  # EStablishes the host, required for repl to detect the site
+#       port=random.randint(2000, 9000)  # Randomly select the port the machine hosts on.
+#     )
+
+# TOGGLE IF YOU WANT TO RUN LOCALLY
+if __name__ == "__main__":
+    app.run(debug=True)  # Starts the site in debug mode (auto-reloads when code changes)
