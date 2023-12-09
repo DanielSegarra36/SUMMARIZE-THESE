@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -7,40 +8,60 @@ body {
   background-color: #000000;
 }
 
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form>* {
+  display: block;
+  margin: 0 auto;
+}
+
 textarea {
   color: white;
   background-color: #0a0a0a;
+  margin-bottom: .5rem;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 textarea::-webkit-input-placeholder {
-   font-style: italic;
+  font-style: italic;
+  font-size: 2rem;
 }
 
 textarea:-moz-placeholder {
-   font-style: italic;
+  font-style: italic;
+  font-size: 2rem;
 }
 
 textarea::-moz-placeholder {
-   font-style: italic;
+  font-style: italic;
+  font-size: 2rem;
 }
 
-textarea:-ms-input-placeholder {  
-   font-style: italic;
+textarea:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 2rem;
 }
 
-form > * {
-  display: block;
-  margin: .5rem auto;
-}
-
-h1, button {
+h1,
+button {
   text-align: center;
 }
 
 button {
-  width: 150px;
+  /*! width: 150px; */
+  padding: 0.5rem 2rem;
 }
 
 label {
-  width: fit-content;
+  /*! width: fit-content; */
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 1rem 0rem 1rem 0rem;
+  border-radius: 15px 15px 0px 0px;
 }
