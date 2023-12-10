@@ -23,7 +23,7 @@ textarea {
   background-color: #0a0a0a;
   margin-bottom: .5rem;
   width: 100%;
-  padding: 0;
+  padding: .5rem 1rem;
   box-sizing: border-box;
 }
 
@@ -55,6 +55,9 @@ button {
 button {
   /*! width: 150px; */
   padding: 0.5rem 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
 }
 
 label {
