@@ -9,8 +9,9 @@ body {
 }
 
 form {
-  width: 50%;
+  min-width: 50%;
   margin: 0 auto;
+  width: fit-content;
 }
 
 form>* {
@@ -22,29 +23,30 @@ textarea {
   color: white;
   background-color: #0a0a0a;
   margin-bottom: .5rem;
-  width: 100%;
+  min-width: 100%;
   padding: .5rem 1rem;
   box-sizing: border-box;
+  height: 7rem;
 }
 
 textarea::-webkit-input-placeholder {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 textarea:-moz-placeholder {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 textarea::-moz-placeholder {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 textarea:-ms-input-placeholder {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h1,
