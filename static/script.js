@@ -214,7 +214,7 @@ function createVideoElement(currentVideo, videoContainer) {
   }
 }
 
-// commented out for testing
+// Test URLs
 // let TEST_URLS = [
 //   "http://www.youtube.com/watch?v=0zM3nApSvMg&feature=feedrec_grec_index",
 //   "http://www.youtube.com/user/IngridMichaelsonVEVO#p/a/u/1/QdK8U-VIH_o",
