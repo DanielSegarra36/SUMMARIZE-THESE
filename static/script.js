@@ -136,11 +136,11 @@ function formatTranscriptLine(line) {
   let startTimeSeconds = Math.floor((startTime % 3600) % 60);
   startTime = `${startTimeHours}:${startTimeMinutes}:${startTimeSeconds}`;
 
-  // calculate endTime by adding the startTime to the duration
+  // calculate endTime by adding the endTime to the duration
   let endTime = roundTo(line.start + line.duration, 2);
-  let endTimeHours = Math.floor(startTime / 3600);
-  let endTimeMinutes = Math.floor((startTime % 3600) / 60);
-  let endTimeSeconds = Math.floor((startTime % 3600) % 60);
+  let endTimeHours = Math.floor(endTime / 3600);
+  let endTimeMinutes = Math.floor((endTime % 3600) / 60);
+  let endTimeSeconds = Math.floor((endTime % 3600) % 60);
   endTime = `${endTimeHours}:${endTimeMinutes}:${endTimeSeconds}`;
 
   return `${line.text} (${startTime} - ${endTime})\n`;
