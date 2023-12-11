@@ -71,3 +71,31 @@ label {
   padding: 1rem 0rem 1rem 0rem;
   border-radius: 15px 15px 0px 0px;
 }
+
+/* Style for the video container */
+.video-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+/* Style for the thumbnail image */
+.thumbnail {
+  /*! max-width: 100px; */
+  height: auto;
+  display: block;
+  margin: 0px auto 10px;
+  width: 60%;
+}
+
+/* Style for the title */
+h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Style for the channel title and description */
+p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}

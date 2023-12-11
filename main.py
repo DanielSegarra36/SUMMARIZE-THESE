@@ -29,30 +29,21 @@ def get_transcript():
     videos = []
     for url in urls:
         print (f'URL:{url}')
-
-        if has_youtube_video_id(url):
+        if len(url) < 15:
+            print (f'video_id only:{url}')
+            videos.append(get_video_transcript(url, USE_AI))
+        elif has_youtube_video_id(url):
             video_id = has_youtube_video_id(url)
             print (f'video_id:{video_id}')
-            videos.append(get_video_transcript(video_id, USE_AI))
+            videos.append(get_video_metadata(video_id))
         elif has_youtube_playlist_id(url):
             playlist_id = has_youtube_playlist_id(url)
             print (f'playlist_id:{playlist_id}')
-            videos += extract_playlist_transcripts(playlist_id)
+            videos += extract_playlist_videos(playlist_id)
         else:
             videos.append({'Invalid URL': url})
 
-
-        # if 'playlist' in url:
-        #     id = has_youtube_playlist_id(url)
-        #     print (f'playlist_id:{id}')
-        #     videos += extract_playlist_transcripts(id)
-        # elif 'video' in url or 'watch' in url:
-        #     id = has_youtube_video_id(url)
-        #     print (f'video_id:{id}')
-        #     videos.append(get_video_transcript(id, USE_AI))
-        # else:
-        #   videos.append({f'Invalid URL: {url}'})
-    print(f'DATA SENT TO CLIENT: {videos}')
+    # print(f'DATA SENT TO CLIENT: {videos}')
     return jsonify({'videos': videos})
 
 def summarize_text(text):
@@ -68,6 +59,30 @@ def summarize_text(text):
           # max_tokens=150  # Adjust the length of the summary as needed
       )
       return response.choices[0].message.content
+  except Exception as e:
+      print(f"Error: {str(e)}")
+      return None
+
+def get_video_metadata(video_id):
+  try:
+      youtube = build('youtube', 'v3', developerKey=api_key)
+      request = youtube.videos().list(
+          part='snippet',
+          id=video_id
+      )
+      response = request.execute()
+      video_metadata = {
+          'publishedAt': response['items'][0]['snippet']['publishedAt'],
+          'channelId': response['items'][0]['snippet']['channelId'],
+          'channelTitle': response['items'][0]['snippet']['channelTitle'],
+          'title': response['items'][0]['snippet']['title'],
+          'description': response['items'][0]['snippet']['description'],
+          'thumbnailUrl': response['items'][0]['snippet']['thumbnails']['maxres']['url'],
+      }
+      transcript = get_video_transcript(video_id, USE_AI)
+      if transcript:
+        video_metadata.update(transcript)
+      return video_metadata
   except Exception as e:
       print(f"Error: {str(e)}")
       return None
@@ -92,18 +107,37 @@ def get_video_transcript(video_id, USE_AI_FLAG=False):
       print(f"Error: {str(e)}")
       return None
 
-def extract_playlist_transcripts(playlist_id):
+def extract_playlist_videos(playlist_id):
     try:
         youtube = build('youtube', 'v3', developerKey=api_key)
+        playlist_data_request = youtube.playlists().list(
+            part='snippet, contentDetails',
+            id=playlist_id,
+            maxResults=5
+        )
+        playlist_data_response = playlist_data_request.execute()
+        playlist_data = [
+          {
+              'publishedAt': item['snippet']['publishedAt'],
+              'playlistOwnerChannelId': item['snippet']['channelId'],
+              'playlistOwnerChannelTitle': item['snippet']['channelTitle'],
+              'playlistTitle': item['snippet']['title'],
+              'itemCount': item['contentDetails']['itemCount'],
+              'playlistDescription': item['snippet']['description'],
+              'playlistThumbnailUrl': item['snippet']['thumbnails']['maxres']['url']
+          }
+          for item in playlist_data_response['items']
+        ]
         request = youtube.playlistItems().list(
             part='snippet',
             playlistId=playlist_id,
             maxResults=50
         )
         response = request.execute()
-        playlist_data = [
+        playlist_videos = [
           {
               'playlistId': item['snippet']['playlistId'],
+              **playlist_data[0],
               'channelTitle': item['snippet']['videoOwnerChannelTitle'],
               'channelId': item['snippet']['videoOwnerChannelId'],
               'title': item['snippet']['title'],
@@ -114,14 +148,14 @@ def extract_playlist_transcripts(playlist_id):
           for item in response['items']
         ]
 
-        print(playlist_data)
+        # print(playlist_videos)
 
-        for video in playlist_data:
+        for video in playlist_videos:
             transcript = get_video_transcript(video['videoId'], USE_AI)
             if transcript:
                 video.update(transcript)
             # print(video['transcript'])
-        return playlist_data
+        return playlist_videos
     except Exception as e:
         return str(e)
 
@@ -133,11 +167,13 @@ def has_youtube_video_id(url):
   return None
 
 def has_youtube_playlist_id(url):
-  regex = r"^https?:\/\/(www\.)?youtube\.com\/playlist\?list=([a-zA-Z0-9_-]+)&si=([a-zA-Z0-9_-]+)$"
-  match = re.search(regex, url)
-  if match:
-      return match.group(1)
-  return None
+    regex = r"^https?:\/\/(www\.)?youtube\.com\/playlist\?list=([^#\&\?]*)"
+
+    match = re.search(regex, url)
+    if match:
+        return match.group(2) # explanation: https://regex101.com/r/8wMv0r/1
+    else:
+        return None
 
 @app.route('/')
 def index():
