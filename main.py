@@ -26,21 +26,34 @@ api_key = os.environ.get('YOUTUBE_API_KEY')  # Replace with your actual API key
 @app.route('/get_transcript', methods=['POST'])
 def get_transcript():
     urls = request.json.get('urls', '')
-    transcripts = []
+    videos = []
     for url in urls:
         print (f'URL:{url}')
-        if 'playlist' in url:
-            id = extract_playlist_id(url)
-            print (f'playlist_id:{id}')
-            transcripts += extract_playlist_transcripts(id)
-        elif 'video' in url or 'watch' in url:
-            id = extract_video_id(url)
-            print (f'video_id:{id}')
-            transcripts.append(get_video_transcript(id, USE_AI))
+
+        if has_youtube_video_id(url):
+            video_id = has_youtube_video_id(url)
+            print (f'video_id:{video_id}')
+            videos.append(get_video_transcript(video_id, USE_AI))
+        elif has_youtube_playlist_id(url):
+            playlist_id = has_youtube_playlist_id(url)
+            print (f'playlist_id:{playlist_id}')
+            videos += extract_playlist_transcripts(playlist_id)
         else:
-          transcripts.append({f'Invalid URL: {url}'})
-    print(f'DATA SENT TO CLIENT: {transcripts}')
-    return jsonify({'transcripts': transcripts})
+            videos.append({'Invalid URL': url})
+
+
+        # if 'playlist' in url:
+        #     id = has_youtube_playlist_id(url)
+        #     print (f'playlist_id:{id}')
+        #     videos += extract_playlist_transcripts(id)
+        # elif 'video' in url or 'watch' in url:
+        #     id = has_youtube_video_id(url)
+        #     print (f'video_id:{id}')
+        #     videos.append(get_video_transcript(id, USE_AI))
+        # else:
+        #   videos.append({f'Invalid URL: {url}'})
+    print(f'DATA SENT TO CLIENT: {videos}')
+    return jsonify({'videos': videos})
 
 def summarize_text(text):
   try:
@@ -66,7 +79,7 @@ def get_video_transcript(video_id, USE_AI_FLAG=False):
       
       if transcript:
         for line in transcript:
-            full_transcript_text_only += line['text']
+            full_transcript_text_only += f"{line['text']} "
       
       results = {'transcript_text_only': full_transcript_text_only,
                  'transcript_with_timestamps': transcript}
@@ -112,14 +125,16 @@ def extract_playlist_transcripts(playlist_id):
     except Exception as e:
         return str(e)
 
-def extract_video_id(youtube_link):
-  match = re.search(r"v=([a-zA-Z0-9_-]+)", youtube_link)
+def has_youtube_video_id(url):
+  regex = r".*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/|live\/|shorts\/|e\/|user\/[^#]*#p\/u\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*"
+  match = re.search(regex, url)
   if match:
       return match.group(1)
   return None
 
-def extract_playlist_id(youtube_link):
-  match = re.search(r"list=([a-zA-Z0-9_-]+)", youtube_link)
+def has_youtube_playlist_id(url):
+  regex = r"^https?:\/\/(www\.)?youtube\.com\/playlist\?list=([a-zA-Z0-9_-]+)&si=([a-zA-Z0-9_-]+)$"
+  match = re.search(regex, url)
   if match:
       return match.group(1)
   return None
