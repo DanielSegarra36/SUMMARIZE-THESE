@@ -18,6 +18,8 @@ What things you need to install the software and how to install them:
 
 ### Set Your API Keys
 
+_make sure you set this in the same shell you'll use to run the flask server_
+
 1. Set your YouTube API key as an environment variable:
    ```
    export YOUTUBE_API_KEY=your_api_key
@@ -99,7 +101,7 @@ It allows you to declare the libraries your project depends on and it will manag
 7. SUCCESS!!!
 
    ```
-   Running on http://127.0.0.1:5000
+   Running on http://localhost:5000
    ```
 
 ## Running the tests
@@ -133,4 +135,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Resources
 
-- some links
+- openai docs: https://platform.openai.com/docs/guides/chat
+- youtube docs:
+  - https://developers.google.com/youtube/v3/docs/videos/list
+  - https://developers.google.com/youtube/v3/docs/playlist/list
+  - https://developers.google.com/youtube/v3/docs/playlistItems/list

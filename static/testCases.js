@@ -1,5 +1,5 @@
 // Test URL: https://youtube.com/playlist?list=PLqR0DrEFzD9ufgr22HZod71yFKMqekKwp&si=pVCsnjOVO-H1Rpk4
-const TEST_PLAYLIST_ID_RESPONSE_0 = {
+export const TEST_PLAYLIST_ID_RESPONSE_0 = {
   videos: [
     {
       channelId: "UCjjHivHJM_ShHMsMeHY5v2w",
@@ -9811,7 +9811,7 @@ const TEST_PLAYLIST_ID_RESPONSE_0 = {
   ],
 };
 // Test URL: https://youtube.com/playlist?list=PLqR0DrEFzD9sb43paVGmK-wV8W8ESxAjS&si=4NnaAGIKmB9g7cUl
-const TEST_PLAYLIST_ID_RESPONSE_1 = {
+export const TEST_PLAYLIST_ID_RESPONSE_1 = {
   videos: [
     {
       channelId: "UC0GzLtu-HV1tzQNOfNHwcEg",
@@ -16231,7 +16231,7 @@ const TEST_PLAYLIST_ID_RESPONSE_1 = {
 };
 
 // Test URL: https://youtu.be/15KvrX4Xyrs?si=G7yzyCuw7GMWBr3b
-const TEST_SINGLE_VIDEO_ID_RESPONSE = {
+export const TEST_SINGLE_VIDEO_ID_RESPONSE = {
   videos: [
     {
       channelId: "UCZ0GhKB8QydKH5xcMhmnGdw",
@@ -16466,7 +16466,7 @@ const TEST_SINGLE_VIDEO_ID_RESPONSE = {
 };
 
 // Test URL: https://youtube.com/playlist?list=PLqR0DrEFzD9ufgr22HZod71yFKMqekKwp
-const playlist_data_response = {
+export const playlist_data_response = {
   kind: "youtube#playlistListResponse",
   etag: "mlZDNcmnlkWMMVH9ZO0Wf2ipJew",
   pageInfo: { totalResults: 1, resultsPerPage: 5 },
@@ -16515,7 +16515,7 @@ const playlist_data_response = {
 };
 
 // Test URLs
-let TEST_URLS = [
+export const TEST_URLS = [
   "http://www.youtube.com/watch?v=0zM3nApSvMg&feature=feedrec_grec_index",
   "http://www.youtube.com/user/IngridMichaelsonVEVO#p/a/u/1/QdK8U-VIH_o",
   "http://www.youtube.com/v/0zM3nApSvMg?fs=1&amp;hl=en_US&amp;rel=0",

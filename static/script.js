@@ -51,7 +51,7 @@ function getTranscriptAPICall(youtubeURLs) {
   })
     .then((response) => response.json())
     .then((data) => {
-      videoList = data.videos;
+      let videoList = data.videos;
 
       // Iterate over each video in the videoList response
       for (let video in videoList) {
@@ -60,7 +60,7 @@ function getTranscriptAPICall(youtubeURLs) {
         videoContainer.classList.add("video-container");
 
         // Layout Video Data in HTML
-        createVideoElement(videoList[video], videoContainer);
+        formatDataInHTML(videoList[video], videoContainer);
 
         // Append the new video request to the result list
         document.getElementById("videoResults").appendChild(videoContainer);
@@ -126,8 +126,8 @@ function roundTo(n, digits) {
  * @returns {string} - The formatted line
  */
 function formatTranscriptLine(line) {
-  let startTime = formatTime(line.start);
-  let endTime = formatTime(line.start + line.duration);
+  let startTime = formatTimeHHMMSS(line.start);
+  let endTime = formatTimeHHMMSS(line.start + line.duration);
   return `(${startTime} - ${endTime}) ${line.text}\n`;
 }
 
@@ -137,7 +137,7 @@ function formatTranscriptLine(line) {
  * @returns {string} - The formatted time
  * @throws {Error} - If the time is not a positive integer
  */
-function formatTime(time) {
+function formatTimeHHMMSS(time) {
   let totalSeconds = roundTo(time, 2);
   let days = padTimeUnit(totalSeconds / (3600 * 24));
   let hours = padTimeUnit(totalSeconds / 3600);
@@ -162,7 +162,7 @@ function padTimeUnit(timeUnit) {
  * @param {Object} currentVideo - The current video object
  * @param {HTMLElement} videoContainer - The container for the video data
  */
-function createVideoElement(currentVideo, videoContainer) {
+function formatDataInHTML(currentVideo, videoContainer) {
   // Check for each field and create HTML elements if the videoList is present
   if (currentVideo.thumbnailUrl) {
     let thumbnail = document.createElement("img");
@@ -175,25 +175,39 @@ function createVideoElement(currentVideo, videoContainer) {
   if (currentVideo.title) {
     let title = document.createElement("h2");
     title.textContent = currentVideo.title;
+    title.classList.add("title");
     videoContainer.appendChild(title);
   }
 
   if (currentVideo.channelTitle) {
     let channelTitle = document.createElement("p");
     channelTitle.textContent = "Channel: " + currentVideo.channelTitle;
+    channelTitle.classList.add("channelTitle");
     videoContainer.appendChild(channelTitle);
   }
 
   if (currentVideo.AI_summary) {
     let aiSummary = document.createElement("p");
     aiSummary.textContent = currentVideo.AI_summary;
+    aiSummary.classList.add("AI_summary");
     videoContainer.appendChild(aiSummary);
   }
 
   if (currentVideo.description) {
+    let container = document.createElement("div");
+    let label = document.createElement("h4");
     let description = document.createElement("p");
+
+    container.classList.add("descriptionContainer");
+    label.classList.add("descriptionLabel");
+    description.classList.add("descriptionText");
+
+    label.textContent = "Description: ";
     description.textContent = currentVideo.description;
-    videoContainer.appendChild(description);
+
+    container.appendChild(label);
+    container.appendChild(description);
+    videoContainer.appendChild(container);
   }
 
   if (currentVideo.transcript_text_only) {
@@ -210,17 +224,59 @@ function createVideoElement(currentVideo, videoContainer) {
 
     // Iterate over each line in the transcript and create a paragraph element
     for (line in currentVideo.transcript_with_timestamps) {
-      // Create a paragraph element for each line
+      const lineData = currentVideo.transcript_with_timestamps[line];
+
       let timestampedLine = document.createElement("p");
       timestampedLine.classList.add("timestamped-line");
+      let transcriptLine = document.createTextNode(lineData.text);
 
-      timestampedLine.textContent += formatTranscriptLine(
-        currentVideo.transcript_with_timestamps[line]
-      );
+      let timestamp = document.createElement("span");
+      timestamp.classList.add("timestamp");
+      let startTime = formatTimeHHMMSS(lineData.start);
+      let endTime = formatTimeHHMMSS(lineData.start + lineData.duration);
+      timestamp.textContent = `(${startTime} - ${endTime})`;
+
+      timestampedLine.appendChild(timestamp);
+      timestampedLine.appendChild(transcriptLine);
+      // timestampedLine.textContent += `${lineData.text}\n`;
+
+      // timestampedLine.textContent += formatTranscriptLine(
+      //   currentVideo.transcript_with_timestamps[line]
+      // );
       transcriptWithTimestamps.appendChild(timestampedLine);
     }
 
     // Append the transcript with timestamps to the video data container
     videoContainer.appendChild(transcriptWithTimestamps);
   }
+}
+
+function formatDataInHTML_HELPER() {
+  for (key in currentVideo) {
+    if (currentVideo.hasOwnProperty(key)) {
+      if (Array.isArray(currentVideo[key])) {
+        const y = currentVideo[key];
+        for (x in y) {
+          // let element = buildHTMLElement("div", [{ class: "key" }], y[x]);
+          // videoContainer.appendChild(element);
+          formatDataInHTML(y[x], videoContainer);
+        }
+      } else {
+        console.log(`Key: ${key}, Value: ${currentVideo[key]}`);
+        videoContainer.appendChild(
+          buildHTMLElement("div", [{ class: key }], currentVideo[key])
+        );
+      }
+    }
+  }
+}
+
+function buildHTMLElement(type, attributes = [], content) {
+  let element = document.createElement(type);
+  for (prop in attributes) {
+    for (key in attributes[prop])
+      element.setAttribute(key, attributes[prop][key]);
+  }
+  element.textContent = content;
+  return element;
 }

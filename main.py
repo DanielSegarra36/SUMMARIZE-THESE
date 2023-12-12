@@ -6,22 +6,20 @@ import random
 import os
 import re
 
-# Compare Pricing
-# https://openai.com/pricing
-# Monitor Your Usage
-# https://platform.openai.com/usage
+# Compare Pricing: https://openai.com/pricing
+# Monitor Your Usage: https://platform.openai.com/usage
 # SET TO TRUE TO ENABLE SUMMARIZATION
-# THIS WILL REQUIRE A FREE OPENAI API KEY AND TOKENS PURCHASED
+# THIS WILL REQUIRE AN OPENAI API KEY AND TOKENS PURCHASED
 USE_AI = False
+# Set your API keys as an environment variables
+YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY')  # Replace with your actual API key
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')  # Replace with your actual API key
 
 app = Flask(  # Create a flask app
   __name__,
   template_folder='templates',  # Name of html file folder
   static_folder='static'  # Name of directory for static files
 )
-
-# Set your YouTube API key as an environment variable or directly assign it here
-api_key = os.environ.get('YOUTUBE_API_KEY')  # Replace with your actual API key
 
 @app.route('/get_transcript', methods=['POST'])
 def get_transcript():
@@ -65,13 +63,14 @@ def summarize_text(text):
 
 def get_video_metadata(video_id):
   try:
-      youtube = build('youtube', 'v3', developerKey=api_key)
+      youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
       request = youtube.videos().list(
           part='snippet',
           id=video_id
       )
       response = request.execute()
       video_metadata = {
+          'videoId': video_id,
           'publishedAt': response['items'][0]['snippet']['publishedAt'],
           'channelId': response['items'][0]['snippet']['channelId'],
           'channelTitle': response['items'][0]['snippet']['channelTitle'],
@@ -109,7 +108,7 @@ def get_video_transcript(video_id, USE_AI_FLAG=False):
 
 def extract_playlist_videos(playlist_id):
     try:
-        youtube = build('youtube', 'v3', developerKey=api_key)
+        youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
         playlist_data_request = youtube.playlists().list(
             part='snippet, contentDetails',
             id=playlist_id,

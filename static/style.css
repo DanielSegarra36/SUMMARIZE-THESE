@@ -1,3 +1,8 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
 html,
 body {
   height: 100%;
@@ -12,6 +17,7 @@ form {
   min-width: 50%;
   margin: 0 auto;
   width: fit-content;
+  max-width: 100%;
 }
 
 form>* {
@@ -27,6 +33,8 @@ textarea {
   padding: .5rem 1rem;
   box-sizing: border-box;
   height: 7rem;
+  max-width: 100%;
+  min-height: 80px;
 }
 
 textarea::-webkit-input-placeholder {
@@ -89,13 +97,27 @@ label {
 }
 
 /* Style for the title */
-h2 {
+.title {
   font-size: 18px;
   margin-bottom: 5px;
 }
 
+.title,
+.channelTitle {
+  text-align: center;
+}
+
 /* Style for the channel title and description */
-p {
+.channelTitle,
+.descriptionText {
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-top: 0.3rem;
+}
+
+.descriptionLabel {
+  margin: 0;
+}
+
+.timestamp {
+  margin-right: 2rem;
 }
