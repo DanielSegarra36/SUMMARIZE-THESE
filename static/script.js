@@ -42,12 +42,23 @@ document
  * @throws {Error} - If the response is not JSON or an array of objects with the correct fields
  */
 function getTranscriptAPICall(youtubeURLs) {
+  let language = document.getElementById("language").value;
+  let gptModel = null;
+
+  // If the AI Summary checkbox is checked, include the GPT model in the API request
+  if (document.getElementById("aiSummary").checked) {
+    gptModel = document.getElementById("gptModel").value;
+    apiRequest = { urls: youtubeURLs, language, gptModel };
+  }
+  // Otherwise, exclude the GPT model from the API request
+  apiRequest = { urls: youtubeURLs, language };
+
   fetch("/get_transcript", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ urls: youtubeURLs }),
+    body: JSON.stringify(apiRequest),
   })
     .then((response) => response.json())
     .then((data) => {
@@ -255,11 +266,11 @@ function formatDataInHTML_HELPER() {
   for (key in currentVideo) {
     if (currentVideo.hasOwnProperty(key)) {
       if (Array.isArray(currentVideo[key])) {
-        const y = currentVideo[key];
-        for (x in y) {
-          // let element = buildHTMLElement("div", [{ class: "key" }], y[x]);
+        const nestedArray = currentVideo[key];
+        for (item in nestedArray) {
+          // let element = buildHTMLElement("div", [{ class: "key" }], nestedArray[item]);
           // videoContainer.appendChild(element);
-          formatDataInHTML(y[x], videoContainer);
+          formatDataInHTML(nestedArray[item], videoContainer);
         }
       } else {
         console.log(`Key: ${key}, Value: ${currentVideo[key]}`);
@@ -280,3 +291,26 @@ function buildHTMLElement(type, attributes = [], content) {
   element.textContent = content;
   return element;
 }
+
+window.onload = function () {
+  const aiSummaryCheckbox = document.getElementById("aiSummary");
+  const gptModelSelect = document.getElementById("gptModel");
+  const gptModelLabel = document.querySelector("label[for='gptModel']"); // assuming the label has a 'for' attribute
+
+  // Disable Summary & hide the GPT model label and select initially
+  aiSummaryCheckbox.checked = false;
+  gptModelLabel.style.display = "none";
+  gptModelSelect.style.display = "none";
+
+  aiSummaryCheckbox.addEventListener("change", function () {
+    // If the AI summary checkbox is checked, show the GPT model label and select
+    // Otherwise, hide them
+    if (this.checked) {
+      gptModelLabel.style.display = "unset";
+      gptModelSelect.style.display = "unset";
+    } else {
+      gptModelLabel.style.display = "none";
+      gptModelSelect.style.display = "none";
+    }
+  });
+};
