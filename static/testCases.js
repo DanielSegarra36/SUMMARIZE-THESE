@@ -16465,6 +16465,354 @@ export const TEST_SINGLE_VIDEO_ID_RESPONSE = {
   ],
 };
 
+// response with OpenAI Summary; Video: https://youtu.be/HErOulIrLCw?si=aPcKIWZJITHaH38J
+export const TEST_WITH_OPENAI_RESPONSE = {
+  videos: [
+    {
+      AI_summary:
+        "The video is the last in a 12-day series about transit in New York City. The content creator celebrates the completion of the challenge and reflects on various facets of transit in the city covered during the series. The focus of this video is on walking in New York City, particularly along the High Line, a former elevated railway converted into a park.\n\nThe creator discusses the significance of walking as a form of transit, highlighting that on average, New Yorkers walk about 2 to 3 miles a day. They explain that walking is ingrained in New York's culture and discuss the High Line's transformation from a transportation route for goods to an elevated park. The High Line is described as a pedestrian-friendly pathway with no crosswalks or cross-traffic, allowing for a unique and relaxing walking experience.\n\nThe video showcases the High Line's features, including artwork, events, and seating areas, along with its direct connection to various districts and attractions in New York City, such as Hudson Yards, Chelsea, and the meat packing district. Additionally, the creator mentions the High Line's influence on other elevated parks, mentioning the planned Hudson Essex Greenway in New Jersey as an example of the repurposing of old rail infrastructure.\n\nThe content creator emphasizes the appeal of the High Line for urban dwellers and tourists, pointing out its scenic views, art galleries, and the potential for leisure activities. The video concludes with the creator encouraging viewers to share their thoughts on the High Line and the entire transit series. They also promote their merchandise and express gratitude to the audience.\n\nOverall, the video provides insight into the role of walking as a mode of transit in New York City, with a specific focus on the unique experience offered by the High Line and its cultural and recreational significance.",
+      channelId: "UCZ0GhKB8QydKH5xcMhmnGdw",
+      channelTitle: "Urban Caffeine",
+      description:
+        "It's the last day of 12 Days of Transit Vlogmas for 2023. We're taking a look at the diverse ways people get around in New York City. For Day 12 we are walking The High Line in New York City. The High Line is a former elevated rail that was converted into an elevated park. It runs from Hudson Yards to Chelsea's Meatpacking District. It's located near NYC's Little Island and Chelsea Market. And today, we're walking it! Walking is a huge part of New York culture, city life in general, and urbanism. And what better way to explore the joys of walking than on a former elevated rail. Happy final day of Vlogmas!\n\nRELATED LINKS:\n12 Days of Transit Vlogmas Full Playlist \u2192 https://www.youtube.com/playlist?list=PLlRaycSozDfY_4FrLj5oJrcuZW4fGcADC\n\n\n\u2728 The BEST Merch EVER!!! \u2728\nEnjoy 10% OFF at the Urban Caffeine Shop \u2192 https://bit.ly/3QOnJUI\nUse code: VLOGMAS10\n\n\ud83c\udfac ABOUT THIS CHANNEL \ud83c\udfac\nHave you ever looked at New York City from a user experience standpoint?\ud83d\udc40 How do you learn to live comfortably in a city with a density of 27,000 souls per square mile?\ud83d\udc65 How come the best transit system in the country is actually not that good?\ud83d\ude87 These are the types of questions I prod on this channel. Make sure to sub and hit the bell so you won't miss future videos.\ud83c\udf7f\ud83d\udc4d\n\n\ud83c\udf1f New to this channel, you might like these videos. \ud83c\udf1f\nWhy are the streets of Queens so confusing \u2192 youtu.be/5WRVwNNoiQs\nWhat's with the New York subway map? \u2192 youtu.be/66AtWWSEvSo\nThe absurd story of the L train \u2192 youtu.be/g5ZeI9BQLms\n\n\ud83c\udf1f Access to perks \ud83c\udf1f \nhttps://www.youtube.com/channel/UCZ0GhKB8QydKH5xcMhmnGdw/join\nOR if you prefer Patreon \u2192 https://www.patreon.com/UrbanCaffeine \n\n\ud83c\udf1f Interested in supporting Urban Caffeine? \ud83c\udf1f\nPayPal \u2192 https://paypal.me/UrbanCaffeineStudio\nVenmo \u2192 https://venmo.com/u/UrbanCaffeine\nPatreon \u2192 https://patreon.com/UrbanCaffeine\n\n\u2709\ufe0f Contact \nInstagram / Xwitter @ urbancaffeineYT \nGeneral contact \u2192 info@urbancaffeine.com\nFor brand partnerships \u2192 urbancaffeine@thoughtleaders.io",
+      publishedAt: "2023-12-13T15:00:12Z",
+      thumbnailUrl: "https://i.ytimg.com/vi/HErOulIrLCw/maxresdefault.jpg",
+      title:
+        "Walking New York's High Line \u2192 Day 12 of 12 Days of Transit Vlogmas 2023",
+      transcript_text_only:
+        "[Music] welcome to the last day of 12 days of\u00a0\ntransit in New York City and I can't believe\u00a0\u00a0 we've made it 12 consecutive days it's been an\u00a0\nexhausting few days for me but we've made it\u00a0\u00a0 yay we survived and honestly I thought I wasn't\u00a0\ngoing to make it but challenge completed we've\u00a0\u00a0 completed 12 days of transit in the last 12 days\u00a0\nwe talked about different facets of Transit is\u00a0\u00a0 it we covered some stations we've covered some\u00a0\nnon-mainstream options of how to get around New\u00a0\u00a0 York and we covered a bus that had this weirdly\u00a0\nshort rot and today we are going to cover a form\u00a0\u00a0 of Transit that has been around since the dawn\u00a0\nof man and that is walking right now I'm at the\u00a0\u00a0 Highline and I thought this would be the perfect\u00a0\nplace to just talk about walking in New York did\u00a0\u00a0 you know on average New Yorkers walk about 2 to\u00a0\n3 miles a day and that's just two and from work\u00a0\u00a0 maybe some light errands here and there that's a\u00a0\nlot of walking walking is a big part of New York\u00a0\u00a0 culture it's a big part of urbanism it's a big\u00a0\npart of city life and I thought the High Line\u00a0\u00a0 would be an interesting place for this video\u00a0\nbecause this is a former elevated Railway cuz\u00a0\u00a0 the High Line is situated in the manufacturing\u00a0\nDistrict of New York you have the meat packing\u00a0\u00a0 District the Garment District and all these other\u00a0\nplaces that do some sort of manufacturing and the\u00a0\u00a0 High Line was used to transport goods between\u00a0\nthese districts now we don't have it we don't\u00a0\u00a0 have a rail like that anymore so the railway\u00a0\nwas converted into this elevated Park and what's\u00a0\u00a0 great about that is when you walk the High Line\u00a0\nyou can walk it from 12th Avenue all the way to\u00a0\u00a0 Hudson yards and it's about a mile and A4 long\u00a0\nand you don't have to cross a walkway there's no\u00a0\u00a0 crosswalks because there's no cross traffic it's\u00a0\njust for pedestrians when you walk around you see\u00a0\u00a0 more detail of your environment it's because\u00a0\nyou're at a slower pace you're more aware of\u00a0\u00a0 what's happening on the ground and you can truly\u00a0\nappreciate it like this artwork behind me this\u00a0\u00a0 narly looking tree and that's the first thing\u00a0\nwe're going to look at the thing about artwork\u00a0\u00a0 at the High Line is it's rotating some of these\u00a0\nare not permanent and they're only here seasonally\u00a0\u00a0 I don't know if this is permanent I wouldn't be\u00a0\nsurprised if this will be gone by the spring but\u00a0\u00a0 it's a great thing because every time you visit\u00a0\nthere's potential for something new to see look\u00a0\u00a0 at that traffic behind me walking really is one\u00a0\nof the best forms of Transit I'm starting out\u00a0\u00a0 at Hudson yards and I'm going to walk the High\u00a0\nLine down to Chelsea the meat packing District\u00a0\u00a0 the High Line connects directly to Hudson yards\u00a0\nas you can see there's the vessel behind me and\u00a0\u00a0 this Museum and there's a new bridge that was\u00a0\nadded that connects the High Line to Moynihan\u00a0\u00a0 Train Hall if you've ever wondered what it's like\u00a0\nto have a throughway that's pedestrian only a good\u00a0\u00a0 example of that is the High Line [Music] I would\u00a0\nfeel so awkward living in one of these apartments\u00a0\u00a0 where you look out your door and there's people\u00a0\nwalking by in the High Line there are also a lot\u00a0\u00a0 of events that happen on the High Line there's a\u00a0\nwhole program of them can just go to the website\u00a0\u00a0 and see what's going on for example in the summer\u00a0\nthey would have an observation night where there\u00a0\u00a0 would be telescopes and some professionals that\u00a0\ntalk to you about night sky and constellations\u00a0\u00a0 and all that fun stuff sometimes the High Line\u00a0\ndoes get crowded especially in the summer time\u00a0\u00a0 a good time to go is like on a Tuesday evening\u00a0\nand there are spots here where you can City watch\u00a0\u00a0 there's like mini amphitheaters where it just\u00a0\nfaces the street and you can watch the street\u00a0\u00a0 and the city the High Line also goes to through\u00a0\nthe art gallery district and behind me you'll\u00a0\u00a0 see a lot of art galleries and a fun thing to\u00a0\ndo is go Gallery hopping especially on Sundays\u00a0\u00a0 and it's free unlike museums you have to pay\u00a0\nan entrance but galleries are free and on in\u00a0\u00a0 the summertime they have wine and cheese nights so\u00a0\nyou can go Gallery hopping and get free wine and cheese look at the size of\u00a0\nthis thing this is enough covering the Highlight has been an inspiration\u00a0\nfor other elevated Parks there's one in New\u00a0\u00a0 Jersey that's being planned out it's the Hudson\u00a0\nessex line Hudson essex pathway or Greenway the\u00a0\u00a0 Hudson essex Greenway really it's a great way\u00a0\nto repurpose an Old Railway especially if it's elevated [Music] There have been Summers where this lawn\u00a0\nbehind me has been open for people to picnic on\u00a0\u00a0 to sit on but right now it's cordoned off so\u00a0\nnobody can use it and they're probably just\u00a0\u00a0 giving the grass some rest this mural I'm looking\u00a0\nat is is supposed to be all things New York you\u00a0\u00a0 have representation of the train with the A6\u00a0\nNew York Sports with the NY pigeons pigeons\u00a0\u00a0 are a big part of New York got some diversity\u00a0\ngoing on of course Pizza I heart New York and\u00a0\u00a0 the Big Apple another thing about the High Line\u00a0\nis that there are plenty of seats so you could\u00a0\u00a0 easily rest along the way for [MUSIC] I'm at the\u00a0\nsouth end of the High Line at Chelsea Market I\u00a0\u00a0 think there's a connection I'm not sure from here\u00a0\nyou're really close to Little Island which is the\u00a0\u00a0 newest floating Park so you could really make a\u00a0\nday of walking from Hudson yards down to Chelsea\u00a0\u00a0 Market to the little island you can actually\u00a0\nsee little Island from here and that's the\u00a0\u00a0 last day of 12 days of transit in New York City\u00a0\nwhat do you think of the High Line do you like\u00a0\u00a0 the idea that there are no cross walks or that\u00a0\nit's elevated comment down below or do you not\u00a0\u00a0 like the High Line if you've missed any videos\u00a0\nfrom this series I have a link to the playlist\u00a0\u00a0 in the description and if you've watched all the\u00a0\nvideos comment below on what your favorite one\u00a0\u00a0 is it's been a long 12 days and I'm ready for\u00a0\na vacation so this might be the last video this\u00a0\u00a0 year and if so I'll see you all in January and\u00a0\nif you want the best merch ever check out shop.\u00a0\u00a0 Urban caffeine.com I have holiday promo going on\u00a0\nand if you're a Patreon or YouTube member you get\u00a0\u00a0 15% off with that I wish you all a happy holiday\u00a0\nseason and until the next video Happy New York ",
+      transcript_with_timestamps: [
+        {
+          duration: 9.0,
+          start: 0.0,
+          text: "[Music] welcome to the last day of 12 days of\u00a0\ntransit in New York City and I can't believe\u00a0\u00a0",
+        },
+        {
+          duration: 7.48,
+          start: 9.0,
+          text: "we've made it 12 consecutive days it's been an\u00a0\nexhausting few days for me but we've made it\u00a0\u00a0",
+        },
+        {
+          duration: 7.32,
+          start: 16.48,
+          text: "yay we survived and honestly I thought I wasn't\u00a0\ngoing to make it but challenge completed we've\u00a0\u00a0",
+        },
+        {
+          duration: 6.36,
+          start: 23.8,
+          text: "completed 12 days of transit in the last 12 days\u00a0\nwe talked about different facets of Transit is\u00a0\u00a0",
+        },
+        {
+          duration: 5.96,
+          start: 30.16,
+          text: "it we covered some stations we've covered some\u00a0\nnon-mainstream options of how to get around New\u00a0\u00a0",
+        },
+        {
+          duration: 6.24,
+          start: 36.12,
+          text: "York and we covered a bus that had this weirdly\u00a0\nshort rot and today we are going to cover a form\u00a0\u00a0",
+        },
+        {
+          duration: 7.44,
+          start: 42.36,
+          text: "of Transit that has been around since the dawn\u00a0\nof man and that is walking right now I'm at the\u00a0\u00a0",
+        },
+        {
+          duration: 6.04,
+          start: 49.8,
+          text: "Highline and I thought this would be the perfect\u00a0\nplace to just talk about walking in New York did\u00a0\u00a0",
+        },
+        {
+          duration: 6.36,
+          start: 55.84,
+          text: "you know on average New Yorkers walk about 2 to\u00a0\n3 miles a day and that's just two and from work\u00a0\u00a0",
+        },
+        {
+          duration: 5.68,
+          start: 62.2,
+          text: "maybe some light errands here and there that's a\u00a0\nlot of walking walking is a big part of New York\u00a0\u00a0",
+        },
+        {
+          duration: 4.8,
+          start: 67.88,
+          text: "culture it's a big part of urbanism it's a big\u00a0\npart of city life and I thought the High Line\u00a0\u00a0",
+        },
+        {
+          duration: 6.04,
+          start: 72.68,
+          text: "would be an interesting place for this video\u00a0\nbecause this is a former elevated Railway cuz\u00a0\u00a0",
+        },
+        {
+          duration: 5.32,
+          start: 78.72,
+          text: "the High Line is situated in the manufacturing\u00a0\nDistrict of New York you have the meat packing\u00a0\u00a0",
+        },
+        {
+          duration: 7.16,
+          start: 84.04,
+          text: "District the Garment District and all these other\u00a0\nplaces that do some sort of manufacturing and the\u00a0\u00a0",
+        },
+        {
+          duration: 6.84,
+          start: 91.2,
+          text: "High Line was used to transport goods between\u00a0\nthese districts now we don't have it we don't\u00a0\u00a0",
+        },
+        {
+          duration: 6.0,
+          start: 98.04,
+          text: "have a rail like that anymore so the railway\u00a0\nwas converted into this elevated Park and what's\u00a0\u00a0",
+        },
+        {
+          duration: 6.12,
+          start: 104.04,
+          text: "great about that is when you walk the High Line\u00a0\nyou can walk it from 12th Avenue all the way to\u00a0\u00a0",
+        },
+        {
+          duration: 8.0,
+          start: 110.16,
+          text: "Hudson yards and it's about a mile and A4 long\u00a0\nand you don't have to cross a walkway there's no\u00a0\u00a0",
+        },
+        {
+          duration: 5.96,
+          start: 118.16,
+          text: "crosswalks because there's no cross traffic it's\u00a0\njust for pedestrians when you walk around you see\u00a0\u00a0",
+        },
+        {
+          duration: 5.52,
+          start: 124.12,
+          text: "more detail of your environment it's because\u00a0\nyou're at a slower pace you're more aware of\u00a0\u00a0",
+        },
+        {
+          duration: 5.88,
+          start: 129.64,
+          text: "what's happening on the ground and you can truly\u00a0\nappreciate it like this artwork behind me this\u00a0\u00a0",
+        },
+        {
+          duration: 4.72,
+          start: 135.52,
+          text: "narly looking tree and that's the first thing\u00a0\nwe're going to look at the thing about artwork\u00a0\u00a0",
+        },
+        {
+          duration: 6.8,
+          start: 140.24,
+          text: "at the High Line is it's rotating some of these\u00a0\nare not permanent and they're only here seasonally\u00a0\u00a0",
+        },
+        {
+          duration: 4.44,
+          start: 147.04,
+          text: "I don't know if this is permanent I wouldn't be\u00a0\nsurprised if this will be gone by the spring but\u00a0\u00a0",
+        },
+        {
+          duration: 5.88,
+          start: 151.48,
+          text: "it's a great thing because every time you visit\u00a0\nthere's potential for something new to see look\u00a0\u00a0",
+        },
+        {
+          duration: 7.6,
+          start: 157.36,
+          text: "at that traffic behind me walking really is one\u00a0\nof the best forms of Transit I'm starting out\u00a0\u00a0",
+        },
+        {
+          duration: 7.2,
+          start: 164.96,
+          text: "at Hudson yards and I'm going to walk the High\u00a0\nLine down to Chelsea the meat packing District\u00a0\u00a0",
+        },
+        {
+          duration: 6.12,
+          start: 172.16,
+          text: "the High Line connects directly to Hudson yards\u00a0\nas you can see there's the vessel behind me and\u00a0\u00a0",
+        },
+        {
+          duration: 7.0,
+          start: 178.28,
+          text: "this Museum and there's a new bridge that was\u00a0\nadded that connects the High Line to Moynihan\u00a0\u00a0",
+        },
+        {
+          duration: 9.68,
+          start: 185.28,
+          text: "Train Hall if you've ever wondered what it's like\u00a0\nto have a throughway that's pedestrian only a good\u00a0\u00a0",
+        },
+        {
+          duration: 23.88,
+          start: 194.96,
+          text: "example of that is the High Line [Music] I would\u00a0\nfeel so awkward living in one of these apartments\u00a0\u00a0",
+        },
+        {
+          duration: 7.32,
+          start: 218.84,
+          text: "where you look out your door and there's people\u00a0\nwalking by in the High Line there are also a lot\u00a0\u00a0",
+        },
+        {
+          duration: 5.8,
+          start: 226.16,
+          text: "of events that happen on the High Line there's a\u00a0\nwhole program of them can just go to the website\u00a0\u00a0",
+        },
+        {
+          duration: 5.04,
+          start: 231.96,
+          text: "and see what's going on for example in the summer\u00a0\nthey would have an observation night where there\u00a0\u00a0",
+        },
+        {
+          duration: 8.2,
+          start: 237.0,
+          text: "would be telescopes and some professionals that\u00a0\ntalk to you about night sky and constellations\u00a0\u00a0",
+        },
+        {
+          duration: 6.6,
+          start: 245.2,
+          text: "and all that fun stuff sometimes the High Line\u00a0\ndoes get crowded especially in the summer time\u00a0\u00a0",
+        },
+        {
+          duration: 7.92,
+          start: 251.8,
+          text: "a good time to go is like on a Tuesday evening\u00a0\nand there are spots here where you can City watch\u00a0\u00a0",
+        },
+        {
+          duration: 7.04,
+          start: 259.72,
+          text: "there's like mini amphitheaters where it just\u00a0\nfaces the street and you can watch the street\u00a0\u00a0",
+        },
+        {
+          duration: 5.84,
+          start: 266.76,
+          text: "and the city the High Line also goes to through\u00a0\nthe art gallery district and behind me you'll\u00a0\u00a0",
+        },
+        {
+          duration: 7.44,
+          start: 272.6,
+          text: "see a lot of art galleries and a fun thing to\u00a0\ndo is go Gallery hopping especially on Sundays\u00a0\u00a0",
+        },
+        {
+          duration: 5.68,
+          start: 280.04,
+          text: "and it's free unlike museums you have to pay\u00a0\nan entrance but galleries are free and on in\u00a0\u00a0",
+        },
+        {
+          duration: 6.32,
+          start: 285.72,
+          text: "the summertime they have wine and cheese nights so\u00a0\nyou can go Gallery hopping and get free wine and",
+        },
+        {
+          duration: 7.6,
+          start: 292.04,
+          text: "cheese look at the size of\u00a0\nthis thing this is enough",
+        },
+        {
+          duration: 9.32,
+          start: 299.64,
+          text: "covering the Highlight has been an inspiration\u00a0\nfor other elevated Parks there's one in New\u00a0\u00a0",
+        },
+        {
+          duration: 8.56,
+          start: 308.96,
+          text: "Jersey that's being planned out it's the Hudson\u00a0\nessex line Hudson essex pathway or Greenway the\u00a0\u00a0",
+        },
+        {
+          duration: 6.76,
+          start: 317.52,
+          text: "Hudson essex Greenway really it's a great way\u00a0\nto repurpose an Old Railway especially if it's",
+        },
+        {
+          duration: 5.2,
+          start: 324.28,
+          text: "elevated",
+        },
+        {
+          duration: 18.44,
+          start: 332.16,
+          text: "[Music] There have been Summers where this lawn\u00a0\nbehind me has been open for people to picnic on\u00a0\u00a0",
+        },
+        {
+          duration: 5.36,
+          start: 350.6,
+          text: "to sit on but right now it's cordoned off so\u00a0\nnobody can use it and they're probably just\u00a0\u00a0",
+        },
+        {
+          duration: 6.28,
+          start: 355.96,
+          text: "giving the grass some rest this mural I'm looking\u00a0\nat is is supposed to be all things New York you\u00a0\u00a0",
+        },
+        {
+          duration: 6.8,
+          start: 362.24,
+          text: "have representation of the train with the A6\u00a0\nNew York Sports with the NY pigeons pigeons\u00a0\u00a0",
+        },
+        {
+          duration: 6.88,
+          start: 369.04,
+          text: "are a big part of New York got some diversity\u00a0\ngoing on of course Pizza I heart New York and\u00a0\u00a0",
+        },
+        {
+          duration: 5.4,
+          start: 375.92,
+          text: "the Big Apple another thing about the High Line\u00a0\nis that there are plenty of seats so you could\u00a0\u00a0",
+        },
+        {
+          duration: 40.36,
+          start: 381.32,
+          text: "easily rest along the way for [MUSIC] I'm at the\u00a0\nsouth end of the High Line at Chelsea Market I\u00a0\u00a0",
+        },
+        {
+          duration: 6.2,
+          start: 421.68,
+          text: "think there's a connection I'm not sure from here\u00a0\nyou're really close to Little Island which is the\u00a0\u00a0",
+        },
+        {
+          duration: 7.2,
+          start: 427.88,
+          text: "newest floating Park so you could really make a\u00a0\nday of walking from Hudson yards down to Chelsea\u00a0\u00a0",
+        },
+        {
+          duration: 7.6,
+          start: 435.08,
+          text: "Market to the little island you can actually\u00a0\nsee little Island from here and that's the\u00a0\u00a0",
+        },
+        {
+          duration: 5.32,
+          start: 442.68,
+          text: "last day of 12 days of transit in New York City\u00a0\nwhat do you think of the High Line do you like\u00a0\u00a0",
+        },
+        {
+          duration: 5.76,
+          start: 448.0,
+          text: "the idea that there are no cross walks or that\u00a0\nit's elevated comment down below or do you not\u00a0\u00a0",
+        },
+        {
+          duration: 4.8,
+          start: 453.76,
+          text: "like the High Line if you've missed any videos\u00a0\nfrom this series I have a link to the playlist\u00a0\u00a0",
+        },
+        {
+          duration: 6.24,
+          start: 458.56,
+          text: "in the description and if you've watched all the\u00a0\nvideos comment below on what your favorite one\u00a0\u00a0",
+        },
+        {
+          duration: 7.84,
+          start: 464.8,
+          text: "is it's been a long 12 days and I'm ready for\u00a0\na vacation so this might be the last video this\u00a0\u00a0",
+        },
+        {
+          duration: 7.88,
+          start: 472.64,
+          text: "year and if so I'll see you all in January and\u00a0\nif you want the best merch ever check out shop.\u00a0\u00a0",
+        },
+        {
+          duration: 6.88,
+          start: 480.52,
+          text: "Urban caffeine.com I have holiday promo going on\u00a0\nand if you're a Patreon or YouTube member you get\u00a0\u00a0",
+        },
+        {
+          duration: 8.0,
+          start: 487.4,
+          text: "15% off with that I wish you all a happy holiday\u00a0\nseason and until the next video Happy New York",
+        },
+      ],
+      videoId: "HErOulIrLCw",
+    },
+  ],
+};
+
 // Test URL: https://youtube.com/playlist?list=PLqR0DrEFzD9ufgr22HZod71yFKMqekKwp
 export const playlist_data_response = {
   kind: "youtube#playlistListResponse",

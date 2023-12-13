@@ -47,11 +47,13 @@ function getTranscriptAPICall(youtubeURLs) {
 
   // If the AI Summary checkbox is checked, include the GPT model in the API request
   if (document.getElementById("aiSummary").checked) {
+    console.log("AI Summary checkbox is checked!!!!");
     gptModel = document.getElementById("gptModel").value;
-    apiRequest = { urls: youtubeURLs, language, gptModel };
+    apiRequest = { urls: youtubeURLs, language, model: gptModel };
+  } else {
+    // Otherwise, exclude the GPT model from the API request
+    apiRequest = { urls: youtubeURLs, language };
   }
-  // Otherwise, exclude the GPT model from the API request
-  apiRequest = { urls: youtubeURLs, language };
 
   fetch("/get_transcript", {
     method: "POST",

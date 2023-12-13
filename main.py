@@ -6,11 +6,6 @@ import random
 import os
 import re
 
-# Compare Pricing: https://openai.com/pricing
-# Monitor Your Usage: https://platform.openai.com/usage
-# SET TO TRUE TO ENABLE SUMMARIZATION
-# THIS WILL REQUIRE AN OPENAI API KEY AND TOKENS PURCHASED
-USE_AI = False
 # Set your API keys as an environment variables
 YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY')  # Replace with your actual API key
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')  # Replace with your actual API key
@@ -23,35 +18,54 @@ app = Flask(  # Create a flask app
 
 @app.route('/get_transcript', methods=['POST'])
 def get_transcript():
+    # Compare Pricing: https://openai.com/pricing
+    # Monitor Your Usage: https://platform.openai.com/usage
+    # SET TO TRUE TO ENABLE SUMMARIZATION
+    # THIS WILL REQUIRE AN OPENAI API KEY AND TOKENS PURCHASED
+    USE_AI = False
+    
     urls = request.json.get('urls', '')
+    language = request.json.get('language', '')
+
+    model = request.json.get('model', '')
+    # if model is not empty or None, then use it
+    if model:
+        USE_AI = True
     videos = []
     for url in urls:
         print (f'URL:{url}')
         if len(url) < 15:
             print (f'video_id only:{url}')
-            videos.append(get_video_transcript(url, USE_AI))
+            videos.append(get_video_transcript(url, USE_AI, model=model, language=language))
         elif has_youtube_video_id(url):
             video_id = has_youtube_video_id(url)
             print (f'video_id:{video_id}')
-            videos.append(get_video_metadata(video_id))
+            videos.append(get_video_metadata(video_id, USE_AI, model=model, language=language))
         elif has_youtube_playlist_id(url):
             playlist_id = has_youtube_playlist_id(url)
             print (f'playlist_id:{playlist_id}')
-            videos += extract_playlist_videos(playlist_id)
+            videos += extract_playlist_videos(playlist_id, USE_AI, model=model, language=language)
         else:
             videos.append({'Invalid URL': url})
 
     # print(f'DATA SENT TO CLIENT: {videos}')
     return jsonify({'videos': videos})
 
-def summarize_text(text):
+def summarize_text(text, model='gpt-3.5-turbo-1106', language='en', prompt=''):
   try:
       client = OpenAI()
+      #   purpose equals prompt if not empty else "string"
+      purpose = prompt if prompt else "You summarize YouTube videos solely on the video's transcript. Explain and highlight core concepts and key points in great detail."
+
+      #   translate string to 'language'
+      if language != 'en':
+          purpose = client.translate(purpose, target_language=language)
+        #   text = client.translate(text, target_language=language)
       response = client.chat.completions.create(
-          model="gpt-3.5-turbo-1106",
+          model=model,
           # api_key=os.environ['OPENAI_API_KEY'],  # this is also the default, it can be omitted
           messages=[
-            {"role": "system", "content": "You summarize YouTube videos solely on the video's transcript. Explain and highlight core concepts and key points in great detail."},
+            {"role": "system", "content": purpose },
             {"role": "user", "content": text}
           ],
           # max_tokens=150  # Adjust the length of the summary as needed
@@ -61,7 +75,7 @@ def summarize_text(text):
       print(f"Error: {str(e)}")
       return None
 
-def get_video_metadata(video_id):
+def get_video_metadata(video_id, USE_AI=False, model='gpt-3.5-turbo-1106', language='en'):
   try:
       youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
       request = youtube.videos().list(
@@ -78,7 +92,7 @@ def get_video_metadata(video_id):
           'description': response['items'][0]['snippet']['description'],
           'thumbnailUrl': response['items'][0]['snippet']['thumbnails']['maxres']['url'],
       }
-      transcript = get_video_transcript(video_id, USE_AI)
+      transcript = get_video_transcript(video_id, USE_AI, model=model, language=language)
       if transcript:
         video_metadata.update(transcript)
       return video_metadata
@@ -86,9 +100,9 @@ def get_video_metadata(video_id):
       print(f"Error: {str(e)}")
       return None
 
-def get_video_transcript(video_id, USE_AI_FLAG=False):
+def get_video_transcript(video_id, USE_AI_FLAG=False, model='gpt-3.5-turbo-1106', language='en'):
   try:
-      transcript = YouTubeTranscriptApi.get_transcript(video_id)
+      transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=[language, 'en'])
       full_transcript_text_only = ''
       
       if transcript:
@@ -99,14 +113,14 @@ def get_video_transcript(video_id, USE_AI_FLAG=False):
                  'transcript_with_timestamps': transcript}
       
       if USE_AI_FLAG:
-          results['AI_summary'] = summarize_text(full_transcript_text_only)
+          results['AI_summary'] = summarize_text(full_transcript_text_only, model=model, language=language)
       
       return results
   except Exception as e:
       print(f"Error: {str(e)}")
       return None
 
-def extract_playlist_videos(playlist_id):
+def extract_playlist_videos(playlist_id, USE_AI=False, model='gpt-3.5-turbo-1106', language='en'):
     try:
         youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
         playlist_data_request = youtube.playlists().list(
@@ -150,7 +164,7 @@ def extract_playlist_videos(playlist_id):
         # print(playlist_videos)
 
         for video in playlist_videos:
-            transcript = get_video_transcript(video['videoId'], USE_AI)
+            transcript = get_video_transcript(video['videoId'], USE_AI, model, language)
             if transcript:
                 video.update(transcript)
             # print(video['transcript'])
