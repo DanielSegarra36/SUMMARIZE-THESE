@@ -1,3 +1,3196 @@
+// Test URL: https://youtu.be/fG2Byh85FSM?si=em7qvaM1CU2nObct
+// English metadata, spanish audio
+// spanish generated transcript translated to english
+export const TEST_EN_METADATA_ES_SUBS_AI_SUMMARY = {
+  videos: [
+    {
+      AI_summary:
+        "El texto que proporcionaste parece ser una transcripci\u00f3n de una entrevista al artista conocido como Bad Bunny, cuyo nombre real es Benito Mart\u00ednez. Durante la entrevista, \u00e9l comparte sus sentimientos y reflexiones sobre su carrera, su identidad y su experiencia en la gira. A continuaci\u00f3n, se destacan los conceptos y puntos clave mencionados por Mart\u00ednez:\n\n1. **Sentimiento durante la gira**: Mart\u00ednez siente un fuerte lazo con su p\u00fablico latinoamericano y menciona que actuar en Argentina fue uno de sus conciertos favoritos, incluso m\u00e1s emotivo que su actuaci\u00f3n en Nueva York en el Yankee Stadium.\n\n2. **Ritual antes de subir al escenario**: Describe su ritual de subir al escenario sin mirar al p\u00fablico y solo voltear a ver a la multitud una vez que est\u00e1 listo y sentado con su neverita, lo cual revela un momento de intimidad y preparaci\u00f3n mental antes de su actuaci\u00f3n.\n\n3. **Colaboraciones musicales**: Explica la l\u00f3gica detr\u00e1s de las colaboraciones en sus shows, las cuales se basan en la disponibilidad y la relevancia dentro de su repertorio. Tambi\u00e9n compara la colaboraci\u00f3n musical con un acto \u00edntimo y serio que tiene una significancia duradera.\n\n4. **Experiencias pasadas y su influencia**: Reflexiona sobre su humilde origen, su trabajo duro y las luchas econ\u00f3micas de su pasado, sugiriendo que estas experiencias han contribuido a su disciplina y gratitud por su \u00e9xito actual.\n\n5. **Planes futuros y pausa musical**: Anuncia que en 2023 planea tomarse un tiempo para s\u00ed mismo para disfrutar de su \u00e9xito, enfoc\u00e1ndose en su salud f\u00edsica y emocional.\n\n6. **Visi\u00f3n sobre el \u00e9xito**: Comparte que su objetivo nunca fue ser el m\u00e1s grande o el n\u00famero uno, sino simplemente hacer lo que ama y poder vivir de ello. Se muestra agradecido por la conexi\u00f3n que ha logrado con su audiencia.\n\n7. **Perspectiva sobre el \u00e9xito y la felicidad**: Mart\u00ednez destaca que disfruta de sus actuales actuaciones en estadios con miles de personas de la misma manera que disfrutaba presentarse ante peque\u00f1as audiencias al inicio de su carrera, lo que subraya una aut\u00e9ntica pasi\u00f3n por su arte m\u00e1s all\u00e1 del tama\u00f1o del p\u00fablico.\n\nAl resumir esta entrevista, es claro que Bad Bunny se siente emocionalmente conectado con su identidad y sus ra\u00edces, y que valora la autenticidad en su m\u00fasica y sus actuaciones. A pesar de su mete\u00f3rico ascenso a la fama, mantiene una perspectiva humilde y enfocada en la gratitud y el disfrute de su trabajo m\u00e1s que en la ambici\u00f3n desmedida.",
+      channelId: "UCsVcseUYbYjldc-XgcsiEbg",
+      channelTitle: "Billboard",
+      description:
+        "Bad Bunny talks to our Chief Content Officer of Latin Leila Cobo about his current tour, World's Hottest Tour, his favorite places to tour, how he approaches collaborations, when he wants to take a break from his career, reflects on his journey to the top and more! \n\nTo learn more about this story: \nhttps://www.billboard.com/music/latin/bad-bunny-billboard-top-artist-2022-concerts-interview-cover-story-1235182432/\n\n\u25ba\u25ba Subscribe for more music news: http://blbrd.cm/Proracf\n\u25ba\u25ba See our latest videos: http://blbrd.cm/xOgw6VQ\n\nAbout: Billboard is the world's most influential music media brand, with an unmatched authority among artists, fans and the industry. Billboard powers the ultimate global music destination and magazine, featuring unrivaled reporting on music news, issues and trends, the industry\u2019s definitive charts, encompassing the most complete and well respected database of charts across all music genres, and elite conferences and events which regularly convene the industry and consumers around important conversations. \n\nConnect with Billboard Online:\nVisit the website: http://blbrd.cm/s5w4vTm\nLikes us on Facebook: http://blbrd.cm/ks26yg5\nFollow us on Twitter: http://blbrd.cm/uRNqRoN \nFollow us on Instagram: http://blbrd.cm/6QaTrhn\n\n#BadBunny #WorldsHottestTour #BillboardCover \n\nBad Bunny Talks Touring, Taking A Break, Reflects On His Journey to The Top & More | Billboard Cover\n\nBillboard\nhttps://youtube.com/billboard",
+      language: "en",
+      publishedAt: "2022-12-08T16:24:30Z",
+      thumbnailUrl: "https://i.ytimg.com/vi/fG2Byh85FSM/maxresdefault.jpg",
+      title:
+        "Bad Bunny Talks Touring, Taking A Break, Reflects On His Journey to The Top & More | Billboard Cover",
+      transcript_text_only:
+        "Yo dir\u00eda que en este punto de mi vida y de carrera es donde m\u00e1s centrado me siento me siento m\u00e1s claro de lo que de lo que soy de qui\u00e9n soy en cuesti\u00f3n a la industria musical Y qui\u00e9n eres Benito Mart\u00ednez hijo de [M\u00fasica] Hola Benito C\u00f3mo est\u00e1s bien y t\u00fa muy bien Bueno cuando primero Te entreviste est\u00e1bamos en Nueva York que acabas de tocar Yankee Stadium y ahora Estamos aqu\u00ed en Argentina en la mitad de la gira ha cambiado algo no creo que haya cambiado mucho Yo creo que el sentimiento quiz\u00e1s de la gira por el hecho de que ahora Estamos en Am\u00e9rica completa ac\u00e1 que iba mucho que no ven\u00eda se siente como si estuviera visitando familiares Que mucho tiempo no ve\u00edan y Argentina nacional locura en verdad mi concierto favorito de mi vida fue el s\u00e1bado pasado de tu vida entera sacando lo que es Puerto Rico que siempre lo saco aparte como que un sentimiento que no se compara Y por qu\u00e9 Benito porque me acuerdo que en Nueva York me dijiste que Nueva York y Yankee Stadium eran como tan viscerales no Nueva York es porque en Nueva York como Nueva York Yo amo a Nueva York y es como que ah\u00ed se juntan todas las comunidades latinas existentes en un solo lugar espec\u00edficamente mayormente boricua y dominicano que t\u00fa sabes que esos son familia para m\u00ed entonces yo creo que todo eso m\u00e1s la ciudad de Nueva York que de porci\u00f3n m\u00e1gica pues lo hace especial siempre Argentina ha sido cabr\u00f3n pero como que se me hab\u00eda olvidado No no es como un ritual pero cuando yo entro a la tarima yo entro sin mirar al p\u00fablico yo entro caminando derecho con la neverita pap\u00e1 pap\u00e1 pap\u00e1 mirando el piso mirando el piso que no me vaya a caer pongo la neverita me siento o sea le estoy dando la espalda al p\u00fablico Me siento con un respiro y hago y ah\u00ed Es que miro la multitud y siempre es como que no importa donde sea siempre es como un pu\u00f1o como que el  C\u00f3mo escoges A qui\u00e9n invitas en cada show trato de invitar a quien yo sienta que que est\u00e1 disponible que tengamos una colaboraci\u00f3n dentro de del tracklist de lo que estoy cantando tambi\u00e9n corr\u00edgeme si estoy mal pero con ibi no tienes canci\u00f3n No s\u00e9 con Ivi no tengo canci\u00f3n como tal Pero si tengo una versi\u00f3n un remix que se le hizo que fue un remix especial que se le hizo a yo perreo sola que fue con Ivy Queen con \u00e9l Y entonces ese remix yo lo hice m\u00e1s en un modo de homenaje tambi\u00e9n y de respeto a la mujer y a ella espec\u00edficamente [M\u00fasica] Considero que la primera el \u00faltimo tour del mundo fue un poco m\u00e1s especial en el t\u00e9rmino sentimental emocional pero el World me lo ha disfrutado m\u00e1s me la he disfrutado m\u00e1s he salido Por lo general yo no salgo para ning\u00fan lado en esta gira tanto en los Estados Unidos como como Am\u00e9rica me la he compartido con hasta con el club con los bailarines con esa l\u00edo muy divertido he ido a lugares he ido a comer restaurantes no trato de estar pensando en cosas sino como que de disfrutarme el momento cantar con la gente c\u00f3mo voy a dio con la presi\u00f3n o t\u00fa Sencillamente lo haces me siento un control yo creo que ahora mismo todos los a\u00f1os es que tambi\u00e9n llevo Cu\u00e1ntos seis cinco a\u00f1os uno va cogiendo experiencia tambi\u00e9n y ha superado muchas cosas tambi\u00e9n he sanado muchas cosas de mi vida etc\u00e9tera cosas que quiz\u00e1s ese el giro que que dio como siempre he dicho el giro que dio mi vida entera es muy r\u00e1pido es un proceso entonces Pues yo dir\u00eda que en este punto de mi vida y de carrera es donde m\u00e1s centrado me siento me siento m\u00e1s claro de lo que de lo que soy de qui\u00e9n soy en cuesti\u00f3n a la industria musical Y qui\u00e9n eres Benito Mart\u00ednez hijo de [M\u00fasica] Quiz\u00e1s s\u00ed influye influye el hecho de que vengo de un barrio de Puerto Rico de una familia trabajadora que fue que nac\u00ed en ambiente de rigidillo ni nada y y que tuve mi trabajo me entiende Tuve que llevar mi resumen y mi trabajo a trabajarla al m\u00ednimo salario y s\u00e9 lo que tienen que llegar temprano el trabajo y que si no te votan me entiende tengo tengo esa disciplina tuve Mis a\u00f1os qu\u00e9 s\u00e9 yo en la universidad joseando tirando el peso para la gasolina para El peaje me entiende Como que yo dir\u00eda que que s\u00ed a veces hab\u00eda una camisa una ropa iba a salir y quer\u00eda comprarme una camisa y no ten\u00eda no ten\u00eda el dinero y era algo que no era ni caro era como que no lo tengo tengo que ponerme lo mismo que me puse ayer y s\u00ed posiblemente eso haya aportado vas a tomarte un break de m\u00fasica o todav\u00eda no has pensado eso el 2023 es para m\u00ed el 2023 para m\u00ed para para mi salud f\u00edsica para mi salud emocional para respirar para disfrutar de los logros que que hice esto ni me acordaba vamos a celebrar lo que se joda vamos a v\u00e1monos para aqu\u00ed v\u00e1monos para all\u00e1 vamos para el bote vamos para el agua vamos el 2023 es para m\u00ed Qu\u00e9 quieres hacer que no hayas hecho ahora mismo Ahora mismo estoy en un punto donde que pase lo que pase me entiende Como que no no estoy buscando que pase algo por ejemplo que se yo cuando se dio esa colaboraci\u00f3n con Drake no fue como que yo estaba pensando fue como que todo as\u00ed espont\u00e1neo este ahora es diferente Ahora ahora las colaboraciones como que todo el mundo todo el mundo quiere colaborar no importa el artista m\u00e1s grande que t\u00fa te imaginas en la tierra quiere colaborar Entonces yo creo que el artista m\u00e1s grande que yo me imagin\u00e9 en la tierra en este momento eres t\u00fa Por eso yo colaboro conmigo siempre entonces como que yo las colaboraciones las veo muy distintas como las de otras personas yo las yo lo veo como algo especial verdad para m\u00ed una colaboraci\u00f3n es casi no quiero hacerle el m\u00e1s pero para m\u00ed una colaboraci\u00f3n Casi casi como como como tener sexo con alguien como que vamos a hacer una canci\u00f3n y a veces yo digo hace una canci\u00f3n algo serio o sea como que t\u00fa est\u00e1s diciendo cosas y est\u00e1s con alguien que no se va a borrarlo o sea eso va a estar para siempre ah\u00ed estoy agradecido que era lo m\u00e1s grande que t\u00fa te ve\u00edas cuando t\u00fa empezaste porque la cabeza en el espejo no pero digo porque claramente t\u00fa tienes metas y ambici\u00f3n No yo nunca so\u00f1\u00e9 en mi mente no hubo esto de que yo quiero ser el m\u00e1s grande o quiero ser el n\u00famero uno quiero llegar yo simplemente quer\u00eda llegar y ya a lo mejor pueden decir a este cabr\u00f3n ya estoy hablando no est\u00e1 siendo sincero yo invert\u00ed tiempo de mi vida y mi juventud desde mi desde los 13 a\u00f1os yo pasaba la mayor\u00eda del d\u00eda haciendo ritmo escribiendo cantando letras en mi mente disfrut\u00e1ndome yo nunca dije quiero ser el m\u00e1s grande o Nunca dije ah con esto que estoy haciendo me voy a hacer de dinero No yo lo hac\u00eda porque lo amaba y mi \u00fanico sue\u00f1o era cuando yo espero poder ganarme la vida Haciendo esto como que tener \u00e9xito haciendo lo que lo que hagamos la primera vez que yo como que yo vi como que gente conect\u00f3 con mis canciones ya para m\u00ed suena grande la primera que yo cant\u00e9 delante de 50 60 90 personas ya yo me sent\u00eda grande entiende Ya yo me sent\u00eda feliz Entonces yo esto estadio me los disfruto de la misma manera que me disfrut\u00e9 de haber cantado en Mayag\u00fcez all\u00ed con 100 personas y en Vega Baja con 70 personas te lo juro que de la misma manera que me disfrutaba ese Show me disfruto me disfruto esto con 50.000 me hubiera tocado quedarme con 100 personas cantando todos los fines de semana con eso yo estaba feliz real [M\u00fasica] ",
+      transcript_with_timestamps: [
+        {
+          duration: 4.62,
+          start: 0.0,
+          text: "Yo dir\u00eda que en este punto de mi vida y",
+        },
+        {
+          duration: 5.279,
+          start: 2.58,
+          text: "de carrera es donde m\u00e1s centrado me",
+        },
+        {
+          duration: 6.12,
+          start: 4.62,
+          text: "siento me siento m\u00e1s claro de lo que de",
+        },
+        {
+          duration: 6.181,
+          start: 7.859,
+          text: "lo que soy de qui\u00e9n soy en cuesti\u00f3n a la",
+        },
+        {
+          duration: 6.439,
+          start: 10.74,
+          text: "industria musical Y qui\u00e9n eres Benito",
+        },
+        {
+          duration: 3.139,
+          start: 14.04,
+          text: "Mart\u00ednez hijo de",
+        },
+        {
+          duration: 19.4,
+          start: 18.42,
+          text: "[M\u00fasica]",
+        },
+        {
+          duration: 7.0,
+          start: 35.18,
+          text: "Hola Benito C\u00f3mo est\u00e1s",
+        },
+        {
+          duration: 6.1,
+          start: 37.82,
+          text: "bien y t\u00fa muy bien Bueno cuando primero",
+        },
+        {
+          duration: 4.399,
+          start: 42.18,
+          text: "Te entreviste est\u00e1bamos en Nueva York",
+        },
+        {
+          duration: 5.52,
+          start: 43.92,
+          text: "que acabas de tocar Yankee Stadium",
+        },
+        {
+          duration: 5.441,
+          start: 46.579,
+          text: "y ahora Estamos aqu\u00ed en Argentina en la",
+        },
+        {
+          duration: 4.08,
+          start: 49.44,
+          text: "mitad de la gira ha cambiado algo no",
+        },
+        {
+          duration: 4.679,
+          start: 52.02,
+          text: "creo que haya cambiado mucho Yo creo que",
+        },
+        {
+          duration: 5.3,
+          start: 53.52,
+          text: "el sentimiento quiz\u00e1s de la gira por el",
+        },
+        {
+          duration: 5.941,
+          start: 56.699,
+          text: "hecho de que ahora Estamos en Am\u00e9rica",
+        },
+        {
+          duration: 5.22,
+          start: 58.82,
+          text: "completa ac\u00e1 que iba mucho que no ven\u00eda",
+        },
+        {
+          duration: 4.92,
+          start: 62.64,
+          text: "se siente como si estuviera visitando",
+        },
+        {
+          duration: 5.98,
+          start: 64.04,
+          text: "familiares Que mucho tiempo no ve\u00edan y",
+        },
+        {
+          duration: 4.34,
+          start: 67.56,
+          text: "Argentina nacional locura en verdad mi",
+        },
+        {
+          duration: 5.599,
+          start: 70.02,
+          text: "concierto favorito de mi vida",
+        },
+        {
+          duration: 7.6,
+          start: 71.9,
+          text: "fue el s\u00e1bado pasado de tu vida",
+        },
+        {
+          duration: 5.441,
+          start: 75.619,
+          text: "entera sacando lo que es Puerto Rico que",
+        },
+        {
+          duration: 4.38,
+          start: 79.5,
+          text: "siempre lo saco aparte como que un",
+        },
+        {
+          duration: 4.26,
+          start: 81.06,
+          text: "sentimiento que no se compara Y por qu\u00e9",
+        },
+        {
+          duration: 3.66,
+          start: 83.88,
+          text: "Benito porque me acuerdo que en Nueva",
+        },
+        {
+          duration: 4.979,
+          start: 85.32,
+          text: "York me dijiste que Nueva York y Yankee",
+        },
+        {
+          duration: 5.1,
+          start: 87.54,
+          text: "Stadium eran como tan viscerales no",
+        },
+        {
+          duration: 5.101,
+          start: 90.299,
+          text: "Nueva York es porque en Nueva York como",
+        },
+        {
+          duration: 4.439,
+          start: 92.64,
+          text: "Nueva York Yo amo a Nueva York y es como",
+        },
+        {
+          duration: 2.899,
+          start: 95.4,
+          text: "que ah\u00ed se juntan todas las comunidades",
+        },
+        {
+          duration: 3.68,
+          start: 97.079,
+          text: "latinas",
+        },
+        {
+          duration: 4.68,
+          start: 98.299,
+          text: "existentes en un solo lugar",
+        },
+        {
+          duration: 5.621,
+          start: 100.759,
+          text: "espec\u00edficamente",
+        },
+        {
+          duration: 5.161,
+          start: 102.979,
+          text: "mayormente boricua y dominicano que t\u00fa",
+        },
+        {
+          duration: 4.919,
+          start: 106.38,
+          text: "sabes que esos son familia para m\u00ed",
+        },
+        {
+          duration: 4.18,
+          start: 108.14,
+          text: "entonces yo creo que todo eso m\u00e1s la",
+        },
+        {
+          duration: 3.0,
+          start: 111.299,
+          text: "ciudad de Nueva York que de porci\u00f3n",
+        },
+        {
+          duration: 5.1,
+          start: 112.32,
+          text: "m\u00e1gica pues lo hace especial siempre",
+        },
+        {
+          duration: 5.841,
+          start: 114.299,
+          text: "Argentina ha sido cabr\u00f3n pero como que",
+        },
+        {
+          duration: 2.72,
+          start: 117.42,
+          text: "se me hab\u00eda olvidado",
+        },
+        {
+          duration: 5.561,
+          start: 122.659,
+          text: "No no es como un ritual pero cuando yo",
+        },
+        {
+          duration: 5.279,
+          start: 125.7,
+          text: "entro a la tarima yo entro sin mirar al",
+        },
+        {
+          duration: 5.4,
+          start: 128.22,
+          text: "p\u00fablico yo entro caminando derecho con",
+        },
+        {
+          duration: 4.021,
+          start: 130.979,
+          text: "la neverita pap\u00e1 pap\u00e1 pap\u00e1 mirando el",
+        },
+        {
+          duration: 4.199,
+          start: 133.62,
+          text: "piso mirando el piso que no me vaya a",
+        },
+        {
+          duration: 4.68,
+          start: 135.0,
+          text: "caer pongo la neverita me siento o sea",
+        },
+        {
+          duration: 6.56,
+          start: 137.819,
+          text: "le estoy dando la espalda al p\u00fablico Me",
+        },
+        {
+          duration: 8.419,
+          start: 139.68,
+          text: "siento con un respiro y hago",
+        },
+        {
+          duration: 3.72,
+          start: 144.379,
+          text: "y ah\u00ed Es que miro",
+        },
+        {
+          duration: 5.4,
+          start: 148.68,
+          text: "la multitud y",
+        },
+        {
+          duration: 5.32,
+          start: 151.34,
+          text: "siempre es como que no importa donde sea",
+        },
+        {
+          duration: 5.879,
+          start: 154.08,
+          text: "siempre es como un pu\u00f1o como que el",
+        },
+        {
+          duration: 6.78,
+          start: 156.66,
+          text: " C\u00f3mo escoges A qui\u00e9n invitas en",
+        },
+        {
+          duration: 5.941,
+          start: 159.959,
+          text: "cada show trato de invitar a quien yo",
+        },
+        {
+          duration: 5.0,
+          start: 163.44,
+          text: "sienta que que est\u00e1 disponible que",
+        },
+        {
+          duration: 6.0,
+          start: 165.9,
+          text: "tengamos una colaboraci\u00f3n dentro de",
+        },
+        {
+          duration: 6.22,
+          start: 168.44,
+          text: "del tracklist de lo que estoy cantando",
+        },
+        {
+          duration: 5.58,
+          start: 171.9,
+          text: "tambi\u00e9n corr\u00edgeme si estoy mal pero con",
+        },
+        {
+          duration: 5.219,
+          start: 174.66,
+          text: "ibi no tienes canci\u00f3n No s\u00e9 con Ivi no",
+        },
+        {
+          duration: 5.58,
+          start: 177.48,
+          text: "tengo canci\u00f3n",
+        },
+        {
+          duration: 5.701,
+          start: 179.879,
+          text: "como tal Pero si tengo una versi\u00f3n un",
+        },
+        {
+          duration: 5.24,
+          start: 183.06,
+          text: "remix que se le hizo que fue un remix",
+        },
+        {
+          duration: 5.579,
+          start: 185.58,
+          text: "especial que se le hizo a yo perreo sola",
+        },
+        {
+          duration: 6.34,
+          start: 188.3,
+          text: "que fue con Ivy Queen con \u00e9l Y entonces",
+        },
+        {
+          duration: 6.121,
+          start: 191.159,
+          text: "ese remix yo lo hice m\u00e1s en un modo de",
+        },
+        {
+          duration: 4.099,
+          start: 194.64,
+          text: "homenaje tambi\u00e9n y de respeto a la mujer",
+        },
+        {
+          duration: 5.64,
+          start: 197.28,
+          text: "y",
+        },
+        {
+          duration: 4.181,
+          start: 198.739,
+          text: "a ella espec\u00edficamente",
+        },
+        {
+          duration: 6.01,
+          start: 203.15,
+          text: "[M\u00fasica]",
+        },
+        {
+          duration: 5.201,
+          start: 211.159,
+          text: "Considero que la primera el \u00faltimo tour",
+        },
+        {
+          duration: 5.401,
+          start: 213.599,
+          text: "del mundo fue un poco m\u00e1s especial en el",
+        },
+        {
+          duration: 5.22,
+          start: 216.36,
+          text: "t\u00e9rmino sentimental emocional pero el",
+        },
+        {
+          duration: 5.22,
+          start: 219.0,
+          text: "World me lo ha disfrutado m\u00e1s me la he",
+        },
+        {
+          duration: 4.62,
+          start: 221.58,
+          text: "disfrutado m\u00e1s he salido Por lo general",
+        },
+        {
+          duration: 3.659,
+          start: 224.22,
+          text: "yo no salgo para ning\u00fan lado en esta",
+        },
+        {
+          duration: 4.88,
+          start: 226.2,
+          text: "gira tanto en los Estados Unidos como",
+        },
+        {
+          duration: 6.0,
+          start: 227.879,
+          text: "como Am\u00e9rica me la",
+        },
+        {
+          duration: 6.6,
+          start: 231.08,
+          text: "he compartido con hasta con el club con",
+        },
+        {
+          duration: 6.061,
+          start: 233.879,
+          text: "los bailarines con esa l\u00edo muy divertido",
+        },
+        {
+          duration: 4.66,
+          start: 237.68,
+          text: "he ido a lugares he ido a comer",
+        },
+        {
+          duration: 4.68,
+          start: 239.94,
+          text: "restaurantes no trato de estar pensando",
+        },
+        {
+          duration: 4.7,
+          start: 242.34,
+          text: "en cosas sino como que de disfrutarme el",
+        },
+        {
+          duration: 5.94,
+          start: 244.62,
+          text: "momento cantar con la gente",
+        },
+        {
+          duration: 5.5,
+          start: 247.04,
+          text: "c\u00f3mo voy a dio con la presi\u00f3n o t\u00fa",
+        },
+        {
+          duration: 4.7,
+          start: 250.56,
+          text: "Sencillamente lo haces me siento un",
+        },
+        {
+          duration: 5.659,
+          start: 252.54,
+          text: "control yo creo que ahora mismo",
+        },
+        {
+          duration: 7.12,
+          start: 255.26,
+          text: "todos los a\u00f1os",
+        },
+        {
+          duration: 5.741,
+          start: 258.199,
+          text: "es que tambi\u00e9n llevo Cu\u00e1ntos seis",
+        },
+        {
+          duration: 3.36,
+          start: 262.38,
+          text: "cinco a\u00f1os uno va cogiendo experiencia",
+        },
+        {
+          duration: 4.38,
+          start: 263.94,
+          text: "tambi\u00e9n y ha superado muchas cosas",
+        },
+        {
+          duration: 5.82,
+          start: 265.74,
+          text: "tambi\u00e9n he sanado muchas cosas de mi",
+        },
+        {
+          duration: 5.159,
+          start: 268.32,
+          text: "vida etc\u00e9tera cosas que quiz\u00e1s ese el",
+        },
+        {
+          duration: 5.1,
+          start: 271.56,
+          text: "giro que que dio como siempre he dicho",
+        },
+        {
+          duration: 6.241,
+          start: 273.479,
+          text: "el giro que dio mi vida entera es muy",
+        },
+        {
+          duration: 5.46,
+          start: 276.66,
+          text: "r\u00e1pido es un proceso entonces Pues yo",
+        },
+        {
+          duration: 4.759,
+          start: 279.72,
+          text: "dir\u00eda que en este punto de mi vida y de",
+        },
+        {
+          duration: 5.28,
+          start: 282.12,
+          text: "carrera es donde m\u00e1s centrado me siento",
+        },
+        {
+          duration: 5.621,
+          start: 284.479,
+          text: "me siento m\u00e1s claro de lo que de lo que",
+        },
+        {
+          duration: 5.94,
+          start: 287.4,
+          text: "soy de qui\u00e9n soy en cuesti\u00f3n a la",
+        },
+        {
+          duration: 6.379,
+          start: 290.1,
+          text: "industria musical Y qui\u00e9n eres Benito",
+        },
+        {
+          duration: 3.139,
+          start: 293.34,
+          text: "Mart\u00ednez hijo de",
+        },
+        {
+          duration: 10.95,
+          start: 298.61,
+          text: "[M\u00fasica]",
+        },
+        {
+          duration: 6.04,
+          start: 306.8,
+          text: "Quiz\u00e1s s\u00ed influye",
+        },
+        {
+          duration: 6.12,
+          start: 309.56,
+          text: "influye el hecho de que vengo de un",
+        },
+        {
+          duration: 6.859,
+          start: 312.84,
+          text: "barrio de Puerto Rico de una familia",
+        },
+        {
+          duration: 8.38,
+          start: 315.68,
+          text: "trabajadora que fue que nac\u00ed en",
+        },
+        {
+          duration: 6.101,
+          start: 319.699,
+          text: "ambiente de rigidillo ni nada y y que",
+        },
+        {
+          duration: 3.479,
+          start: 324.06,
+          text: "tuve mi trabajo me entiende Tuve que",
+        },
+        {
+          duration: 4.56,
+          start: 325.8,
+          text: "llevar mi resumen y mi trabajo a",
+        },
+        {
+          duration: 4.861,
+          start: 327.539,
+          text: "trabajarla al m\u00ednimo salario y s\u00e9 lo que",
+        },
+        {
+          duration: 4.559,
+          start: 330.36,
+          text: "tienen que llegar temprano el trabajo y",
+        },
+        {
+          duration: 4.46,
+          start: 332.4,
+          text: "que si no te votan",
+        },
+        {
+          duration: 4.081,
+          start: 334.919,
+          text: "me entiende tengo tengo esa disciplina",
+        },
+        {
+          duration: 2.94,
+          start: 336.86,
+          text: "tuve Mis a\u00f1os qu\u00e9 s\u00e9 yo en la",
+        },
+        {
+          duration: 3.78,
+          start: 339.0,
+          text: "universidad",
+        },
+        {
+          duration: 5.02,
+          start: 339.8,
+          text: "joseando tirando el peso para la",
+        },
+        {
+          duration: 4.919,
+          start: 342.78,
+          text: "gasolina para El peaje me entiende Como",
+        },
+        {
+          duration: 5.939,
+          start: 344.82,
+          text: "que yo dir\u00eda que que s\u00ed a veces hab\u00eda",
+        },
+        {
+          duration: 6.321,
+          start: 347.699,
+          text: "una camisa una ropa iba a salir y quer\u00eda",
+        },
+        {
+          duration: 7.861,
+          start: 350.759,
+          text: "comprarme una camisa y no ten\u00eda no ten\u00eda",
+        },
+        {
+          duration: 6.04,
+          start: 354.02,
+          text: "el dinero y era algo que no era ni caro",
+        },
+        {
+          duration: 4.82,
+          start: 358.62,
+          text: "era como que no lo tengo tengo que",
+        },
+        {
+          duration: 7.139,
+          start: 360.06,
+          text: "ponerme lo mismo que me puse ayer y",
+        },
+        {
+          duration: 5.68,
+          start: 363.44,
+          text: "s\u00ed posiblemente eso haya aportado vas a",
+        },
+        {
+          duration: 5.581,
+          start: 367.199,
+          text: "tomarte un break de m\u00fasica o todav\u00eda no",
+        },
+        {
+          duration: 6.6,
+          start: 369.12,
+          text: "has pensado eso el 2023 es para m\u00ed el",
+        },
+        {
+          duration: 5.94,
+          start: 372.78,
+          text: "2023 para m\u00ed para para mi salud f\u00edsica",
+        },
+        {
+          duration: 5.759,
+          start: 375.72,
+          text: "para mi salud emocional para respirar",
+        },
+        {
+          duration: 4.5,
+          start: 378.72,
+          text: "para disfrutar de los logros que que",
+        },
+        {
+          duration: 4.861,
+          start: 381.479,
+          text: "hice esto ni me acordaba vamos a",
+        },
+        {
+          duration: 5.16,
+          start: 383.22,
+          text: "celebrar lo que se joda vamos a v\u00e1monos",
+        },
+        {
+          duration: 4.32,
+          start: 386.34,
+          text: "para aqu\u00ed v\u00e1monos para all\u00e1 vamos para",
+        },
+        {
+          duration: 5.099,
+          start: 388.38,
+          text: "el bote vamos para el agua vamos el 2023",
+        },
+        {
+          duration: 4.92,
+          start: 390.66,
+          text: "es para m\u00ed Qu\u00e9 quieres hacer que no",
+        },
+        {
+          duration: 5.541,
+          start: 393.479,
+          text: "hayas hecho ahora mismo Ahora mismo",
+        },
+        {
+          duration: 3.44,
+          start: 395.58,
+          text: "estoy en un punto donde",
+        },
+        {
+          duration: 6.321,
+          start: 401.699,
+          text: "que pase lo que pase me entiende Como",
+        },
+        {
+          duration: 5.821,
+          start: 404.699,
+          text: "que no no estoy buscando que pase algo",
+        },
+        {
+          duration: 3.94,
+          start: 408.02,
+          text: "por ejemplo que se yo cuando se dio esa",
+        },
+        {
+          duration: 3.799,
+          start: 410.52,
+          text: "colaboraci\u00f3n con Drake no fue como que",
+        },
+        {
+          duration: 4.04,
+          start: 411.96,
+          text: "yo estaba pensando fue como que todo as\u00ed",
+        },
+        {
+          duration: 6.581,
+          start: 414.319,
+          text: "espont\u00e1neo",
+        },
+        {
+          duration: 6.819,
+          start: 416.0,
+          text: "este ahora es diferente Ahora ahora las",
+        },
+        {
+          duration: 3.78,
+          start: 420.9,
+          text: "colaboraciones como que todo el mundo",
+        },
+        {
+          duration: 4.38,
+          start: 422.819,
+          text: "todo el mundo quiere colaborar no",
+        },
+        {
+          duration: 4.44,
+          start: 424.68,
+          text: "importa el artista m\u00e1s grande que t\u00fa te",
+        },
+        {
+          duration: 4.921,
+          start: 427.199,
+          text: "imaginas en la tierra",
+        },
+        {
+          duration: 4.5,
+          start: 429.12,
+          text: "quiere colaborar Entonces yo creo que el",
+        },
+        {
+          duration: 3.66,
+          start: 432.12,
+          text: "artista m\u00e1s grande que yo me imagin\u00e9 en",
+        },
+        {
+          duration: 4.519,
+          start: 433.62,
+          text: "la tierra en este momento eres t\u00fa Por",
+        },
+        {
+          duration: 5.039,
+          start: 435.78,
+          text: "eso yo colaboro conmigo siempre entonces",
+        },
+        {
+          duration: 4.9,
+          start: 438.139,
+          text: "como que yo las colaboraciones las veo",
+        },
+        {
+          duration: 4.1,
+          start: 440.819,
+          text: "muy distintas como las de otras personas",
+        },
+        {
+          duration: 5.041,
+          start: 443.039,
+          text: "yo las yo lo veo como algo especial",
+        },
+        {
+          duration: 6.28,
+          start: 444.919,
+          text: "verdad para m\u00ed una colaboraci\u00f3n es casi",
+        },
+        {
+          duration: 4.14,
+          start: 448.08,
+          text: "no quiero hacerle el m\u00e1s pero para m\u00ed",
+        },
+        {
+          duration: 4.161,
+          start: 451.199,
+          text: "una colaboraci\u00f3n Casi casi como como",
+        },
+        {
+          duration: 5.699,
+          start: 452.22,
+          text: "como tener sexo con alguien como",
+        },
+        {
+          duration: 4.86,
+          start: 455.36,
+          text: "que vamos a hacer una canci\u00f3n y a veces",
+        },
+        {
+          duration: 2.301,
+          start: 457.919,
+          text: "yo digo",
+        },
+        {
+          duration: 5.12,
+          start: 460.38,
+          text: "hace una canci\u00f3n algo serio o sea como",
+        },
+        {
+          duration: 6.96,
+          start: 463.139,
+          text: "que t\u00fa est\u00e1s diciendo cosas",
+        },
+        {
+          duration: 6.039,
+          start: 465.5,
+          text: "y est\u00e1s con alguien que no se va a",
+        },
+        {
+          duration: 3.72,
+          start: 470.099,
+          text: "borrarlo o sea eso va a estar para",
+        },
+        {
+          duration: 4.021,
+          start: 471.539,
+          text: "siempre ah\u00ed estoy agradecido que era lo",
+        },
+        {
+          duration: 5.301,
+          start: 473.819,
+          text: "m\u00e1s grande que t\u00fa te ve\u00edas cuando t\u00fa",
+        },
+        {
+          duration: 6.6,
+          start: 475.56,
+          text: "empezaste porque la cabeza en el espejo",
+        },
+        {
+          duration: 6.94,
+          start: 479.12,
+          text: "no pero digo porque claramente t\u00fa tienes",
+        },
+        {
+          duration: 7.2,
+          start: 482.16,
+          text: "metas y ambici\u00f3n No yo nunca so\u00f1\u00e9 en mi",
+        },
+        {
+          duration: 5.039,
+          start: 486.06,
+          text: "mente no hubo esto de que yo quiero ser",
+        },
+        {
+          duration: 4.7,
+          start: 489.36,
+          text: "el m\u00e1s grande o quiero ser el n\u00famero uno",
+        },
+        {
+          duration: 2.961,
+          start: 491.099,
+          text: "quiero llegar",
+        },
+        {
+          duration: 4.96,
+          start: 494.78,
+          text: "yo simplemente quer\u00eda llegar y ya a lo",
+        },
+        {
+          duration: 3.06,
+          start: 498.3,
+          text: "mejor pueden decir a este cabr\u00f3n ya",
+        },
+        {
+          duration: 5.459,
+          start: 499.74,
+          text: "estoy hablando no est\u00e1 siendo",
+        },
+        {
+          duration: 7.08,
+          start: 501.36,
+          text: "sincero yo invert\u00ed tiempo de mi vida y",
+        },
+        {
+          duration: 3.921,
+          start: 505.199,
+          text: "mi juventud desde mi desde los 13",
+        },
+        {
+          duration: 3.959,
+          start: 508.44,
+          text: "a\u00f1os",
+        },
+        {
+          duration: 5.32,
+          start: 509.12,
+          text: "yo pasaba la mayor\u00eda del d\u00eda haciendo",
+        },
+        {
+          duration: 6.801,
+          start: 512.399,
+          text: "ritmo",
+        },
+        {
+          duration: 7.339,
+          start: 514.44,
+          text: "escribiendo cantando letras en mi mente",
+        },
+        {
+          duration: 4.74,
+          start: 519.2,
+          text: "disfrut\u00e1ndome yo nunca",
+        },
+        {
+          duration: 5.56,
+          start: 521.779,
+          text: "dije",
+        },
+        {
+          duration: 4.54,
+          start: 523.94,
+          text: "quiero ser el m\u00e1s grande o Nunca dije ah",
+        },
+        {
+          duration: 3.12,
+          start: 527.339,
+          text: "con esto que estoy haciendo me voy a",
+        },
+        {
+          duration: 4.44,
+          start: 528.48,
+          text: "hacer de dinero No yo lo hac\u00eda porque lo",
+        },
+        {
+          duration: 5.101,
+          start: 530.459,
+          text: "amaba y mi \u00fanico sue\u00f1o era cuando yo",
+        },
+        {
+          duration: 4.68,
+          start: 532.92,
+          text: "espero poder ganarme la vida Haciendo",
+        },
+        {
+          duration: 4.339,
+          start: 535.56,
+          text: "esto como que tener \u00e9xito haciendo lo",
+        },
+        {
+          duration: 5.34,
+          start: 537.6,
+          text: "que lo que hagamos la primera vez que yo",
+        },
+        {
+          duration: 4.541,
+          start: 539.899,
+          text: "como que yo vi como que gente conect\u00f3",
+        },
+        {
+          duration: 3.48,
+          start: 542.94,
+          text: "con mis canciones ya para m\u00ed suena",
+        },
+        {
+          duration: 4.1,
+          start: 544.44,
+          text: "grande la primera que yo cant\u00e9 delante",
+        },
+        {
+          duration: 5.52,
+          start: 546.42,
+          text: "de 50 60",
+        },
+        {
+          duration: 7.62,
+          start: 548.54,
+          text: "90 personas ya yo me sent\u00eda grande",
+        },
+        {
+          duration: 7.2,
+          start: 551.94,
+          text: "entiende Ya yo me sent\u00eda feliz Entonces",
+        },
+        {
+          duration: 4.54,
+          start: 556.16,
+          text: "yo esto estadio me los disfruto de la",
+        },
+        {
+          duration: 3.36,
+          start: 559.14,
+          text: "misma manera que me disfrut\u00e9 de haber",
+        },
+        {
+          duration: 5.52,
+          start: 560.7,
+          text: "cantado en Mayag\u00fcez all\u00ed con 100",
+        },
+        {
+          duration: 5.94,
+          start: 562.5,
+          text: "personas y en Vega Baja con 70 personas",
+        },
+        {
+          duration: 3.78,
+          start: 566.22,
+          text: "te lo juro que de la misma manera que me",
+        },
+        {
+          duration: 4.019,
+          start: 568.44,
+          text: "disfrutaba ese Show me disfruto me",
+        },
+        {
+          duration: 3.899,
+          start: 570.0,
+          text: "disfruto esto con 50.000 me hubiera",
+        },
+        {
+          duration: 3.361,
+          start: 572.459,
+          text: "tocado quedarme con 100 personas",
+        },
+        {
+          duration: 3.301,
+          start: 573.899,
+          text: "cantando todos los fines de semana con",
+        },
+        {
+          duration: 2.39,
+          start: 575.82,
+          text: "eso yo estaba feliz",
+        },
+        {
+          duration: 11.979,
+          start: 577.2,
+          text: "real",
+        },
+        {
+          duration: 10.969,
+          start: 578.21,
+          text: "[M\u00fasica]",
+        },
+      ],
+      videoId: "fG2Byh85FSM",
+    },
+  ],
+};
+
+export const TEST_EN_METADATA_ES_SUBS = {
+  videos: [
+    {
+      channelId: "UCsVcseUYbYjldc-XgcsiEbg",
+      channelTitle: "Billboard",
+      description:
+        "Bad Bunny talks to our Chief Content Officer of Latin Leila Cobo about his current tour, World's Hottest Tour, his favorite places to tour, how he approaches collaborations, when he wants to take a break from his career, reflects on his journey to the top and more! \n\nTo learn more about this story: \nhttps://www.billboard.com/music/latin/bad-bunny-billboard-top-artist-2022-concerts-interview-cover-story-1235182432/\n\n\u25ba\u25ba Subscribe for more music news: http://blbrd.cm/Proracf\n\u25ba\u25ba See our latest videos: http://blbrd.cm/xOgw6VQ\n\nAbout: Billboard is the world's most influential music media brand, with an unmatched authority among artists, fans and the industry. Billboard powers the ultimate global music destination and magazine, featuring unrivaled reporting on music news, issues and trends, the industry\u2019s definitive charts, encompassing the most complete and well respected database of charts across all music genres, and elite conferences and events which regularly convene the industry and consumers around important conversations. \n\nConnect with Billboard Online:\nVisit the website: http://blbrd.cm/s5w4vTm\nLikes us on Facebook: http://blbrd.cm/ks26yg5\nFollow us on Twitter: http://blbrd.cm/uRNqRoN \nFollow us on Instagram: http://blbrd.cm/6QaTrhn\n\n#BadBunny #WorldsHottestTour #BillboardCover \n\nBad Bunny Talks Touring, Taking A Break, Reflects On His Journey to The Top & More | Billboard Cover\n\nBillboard\nhttps://youtube.com/billboard",
+      language: "en",
+      publishedAt: "2022-12-08T16:24:30Z",
+      thumbnailUrl: "https://i.ytimg.com/vi/fG2Byh85FSM/maxresdefault.jpg",
+      title:
+        "Bad Bunny Talks Touring, Taking A Break, Reflects On His Journey to The Top & More | Billboard Cover",
+      transcript_text_only:
+        "Yo dir\u00eda que en este punto de mi vida y de carrera es donde m\u00e1s centrado me siento me siento m\u00e1s claro de lo que de lo que soy de qui\u00e9n soy en cuesti\u00f3n a la industria musical Y qui\u00e9n eres Benito Mart\u00ednez hijo de [M\u00fasica] Hola Benito C\u00f3mo est\u00e1s bien y t\u00fa muy bien Bueno cuando primero Te entreviste est\u00e1bamos en Nueva York que acabas de tocar Yankee Stadium y ahora Estamos aqu\u00ed en Argentina en la mitad de la gira ha cambiado algo no creo que haya cambiado mucho Yo creo que el sentimiento quiz\u00e1s de la gira por el hecho de que ahora Estamos en Am\u00e9rica completa ac\u00e1 que iba mucho que no ven\u00eda se siente como si estuviera visitando familiares Que mucho tiempo no ve\u00edan y Argentina nacional locura en verdad mi concierto favorito de mi vida fue el s\u00e1bado pasado de tu vida entera sacando lo que es Puerto Rico que siempre lo saco aparte como que un sentimiento que no se compara Y por qu\u00e9 Benito porque me acuerdo que en Nueva York me dijiste que Nueva York y Yankee Stadium eran como tan viscerales no Nueva York es porque en Nueva York como Nueva York Yo amo a Nueva York y es como que ah\u00ed se juntan todas las comunidades latinas existentes en un solo lugar espec\u00edficamente mayormente boricua y dominicano que t\u00fa sabes que esos son familia para m\u00ed entonces yo creo que todo eso m\u00e1s la ciudad de Nueva York que de porci\u00f3n m\u00e1gica pues lo hace especial siempre Argentina ha sido cabr\u00f3n pero como que se me hab\u00eda olvidado No no es como un ritual pero cuando yo entro a la tarima yo entro sin mirar al p\u00fablico yo entro caminando derecho con la neverita pap\u00e1 pap\u00e1 pap\u00e1 mirando el piso mirando el piso que no me vaya a caer pongo la neverita me siento o sea le estoy dando la espalda al p\u00fablico Me siento con un respiro y hago y ah\u00ed Es que miro la multitud y siempre es como que no importa donde sea siempre es como un pu\u00f1o como que el  C\u00f3mo escoges A qui\u00e9n invitas en cada show trato de invitar a quien yo sienta que que est\u00e1 disponible que tengamos una colaboraci\u00f3n dentro de del tracklist de lo que estoy cantando tambi\u00e9n corr\u00edgeme si estoy mal pero con ibi no tienes canci\u00f3n No s\u00e9 con Ivi no tengo canci\u00f3n como tal Pero si tengo una versi\u00f3n un remix que se le hizo que fue un remix especial que se le hizo a yo perreo sola que fue con Ivy Queen con \u00e9l Y entonces ese remix yo lo hice m\u00e1s en un modo de homenaje tambi\u00e9n y de respeto a la mujer y a ella espec\u00edficamente [M\u00fasica] Considero que la primera el \u00faltimo tour del mundo fue un poco m\u00e1s especial en el t\u00e9rmino sentimental emocional pero el World me lo ha disfrutado m\u00e1s me la he disfrutado m\u00e1s he salido Por lo general yo no salgo para ning\u00fan lado en esta gira tanto en los Estados Unidos como como Am\u00e9rica me la he compartido con hasta con el club con los bailarines con esa l\u00edo muy divertido he ido a lugares he ido a comer restaurantes no trato de estar pensando en cosas sino como que de disfrutarme el momento cantar con la gente c\u00f3mo voy a dio con la presi\u00f3n o t\u00fa Sencillamente lo haces me siento un control yo creo que ahora mismo todos los a\u00f1os es que tambi\u00e9n llevo Cu\u00e1ntos seis cinco a\u00f1os uno va cogiendo experiencia tambi\u00e9n y ha superado muchas cosas tambi\u00e9n he sanado muchas cosas de mi vida etc\u00e9tera cosas que quiz\u00e1s ese el giro que que dio como siempre he dicho el giro que dio mi vida entera es muy r\u00e1pido es un proceso entonces Pues yo dir\u00eda que en este punto de mi vida y de carrera es donde m\u00e1s centrado me siento me siento m\u00e1s claro de lo que de lo que soy de qui\u00e9n soy en cuesti\u00f3n a la industria musical Y qui\u00e9n eres Benito Mart\u00ednez hijo de [M\u00fasica] Quiz\u00e1s s\u00ed influye influye el hecho de que vengo de un barrio de Puerto Rico de una familia trabajadora que fue que nac\u00ed en ambiente de rigidillo ni nada y y que tuve mi trabajo me entiende Tuve que llevar mi resumen y mi trabajo a trabajarla al m\u00ednimo salario y s\u00e9 lo que tienen que llegar temprano el trabajo y que si no te votan me entiende tengo tengo esa disciplina tuve Mis a\u00f1os qu\u00e9 s\u00e9 yo en la universidad joseando tirando el peso para la gasolina para El peaje me entiende Como que yo dir\u00eda que que s\u00ed a veces hab\u00eda una camisa una ropa iba a salir y quer\u00eda comprarme una camisa y no ten\u00eda no ten\u00eda el dinero y era algo que no era ni caro era como que no lo tengo tengo que ponerme lo mismo que me puse ayer y s\u00ed posiblemente eso haya aportado vas a tomarte un break de m\u00fasica o todav\u00eda no has pensado eso el 2023 es para m\u00ed el 2023 para m\u00ed para para mi salud f\u00edsica para mi salud emocional para respirar para disfrutar de los logros que que hice esto ni me acordaba vamos a celebrar lo que se joda vamos a v\u00e1monos para aqu\u00ed v\u00e1monos para all\u00e1 vamos para el bote vamos para el agua vamos el 2023 es para m\u00ed Qu\u00e9 quieres hacer que no hayas hecho ahora mismo Ahora mismo estoy en un punto donde que pase lo que pase me entiende Como que no no estoy buscando que pase algo por ejemplo que se yo cuando se dio esa colaboraci\u00f3n con Drake no fue como que yo estaba pensando fue como que todo as\u00ed espont\u00e1neo este ahora es diferente Ahora ahora las colaboraciones como que todo el mundo todo el mundo quiere colaborar no importa el artista m\u00e1s grande que t\u00fa te imaginas en la tierra quiere colaborar Entonces yo creo que el artista m\u00e1s grande que yo me imagin\u00e9 en la tierra en este momento eres t\u00fa Por eso yo colaboro conmigo siempre entonces como que yo las colaboraciones las veo muy distintas como las de otras personas yo las yo lo veo como algo especial verdad para m\u00ed una colaboraci\u00f3n es casi no quiero hacerle el m\u00e1s pero para m\u00ed una colaboraci\u00f3n Casi casi como como como tener sexo con alguien como que vamos a hacer una canci\u00f3n y a veces yo digo hace una canci\u00f3n algo serio o sea como que t\u00fa est\u00e1s diciendo cosas y est\u00e1s con alguien que no se va a borrarlo o sea eso va a estar para siempre ah\u00ed estoy agradecido que era lo m\u00e1s grande que t\u00fa te ve\u00edas cuando t\u00fa empezaste porque la cabeza en el espejo no pero digo porque claramente t\u00fa tienes metas y ambici\u00f3n No yo nunca so\u00f1\u00e9 en mi mente no hubo esto de que yo quiero ser el m\u00e1s grande o quiero ser el n\u00famero uno quiero llegar yo simplemente quer\u00eda llegar y ya a lo mejor pueden decir a este cabr\u00f3n ya estoy hablando no est\u00e1 siendo sincero yo invert\u00ed tiempo de mi vida y mi juventud desde mi desde los 13 a\u00f1os yo pasaba la mayor\u00eda del d\u00eda haciendo ritmo escribiendo cantando letras en mi mente disfrut\u00e1ndome yo nunca dije quiero ser el m\u00e1s grande o Nunca dije ah con esto que estoy haciendo me voy a hacer de dinero No yo lo hac\u00eda porque lo amaba y mi \u00fanico sue\u00f1o era cuando yo espero poder ganarme la vida Haciendo esto como que tener \u00e9xito haciendo lo que lo que hagamos la primera vez que yo como que yo vi como que gente conect\u00f3 con mis canciones ya para m\u00ed suena grande la primera que yo cant\u00e9 delante de 50 60 90 personas ya yo me sent\u00eda grande entiende Ya yo me sent\u00eda feliz Entonces yo esto estadio me los disfruto de la misma manera que me disfrut\u00e9 de haber cantado en Mayag\u00fcez all\u00ed con 100 personas y en Vega Baja con 70 personas te lo juro que de la misma manera que me disfrutaba ese Show me disfruto me disfruto esto con 50.000 me hubiera tocado quedarme con 100 personas cantando todos los fines de semana con eso yo estaba feliz real [M\u00fasica] ",
+      transcript_with_timestamps: [
+        {
+          duration: 4.62,
+          start: 0.0,
+          text: "Yo dir\u00eda que en este punto de mi vida y",
+        },
+        {
+          duration: 5.279,
+          start: 2.58,
+          text: "de carrera es donde m\u00e1s centrado me",
+        },
+        {
+          duration: 6.12,
+          start: 4.62,
+          text: "siento me siento m\u00e1s claro de lo que de",
+        },
+        {
+          duration: 6.181,
+          start: 7.859,
+          text: "lo que soy de qui\u00e9n soy en cuesti\u00f3n a la",
+        },
+        {
+          duration: 6.439,
+          start: 10.74,
+          text: "industria musical Y qui\u00e9n eres Benito",
+        },
+        {
+          duration: 3.139,
+          start: 14.04,
+          text: "Mart\u00ednez hijo de",
+        },
+        {
+          duration: 19.4,
+          start: 18.42,
+          text: "[M\u00fasica]",
+        },
+        {
+          duration: 7.0,
+          start: 35.18,
+          text: "Hola Benito C\u00f3mo est\u00e1s",
+        },
+        {
+          duration: 6.1,
+          start: 37.82,
+          text: "bien y t\u00fa muy bien Bueno cuando primero",
+        },
+        {
+          duration: 4.399,
+          start: 42.18,
+          text: "Te entreviste est\u00e1bamos en Nueva York",
+        },
+        {
+          duration: 5.52,
+          start: 43.92,
+          text: "que acabas de tocar Yankee Stadium",
+        },
+        {
+          duration: 5.441,
+          start: 46.579,
+          text: "y ahora Estamos aqu\u00ed en Argentina en la",
+        },
+        {
+          duration: 4.08,
+          start: 49.44,
+          text: "mitad de la gira ha cambiado algo no",
+        },
+        {
+          duration: 4.679,
+          start: 52.02,
+          text: "creo que haya cambiado mucho Yo creo que",
+        },
+        {
+          duration: 5.3,
+          start: 53.52,
+          text: "el sentimiento quiz\u00e1s de la gira por el",
+        },
+        {
+          duration: 5.941,
+          start: 56.699,
+          text: "hecho de que ahora Estamos en Am\u00e9rica",
+        },
+        {
+          duration: 5.22,
+          start: 58.82,
+          text: "completa ac\u00e1 que iba mucho que no ven\u00eda",
+        },
+        {
+          duration: 4.92,
+          start: 62.64,
+          text: "se siente como si estuviera visitando",
+        },
+        {
+          duration: 5.98,
+          start: 64.04,
+          text: "familiares Que mucho tiempo no ve\u00edan y",
+        },
+        {
+          duration: 4.34,
+          start: 67.56,
+          text: "Argentina nacional locura en verdad mi",
+        },
+        {
+          duration: 5.599,
+          start: 70.02,
+          text: "concierto favorito de mi vida",
+        },
+        {
+          duration: 7.6,
+          start: 71.9,
+          text: "fue el s\u00e1bado pasado de tu vida",
+        },
+        {
+          duration: 5.441,
+          start: 75.619,
+          text: "entera sacando lo que es Puerto Rico que",
+        },
+        {
+          duration: 4.38,
+          start: 79.5,
+          text: "siempre lo saco aparte como que un",
+        },
+        {
+          duration: 4.26,
+          start: 81.06,
+          text: "sentimiento que no se compara Y por qu\u00e9",
+        },
+        {
+          duration: 3.66,
+          start: 83.88,
+          text: "Benito porque me acuerdo que en Nueva",
+        },
+        {
+          duration: 4.979,
+          start: 85.32,
+          text: "York me dijiste que Nueva York y Yankee",
+        },
+        {
+          duration: 5.1,
+          start: 87.54,
+          text: "Stadium eran como tan viscerales no",
+        },
+        {
+          duration: 5.101,
+          start: 90.299,
+          text: "Nueva York es porque en Nueva York como",
+        },
+        {
+          duration: 4.439,
+          start: 92.64,
+          text: "Nueva York Yo amo a Nueva York y es como",
+        },
+        {
+          duration: 2.899,
+          start: 95.4,
+          text: "que ah\u00ed se juntan todas las comunidades",
+        },
+        {
+          duration: 3.68,
+          start: 97.079,
+          text: "latinas",
+        },
+        {
+          duration: 4.68,
+          start: 98.299,
+          text: "existentes en un solo lugar",
+        },
+        {
+          duration: 5.621,
+          start: 100.759,
+          text: "espec\u00edficamente",
+        },
+        {
+          duration: 5.161,
+          start: 102.979,
+          text: "mayormente boricua y dominicano que t\u00fa",
+        },
+        {
+          duration: 4.919,
+          start: 106.38,
+          text: "sabes que esos son familia para m\u00ed",
+        },
+        {
+          duration: 4.18,
+          start: 108.14,
+          text: "entonces yo creo que todo eso m\u00e1s la",
+        },
+        {
+          duration: 3.0,
+          start: 111.299,
+          text: "ciudad de Nueva York que de porci\u00f3n",
+        },
+        {
+          duration: 5.1,
+          start: 112.32,
+          text: "m\u00e1gica pues lo hace especial siempre",
+        },
+        {
+          duration: 5.841,
+          start: 114.299,
+          text: "Argentina ha sido cabr\u00f3n pero como que",
+        },
+        {
+          duration: 2.72,
+          start: 117.42,
+          text: "se me hab\u00eda olvidado",
+        },
+        {
+          duration: 5.561,
+          start: 122.659,
+          text: "No no es como un ritual pero cuando yo",
+        },
+        {
+          duration: 5.279,
+          start: 125.7,
+          text: "entro a la tarima yo entro sin mirar al",
+        },
+        {
+          duration: 5.4,
+          start: 128.22,
+          text: "p\u00fablico yo entro caminando derecho con",
+        },
+        {
+          duration: 4.021,
+          start: 130.979,
+          text: "la neverita pap\u00e1 pap\u00e1 pap\u00e1 mirando el",
+        },
+        {
+          duration: 4.199,
+          start: 133.62,
+          text: "piso mirando el piso que no me vaya a",
+        },
+        {
+          duration: 4.68,
+          start: 135.0,
+          text: "caer pongo la neverita me siento o sea",
+        },
+        {
+          duration: 6.56,
+          start: 137.819,
+          text: "le estoy dando la espalda al p\u00fablico Me",
+        },
+        {
+          duration: 8.419,
+          start: 139.68,
+          text: "siento con un respiro y hago",
+        },
+        {
+          duration: 3.72,
+          start: 144.379,
+          text: "y ah\u00ed Es que miro",
+        },
+        {
+          duration: 5.4,
+          start: 148.68,
+          text: "la multitud y",
+        },
+        {
+          duration: 5.32,
+          start: 151.34,
+          text: "siempre es como que no importa donde sea",
+        },
+        {
+          duration: 5.879,
+          start: 154.08,
+          text: "siempre es como un pu\u00f1o como que el",
+        },
+        {
+          duration: 6.78,
+          start: 156.66,
+          text: " C\u00f3mo escoges A qui\u00e9n invitas en",
+        },
+        {
+          duration: 5.941,
+          start: 159.959,
+          text: "cada show trato de invitar a quien yo",
+        },
+        {
+          duration: 5.0,
+          start: 163.44,
+          text: "sienta que que est\u00e1 disponible que",
+        },
+        {
+          duration: 6.0,
+          start: 165.9,
+          text: "tengamos una colaboraci\u00f3n dentro de",
+        },
+        {
+          duration: 6.22,
+          start: 168.44,
+          text: "del tracklist de lo que estoy cantando",
+        },
+        {
+          duration: 5.58,
+          start: 171.9,
+          text: "tambi\u00e9n corr\u00edgeme si estoy mal pero con",
+        },
+        {
+          duration: 5.219,
+          start: 174.66,
+          text: "ibi no tienes canci\u00f3n No s\u00e9 con Ivi no",
+        },
+        {
+          duration: 5.58,
+          start: 177.48,
+          text: "tengo canci\u00f3n",
+        },
+        {
+          duration: 5.701,
+          start: 179.879,
+          text: "como tal Pero si tengo una versi\u00f3n un",
+        },
+        {
+          duration: 5.24,
+          start: 183.06,
+          text: "remix que se le hizo que fue un remix",
+        },
+        {
+          duration: 5.579,
+          start: 185.58,
+          text: "especial que se le hizo a yo perreo sola",
+        },
+        {
+          duration: 6.34,
+          start: 188.3,
+          text: "que fue con Ivy Queen con \u00e9l Y entonces",
+        },
+        {
+          duration: 6.121,
+          start: 191.159,
+          text: "ese remix yo lo hice m\u00e1s en un modo de",
+        },
+        {
+          duration: 4.099,
+          start: 194.64,
+          text: "homenaje tambi\u00e9n y de respeto a la mujer",
+        },
+        {
+          duration: 5.64,
+          start: 197.28,
+          text: "y",
+        },
+        {
+          duration: 4.181,
+          start: 198.739,
+          text: "a ella espec\u00edficamente",
+        },
+        {
+          duration: 6.01,
+          start: 203.15,
+          text: "[M\u00fasica]",
+        },
+        {
+          duration: 5.201,
+          start: 211.159,
+          text: "Considero que la primera el \u00faltimo tour",
+        },
+        {
+          duration: 5.401,
+          start: 213.599,
+          text: "del mundo fue un poco m\u00e1s especial en el",
+        },
+        {
+          duration: 5.22,
+          start: 216.36,
+          text: "t\u00e9rmino sentimental emocional pero el",
+        },
+        {
+          duration: 5.22,
+          start: 219.0,
+          text: "World me lo ha disfrutado m\u00e1s me la he",
+        },
+        {
+          duration: 4.62,
+          start: 221.58,
+          text: "disfrutado m\u00e1s he salido Por lo general",
+        },
+        {
+          duration: 3.659,
+          start: 224.22,
+          text: "yo no salgo para ning\u00fan lado en esta",
+        },
+        {
+          duration: 4.88,
+          start: 226.2,
+          text: "gira tanto en los Estados Unidos como",
+        },
+        {
+          duration: 6.0,
+          start: 227.879,
+          text: "como Am\u00e9rica me la",
+        },
+        {
+          duration: 6.6,
+          start: 231.08,
+          text: "he compartido con hasta con el club con",
+        },
+        {
+          duration: 6.061,
+          start: 233.879,
+          text: "los bailarines con esa l\u00edo muy divertido",
+        },
+        {
+          duration: 4.66,
+          start: 237.68,
+          text: "he ido a lugares he ido a comer",
+        },
+        {
+          duration: 4.68,
+          start: 239.94,
+          text: "restaurantes no trato de estar pensando",
+        },
+        {
+          duration: 4.7,
+          start: 242.34,
+          text: "en cosas sino como que de disfrutarme el",
+        },
+        {
+          duration: 5.94,
+          start: 244.62,
+          text: "momento cantar con la gente",
+        },
+        {
+          duration: 5.5,
+          start: 247.04,
+          text: "c\u00f3mo voy a dio con la presi\u00f3n o t\u00fa",
+        },
+        {
+          duration: 4.7,
+          start: 250.56,
+          text: "Sencillamente lo haces me siento un",
+        },
+        {
+          duration: 5.659,
+          start: 252.54,
+          text: "control yo creo que ahora mismo",
+        },
+        {
+          duration: 7.12,
+          start: 255.26,
+          text: "todos los a\u00f1os",
+        },
+        {
+          duration: 5.741,
+          start: 258.199,
+          text: "es que tambi\u00e9n llevo Cu\u00e1ntos seis",
+        },
+        {
+          duration: 3.36,
+          start: 262.38,
+          text: "cinco a\u00f1os uno va cogiendo experiencia",
+        },
+        {
+          duration: 4.38,
+          start: 263.94,
+          text: "tambi\u00e9n y ha superado muchas cosas",
+        },
+        {
+          duration: 5.82,
+          start: 265.74,
+          text: "tambi\u00e9n he sanado muchas cosas de mi",
+        },
+        {
+          duration: 5.159,
+          start: 268.32,
+          text: "vida etc\u00e9tera cosas que quiz\u00e1s ese el",
+        },
+        {
+          duration: 5.1,
+          start: 271.56,
+          text: "giro que que dio como siempre he dicho",
+        },
+        {
+          duration: 6.241,
+          start: 273.479,
+          text: "el giro que dio mi vida entera es muy",
+        },
+        {
+          duration: 5.46,
+          start: 276.66,
+          text: "r\u00e1pido es un proceso entonces Pues yo",
+        },
+        {
+          duration: 4.759,
+          start: 279.72,
+          text: "dir\u00eda que en este punto de mi vida y de",
+        },
+        {
+          duration: 5.28,
+          start: 282.12,
+          text: "carrera es donde m\u00e1s centrado me siento",
+        },
+        {
+          duration: 5.621,
+          start: 284.479,
+          text: "me siento m\u00e1s claro de lo que de lo que",
+        },
+        {
+          duration: 5.94,
+          start: 287.4,
+          text: "soy de qui\u00e9n soy en cuesti\u00f3n a la",
+        },
+        {
+          duration: 6.379,
+          start: 290.1,
+          text: "industria musical Y qui\u00e9n eres Benito",
+        },
+        {
+          duration: 3.139,
+          start: 293.34,
+          text: "Mart\u00ednez hijo de",
+        },
+        {
+          duration: 10.95,
+          start: 298.61,
+          text: "[M\u00fasica]",
+        },
+        {
+          duration: 6.04,
+          start: 306.8,
+          text: "Quiz\u00e1s s\u00ed influye",
+        },
+        {
+          duration: 6.12,
+          start: 309.56,
+          text: "influye el hecho de que vengo de un",
+        },
+        {
+          duration: 6.859,
+          start: 312.84,
+          text: "barrio de Puerto Rico de una familia",
+        },
+        {
+          duration: 8.38,
+          start: 315.68,
+          text: "trabajadora que fue que nac\u00ed en",
+        },
+        {
+          duration: 6.101,
+          start: 319.699,
+          text: "ambiente de rigidillo ni nada y y que",
+        },
+        {
+          duration: 3.479,
+          start: 324.06,
+          text: "tuve mi trabajo me entiende Tuve que",
+        },
+        {
+          duration: 4.56,
+          start: 325.8,
+          text: "llevar mi resumen y mi trabajo a",
+        },
+        {
+          duration: 4.861,
+          start: 327.539,
+          text: "trabajarla al m\u00ednimo salario y s\u00e9 lo que",
+        },
+        {
+          duration: 4.559,
+          start: 330.36,
+          text: "tienen que llegar temprano el trabajo y",
+        },
+        {
+          duration: 4.46,
+          start: 332.4,
+          text: "que si no te votan",
+        },
+        {
+          duration: 4.081,
+          start: 334.919,
+          text: "me entiende tengo tengo esa disciplina",
+        },
+        {
+          duration: 2.94,
+          start: 336.86,
+          text: "tuve Mis a\u00f1os qu\u00e9 s\u00e9 yo en la",
+        },
+        {
+          duration: 3.78,
+          start: 339.0,
+          text: "universidad",
+        },
+        {
+          duration: 5.02,
+          start: 339.8,
+          text: "joseando tirando el peso para la",
+        },
+        {
+          duration: 4.919,
+          start: 342.78,
+          text: "gasolina para El peaje me entiende Como",
+        },
+        {
+          duration: 5.939,
+          start: 344.82,
+          text: "que yo dir\u00eda que que s\u00ed a veces hab\u00eda",
+        },
+        {
+          duration: 6.321,
+          start: 347.699,
+          text: "una camisa una ropa iba a salir y quer\u00eda",
+        },
+        {
+          duration: 7.861,
+          start: 350.759,
+          text: "comprarme una camisa y no ten\u00eda no ten\u00eda",
+        },
+        {
+          duration: 6.04,
+          start: 354.02,
+          text: "el dinero y era algo que no era ni caro",
+        },
+        {
+          duration: 4.82,
+          start: 358.62,
+          text: "era como que no lo tengo tengo que",
+        },
+        {
+          duration: 7.139,
+          start: 360.06,
+          text: "ponerme lo mismo que me puse ayer y",
+        },
+        {
+          duration: 5.68,
+          start: 363.44,
+          text: "s\u00ed posiblemente eso haya aportado vas a",
+        },
+        {
+          duration: 5.581,
+          start: 367.199,
+          text: "tomarte un break de m\u00fasica o todav\u00eda no",
+        },
+        {
+          duration: 6.6,
+          start: 369.12,
+          text: "has pensado eso el 2023 es para m\u00ed el",
+        },
+        {
+          duration: 5.94,
+          start: 372.78,
+          text: "2023 para m\u00ed para para mi salud f\u00edsica",
+        },
+        {
+          duration: 5.759,
+          start: 375.72,
+          text: "para mi salud emocional para respirar",
+        },
+        {
+          duration: 4.5,
+          start: 378.72,
+          text: "para disfrutar de los logros que que",
+        },
+        {
+          duration: 4.861,
+          start: 381.479,
+          text: "hice esto ni me acordaba vamos a",
+        },
+        {
+          duration: 5.16,
+          start: 383.22,
+          text: "celebrar lo que se joda vamos a v\u00e1monos",
+        },
+        {
+          duration: 4.32,
+          start: 386.34,
+          text: "para aqu\u00ed v\u00e1monos para all\u00e1 vamos para",
+        },
+        {
+          duration: 5.099,
+          start: 388.38,
+          text: "el bote vamos para el agua vamos el 2023",
+        },
+        {
+          duration: 4.92,
+          start: 390.66,
+          text: "es para m\u00ed Qu\u00e9 quieres hacer que no",
+        },
+        {
+          duration: 5.541,
+          start: 393.479,
+          text: "hayas hecho ahora mismo Ahora mismo",
+        },
+        {
+          duration: 3.44,
+          start: 395.58,
+          text: "estoy en un punto donde",
+        },
+        {
+          duration: 6.321,
+          start: 401.699,
+          text: "que pase lo que pase me entiende Como",
+        },
+        {
+          duration: 5.821,
+          start: 404.699,
+          text: "que no no estoy buscando que pase algo",
+        },
+        {
+          duration: 3.94,
+          start: 408.02,
+          text: "por ejemplo que se yo cuando se dio esa",
+        },
+        {
+          duration: 3.799,
+          start: 410.52,
+          text: "colaboraci\u00f3n con Drake no fue como que",
+        },
+        {
+          duration: 4.04,
+          start: 411.96,
+          text: "yo estaba pensando fue como que todo as\u00ed",
+        },
+        {
+          duration: 6.581,
+          start: 414.319,
+          text: "espont\u00e1neo",
+        },
+        {
+          duration: 6.819,
+          start: 416.0,
+          text: "este ahora es diferente Ahora ahora las",
+        },
+        {
+          duration: 3.78,
+          start: 420.9,
+          text: "colaboraciones como que todo el mundo",
+        },
+        {
+          duration: 4.38,
+          start: 422.819,
+          text: "todo el mundo quiere colaborar no",
+        },
+        {
+          duration: 4.44,
+          start: 424.68,
+          text: "importa el artista m\u00e1s grande que t\u00fa te",
+        },
+        {
+          duration: 4.921,
+          start: 427.199,
+          text: "imaginas en la tierra",
+        },
+        {
+          duration: 4.5,
+          start: 429.12,
+          text: "quiere colaborar Entonces yo creo que el",
+        },
+        {
+          duration: 3.66,
+          start: 432.12,
+          text: "artista m\u00e1s grande que yo me imagin\u00e9 en",
+        },
+        {
+          duration: 4.519,
+          start: 433.62,
+          text: "la tierra en este momento eres t\u00fa Por",
+        },
+        {
+          duration: 5.039,
+          start: 435.78,
+          text: "eso yo colaboro conmigo siempre entonces",
+        },
+        {
+          duration: 4.9,
+          start: 438.139,
+          text: "como que yo las colaboraciones las veo",
+        },
+        {
+          duration: 4.1,
+          start: 440.819,
+          text: "muy distintas como las de otras personas",
+        },
+        {
+          duration: 5.041,
+          start: 443.039,
+          text: "yo las yo lo veo como algo especial",
+        },
+        {
+          duration: 6.28,
+          start: 444.919,
+          text: "verdad para m\u00ed una colaboraci\u00f3n es casi",
+        },
+        {
+          duration: 4.14,
+          start: 448.08,
+          text: "no quiero hacerle el m\u00e1s pero para m\u00ed",
+        },
+        {
+          duration: 4.161,
+          start: 451.199,
+          text: "una colaboraci\u00f3n Casi casi como como",
+        },
+        {
+          duration: 5.699,
+          start: 452.22,
+          text: "como tener sexo con alguien como",
+        },
+        {
+          duration: 4.86,
+          start: 455.36,
+          text: "que vamos a hacer una canci\u00f3n y a veces",
+        },
+        {
+          duration: 2.301,
+          start: 457.919,
+          text: "yo digo",
+        },
+        {
+          duration: 5.12,
+          start: 460.38,
+          text: "hace una canci\u00f3n algo serio o sea como",
+        },
+        {
+          duration: 6.96,
+          start: 463.139,
+          text: "que t\u00fa est\u00e1s diciendo cosas",
+        },
+        {
+          duration: 6.039,
+          start: 465.5,
+          text: "y est\u00e1s con alguien que no se va a",
+        },
+        {
+          duration: 3.72,
+          start: 470.099,
+          text: "borrarlo o sea eso va a estar para",
+        },
+        {
+          duration: 4.021,
+          start: 471.539,
+          text: "siempre ah\u00ed estoy agradecido que era lo",
+        },
+        {
+          duration: 5.301,
+          start: 473.819,
+          text: "m\u00e1s grande que t\u00fa te ve\u00edas cuando t\u00fa",
+        },
+        {
+          duration: 6.6,
+          start: 475.56,
+          text: "empezaste porque la cabeza en el espejo",
+        },
+        {
+          duration: 6.94,
+          start: 479.12,
+          text: "no pero digo porque claramente t\u00fa tienes",
+        },
+        {
+          duration: 7.2,
+          start: 482.16,
+          text: "metas y ambici\u00f3n No yo nunca so\u00f1\u00e9 en mi",
+        },
+        {
+          duration: 5.039,
+          start: 486.06,
+          text: "mente no hubo esto de que yo quiero ser",
+        },
+        {
+          duration: 4.7,
+          start: 489.36,
+          text: "el m\u00e1s grande o quiero ser el n\u00famero uno",
+        },
+        {
+          duration: 2.961,
+          start: 491.099,
+          text: "quiero llegar",
+        },
+        {
+          duration: 4.96,
+          start: 494.78,
+          text: "yo simplemente quer\u00eda llegar y ya a lo",
+        },
+        {
+          duration: 3.06,
+          start: 498.3,
+          text: "mejor pueden decir a este cabr\u00f3n ya",
+        },
+        {
+          duration: 5.459,
+          start: 499.74,
+          text: "estoy hablando no est\u00e1 siendo",
+        },
+        {
+          duration: 7.08,
+          start: 501.36,
+          text: "sincero yo invert\u00ed tiempo de mi vida y",
+        },
+        {
+          duration: 3.921,
+          start: 505.199,
+          text: "mi juventud desde mi desde los 13",
+        },
+        {
+          duration: 3.959,
+          start: 508.44,
+          text: "a\u00f1os",
+        },
+        {
+          duration: 5.32,
+          start: 509.12,
+          text: "yo pasaba la mayor\u00eda del d\u00eda haciendo",
+        },
+        {
+          duration: 6.801,
+          start: 512.399,
+          text: "ritmo",
+        },
+        {
+          duration: 7.339,
+          start: 514.44,
+          text: "escribiendo cantando letras en mi mente",
+        },
+        {
+          duration: 4.74,
+          start: 519.2,
+          text: "disfrut\u00e1ndome yo nunca",
+        },
+        {
+          duration: 5.56,
+          start: 521.779,
+          text: "dije",
+        },
+        {
+          duration: 4.54,
+          start: 523.94,
+          text: "quiero ser el m\u00e1s grande o Nunca dije ah",
+        },
+        {
+          duration: 3.12,
+          start: 527.339,
+          text: "con esto que estoy haciendo me voy a",
+        },
+        {
+          duration: 4.44,
+          start: 528.48,
+          text: "hacer de dinero No yo lo hac\u00eda porque lo",
+        },
+        {
+          duration: 5.101,
+          start: 530.459,
+          text: "amaba y mi \u00fanico sue\u00f1o era cuando yo",
+        },
+        {
+          duration: 4.68,
+          start: 532.92,
+          text: "espero poder ganarme la vida Haciendo",
+        },
+        {
+          duration: 4.339,
+          start: 535.56,
+          text: "esto como que tener \u00e9xito haciendo lo",
+        },
+        {
+          duration: 5.34,
+          start: 537.6,
+          text: "que lo que hagamos la primera vez que yo",
+        },
+        {
+          duration: 4.541,
+          start: 539.899,
+          text: "como que yo vi como que gente conect\u00f3",
+        },
+        {
+          duration: 3.48,
+          start: 542.94,
+          text: "con mis canciones ya para m\u00ed suena",
+        },
+        {
+          duration: 4.1,
+          start: 544.44,
+          text: "grande la primera que yo cant\u00e9 delante",
+        },
+        {
+          duration: 5.52,
+          start: 546.42,
+          text: "de 50 60",
+        },
+        {
+          duration: 7.62,
+          start: 548.54,
+          text: "90 personas ya yo me sent\u00eda grande",
+        },
+        {
+          duration: 7.2,
+          start: 551.94,
+          text: "entiende Ya yo me sent\u00eda feliz Entonces",
+        },
+        {
+          duration: 4.54,
+          start: 556.16,
+          text: "yo esto estadio me los disfruto de la",
+        },
+        {
+          duration: 3.36,
+          start: 559.14,
+          text: "misma manera que me disfrut\u00e9 de haber",
+        },
+        {
+          duration: 5.52,
+          start: 560.7,
+          text: "cantado en Mayag\u00fcez all\u00ed con 100",
+        },
+        {
+          duration: 5.94,
+          start: 562.5,
+          text: "personas y en Vega Baja con 70 personas",
+        },
+        {
+          duration: 3.78,
+          start: 566.22,
+          text: "te lo juro que de la misma manera que me",
+        },
+        {
+          duration: 4.019,
+          start: 568.44,
+          text: "disfrutaba ese Show me disfruto me",
+        },
+        {
+          duration: 3.899,
+          start: 570.0,
+          text: "disfruto esto con 50.000 me hubiera",
+        },
+        {
+          duration: 3.361,
+          start: 572.459,
+          text: "tocado quedarme con 100 personas",
+        },
+        {
+          duration: 3.301,
+          start: 573.899,
+          text: "cantando todos los fines de semana con",
+        },
+        {
+          duration: 2.39,
+          start: 575.82,
+          text: "eso yo estaba feliz",
+        },
+        {
+          duration: 11.979,
+          start: 577.2,
+          text: "real",
+        },
+        {
+          duration: 10.969,
+          start: 578.21,
+          text: "[M\u00fasica]",
+        },
+      ],
+      videoId: "fG2Byh85FSM",
+    },
+  ],
+};
+
+export const TEST_EN_METADATA_ES_SUBS_EN_TRANSLATE = {
+  videos: [
+    {
+      channelId: "UCsVcseUYbYjldc-XgcsiEbg",
+      channelTitle: "Billboard",
+      description:
+        "Bad Bunny talks to our Chief Content Officer of Latin Leila Cobo about his current tour, World's Hottest Tour, his favorite places to tour, how he approaches collaborations, when he wants to take a break from his career, reflects on his journey to the top and more! \n\nTo learn more about this story: \nhttps://www.billboard.com/music/latin/bad-bunny-billboard-top-artist-2022-concerts-interview-cover-story-1235182432/\n\n\u25ba\u25ba Subscribe for more music news: http://blbrd.cm/Proracf\n\u25ba\u25ba See our latest videos: http://blbrd.cm/xOgw6VQ\n\nAbout: Billboard is the world's most influential music media brand, with an unmatched authority among artists, fans and the industry. Billboard powers the ultimate global music destination and magazine, featuring unrivaled reporting on music news, issues and trends, the industry\u2019s definitive charts, encompassing the most complete and well respected database of charts across all music genres, and elite conferences and events which regularly convene the industry and consumers around important conversations. \n\nConnect with Billboard Online:\nVisit the website: http://blbrd.cm/s5w4vTm\nLikes us on Facebook: http://blbrd.cm/ks26yg5\nFollow us on Twitter: http://blbrd.cm/uRNqRoN \nFollow us on Instagram: http://blbrd.cm/6QaTrhn\n\n#BadBunny #WorldsHottestTour #BillboardCover \n\nBad Bunny Talks Touring, Taking A Break, Reflects On His Journey to The Top & More | Billboard Cover\n\nBillboard\nhttps://youtube.com/billboard",
+      language: "en",
+      publishedAt: "2022-12-08T16:24:30Z",
+      thumbnailUrl: "https://i.ytimg.com/vi/fG2Byh85FSM/maxresdefault.jpg",
+      title:
+        "Bad Bunny Talks Touring, Taking A Break, Reflects On His Journey to The Top & More | Billboard Cover",
+      transcript_text_only:
+        "I would say that at this point in my life and career is where I feel most focused, I feel clearer about who I am, who I am in terms of the music industry And who you are Benito Mart\u00ednez son of a [ __ ] [Music] Hello  Benito How are you doing well and you are very well Well when I first interviewed you we were in New York and you just played Yankee Stadium and now we are here in Argentina in the middle of the tour something has changed I don't think it has changed much I think the feeling maybe  of the tour due to the fact that now we are in America, complete here that I went a lot that I didn't come, it feels like I was visiting relatives that I hadn't seen for a long time and Argentina national madness, in truth, my favorite concert of my life was last Saturday of your  my whole life taking out what Puerto Rico is, which I always take aside as a feeling that cannot be compared. And why, Benito, because I remember that in New York you told me that New York and Yankee Stadium were so visceral, not New York because in  New York as New York I love New York and it's like all the existing Latin communities come together in one place specifically mostly Puerto Rican and Dominican that you know those are family to me so I think that all that plus the city of  New York has a magical portion because it always makes it special. Argentina has always been a bastard, but I kind of forgot. No, it's not like a ritual, but when I enter the stage, I enter without looking at the audience, I enter walking straight with the refrigerator, dad, dad.  dad looking at the floor looking at the floor so that I'm not going to fall I put the refrigerator I sit down that is I'm turning my back to the audience I sit down with a breath and I do and there I look at the crowd and it's always like it doesn't matter where it is  It 's always like a fist like the devil How do you choose Who do you invite in each show I try to invite whoever I feel is available that we have a collaboration within the tracklist of what I'm singing also correct me if I'm wrong but not with ibi  You have a song I don't know with Ivi I don't have a song as such But I do have a version, a remix that was made that was a special remix that was made for me perreo alone that was with Ivy Queen with him And then I did that remix more  in a way of homage as well and of respect to women and to her specifically [Music] I consider that the first the last tour of the world was a little more special in the emotional sentimental term but I enjoyed the World more I enjoyed it more  I have gone out. Generally I don't go out anywhere on this tour, both in the United States and in America. I have shared it with even the club with the dancers with that very fun mess. I have gone to places. I have gone to eat in restaurants. I don't deal.  of thinking about things but rather of enjoying the moment singing with people how am I going to deal with the pressure or you You just do it I feel in control I think that right now every year is that the hell I've been there too How many six five years one  He is also gaining experience and has overcome many things, I have also healed many things in my life, etc., things that perhaps that is the turn that took, as I have always said, the turn that my entire life took is very fast, it is a process, so, well, I would say that in  This point in my life and career is where I feel most focused I feel clearer about who I am about who I am in question to the music industry And who you are Benito Mart\u00ednez son of a [ __ ] [Music] Maybe it does influence the  The fact that I come from a neighborhood in Puerto Rico from a working family that was that I was born in a rigid environment or nothing and that I had my job you understand me. I had to take my resume and my job to work at the minimum wage and I know what they have to do  get to work early and if they don't vote for you you understand me I have that discipline I had My years what do I know at the university josing around throwing the peso for gas for The toll you understand me Like I would say yes sometimes there was a shirt a  clothes were going to go out and I wanted to buy a shirt and I didn't have it I didn't have the money and it was something that wasn't even expensive it was like I don't have it I have to wear the same thing I wore yesterday and yes possibly that contributed are you going to take a break  about music or you still haven't thought about that, 2023 is for me 2023 for me for my physical health for my emotional health to breathe to enjoy the achievements that I did n't even remember doing this let's celebrate whatever the hell let's go here let's go there let's go to the boat let's go to the water let's go 2023 is for me What do you want to do that you haven't done right now Right now I'm at a point where whatever happens understands me Like no I'm not looking for what happens  Something, for example, that I know when that collaboration with Drake took place, it wasn't like what I was thinking, it was like everything was spontaneous, this is different now Now, now the collaborations are like everyone, everyone wants to collaborate, it doesn't matter what the biggest artist is.  that you imagine on earth wants to collaborate So I believe that the greatest artist that I imagined on earth at this moment is you That's why I always collaborate with myself so I see collaborations as very different from those of other people I see it as something special, true, for me a collaboration is almost I do n't want to do it the most but for me a collaboration Almost almost like having sex with someone like we are going to make a song and sometimes I say make a song something serious  I mean, you're saying things and you're with someone who's not going to erase it, or that's going to be there forever. I'm grateful that it was the biggest thing you saw when you started because the head in the mirror isn't, but I'm saying  because clearly you have goals and ambition No, I never dreamed in my mind there was not this thing that I want to be the greatest or I want to be number one I want to get there I simply wanted to get there and maybe they can tell this bastard I 'm already talking  [ __ ] is not being sincere I invested time of my life and my youth since my [ __ ] since I was 13 years old I spent most of the day making rhythm writing singing lyrics in my mind enjoying myself I never said I want to be the greatest or I never said ah with this  What am I doing? I'm going to make money. I didn't do it because I loved it and my only dream was when I hope to be able to make a living. Doing this like being successful doing whatever we do the first time I kind of saw how.  that people connected with my songs and for me it sounds great the first one that I sang in front of 50 60 90 people I already felt great understand I already felt happy So I enjoyed this stadium in the same way that I enjoyed having sung  In Mayag\u00fcez there with 100 people and in Vega Baja with 70 people I swear that in the same way that I enjoyed that Show I enjoyed myself I enjoyed this with 50,000 I would have had to stay with 100 people singing every weekend with that I was  real happy [Music] ",
+      transcript_with_timestamps: [
+        {
+          duration: 4.62,
+          start: 0.0,
+          text: "I would say that at this point in my life and",
+        },
+        {
+          duration: 5.279,
+          start: 2.58,
+          text: "career is where I feel most focused, I",
+        },
+        {
+          duration: 6.12,
+          start: 4.62,
+          text: "feel clearer about who I",
+        },
+        {
+          duration: 6.181,
+          start: 7.859,
+          text: "am, who I am in terms of the",
+        },
+        {
+          duration: 6.439,
+          start: 10.74,
+          text: "music industry And who you are Benito",
+        },
+        {
+          duration: 3.139,
+          start: 14.04,
+          text: "Mart\u00ednez son of a [ __ ]",
+        },
+        {
+          duration: 19.4,
+          start: 18.42,
+          text: "[Music]",
+        },
+        {
+          duration: 7.0,
+          start: 35.18,
+          text: "Hello  Benito How are you doing",
+        },
+        {
+          duration: 6.1,
+          start: 37.82,
+          text: "well and you are very well Well when I first",
+        },
+        {
+          duration: 4.399,
+          start: 42.18,
+          text: "interviewed you we were in New York and you",
+        },
+        {
+          duration: 5.52,
+          start: 43.92,
+          text: "just played Yankee Stadium",
+        },
+        {
+          duration: 5.441,
+          start: 46.579,
+          text: "and now we are here in Argentina in the",
+        },
+        {
+          duration: 4.08,
+          start: 49.44,
+          text: "middle of the tour something has changed I don't think it",
+        },
+        {
+          duration: 4.679,
+          start: 52.02,
+          text: "has changed much I think",
+        },
+        {
+          duration: 5.3,
+          start: 53.52,
+          text: "the feeling maybe  of the tour due to the",
+        },
+        {
+          duration: 5.941,
+          start: 56.699,
+          text: "fact that now we are in America,",
+        },
+        {
+          duration: 5.22,
+          start: 58.82,
+          text: "complete here that I went a lot that I didn't come,",
+        },
+        {
+          duration: 4.92,
+          start: 62.64,
+          text: "it feels like I was visiting",
+        },
+        {
+          duration: 5.98,
+          start: 64.04,
+          text: "relatives that I hadn't seen for a long time and",
+        },
+        {
+          duration: 4.34,
+          start: 67.56,
+          text: "Argentina national madness, in truth, my",
+        },
+        {
+          duration: 5.599,
+          start: 70.02,
+          text: "favorite concert of my life",
+        },
+        {
+          duration: 7.6,
+          start: 71.9,
+          text: "was last Saturday of your  my",
+        },
+        {
+          duration: 5.441,
+          start: 75.619,
+          text: "whole life taking out what Puerto Rico is, which I",
+        },
+        {
+          duration: 4.38,
+          start: 79.5,
+          text: "always take aside as a",
+        },
+        {
+          duration: 4.26,
+          start: 81.06,
+          text: "feeling that cannot be compared. And why,",
+        },
+        {
+          duration: 3.66,
+          start: 83.88,
+          text: "Benito, because I remember that in New",
+        },
+        {
+          duration: 4.979,
+          start: 85.32,
+          text: "York you told me that New York and Yankee",
+        },
+        {
+          duration: 5.1,
+          start: 87.54,
+          text: "Stadium were so visceral, not",
+        },
+        {
+          duration: 5.101,
+          start: 90.299,
+          text: "New York because in  New York as",
+        },
+        {
+          duration: 4.439,
+          start: 92.64,
+          text: "New York I love New York and it's like",
+        },
+        {
+          duration: 2.899,
+          start: 95.4,
+          text: "all the existing Latin communities come together",
+        },
+        {
+          duration: 4.68,
+          start: 98.299,
+          text: "in one place",
+        },
+        {
+          duration: 5.621,
+          start: 100.759,
+          text: "specifically",
+        },
+        {
+          duration: 5.161,
+          start: 102.979,
+          text: "mostly Puerto Rican and Dominican that you",
+        },
+        {
+          duration: 4.919,
+          start: 106.38,
+          text: "know those are family to me",
+        },
+        {
+          duration: 4.18,
+          start: 108.14,
+          text: "so I think that all that plus the",
+        },
+        {
+          duration: 3.0,
+          start: 111.299,
+          text: "city of  New York has a",
+        },
+        {
+          duration: 5.1,
+          start: 112.32,
+          text: "magical portion because it always makes it special.",
+        },
+        {
+          duration: 5.841,
+          start: 114.299,
+          text: "Argentina has always been a bastard, but I kind of",
+        },
+        {
+          duration: 2.72,
+          start: 117.42,
+          text: "forgot.",
+        },
+        {
+          duration: 5.561,
+          start: 122.659,
+          text: "No, it's not like a ritual, but when I",
+        },
+        {
+          duration: 5.279,
+          start: 125.7,
+          text: "enter the stage, I enter without looking at the",
+        },
+        {
+          duration: 5.4,
+          start: 128.22,
+          text: "audience, I enter walking straight with",
+        },
+        {
+          duration: 4.021,
+          start: 130.979,
+          text: "the refrigerator, dad, dad.  dad looking at the",
+        },
+        {
+          duration: 4.199,
+          start: 133.62,
+          text: "floor looking at the floor so that I'm not going to",
+        },
+        {
+          duration: 4.68,
+          start: 135.0,
+          text: "fall I put the refrigerator I sit down that is I'm",
+        },
+        {
+          duration: 6.56,
+          start: 137.819,
+          text: "turning my back to the audience I",
+        },
+        {
+          duration: 8.419,
+          start: 139.68,
+          text: "sit down with a breath and I do",
+        },
+        {
+          duration: 3.72,
+          start: 144.379,
+          text: "and there I look at",
+        },
+        {
+          duration: 5.4,
+          start: 148.68,
+          text: "the crowd and",
+        },
+        {
+          duration: 5.32,
+          start: 151.34,
+          text: "it's always like it doesn't matter where it is  It",
+        },
+        {
+          duration: 5.879,
+          start: 154.08,
+          text: "'s always like a fist like the",
+        },
+        {
+          duration: 6.78,
+          start: 156.66,
+          text: "devil How do you choose Who do you invite in",
+        },
+        {
+          duration: 5.941,
+          start: 159.959,
+          text: "each show I try to invite whoever I",
+        },
+        {
+          duration: 5.0,
+          start: 163.44,
+          text: "feel is available that",
+        },
+        {
+          duration: 6.0,
+          start: 165.9,
+          text: "we have a collaboration within",
+        },
+        {
+          duration: 6.22,
+          start: 168.44,
+          text: "the tracklist of what I'm singing",
+        },
+        {
+          duration: 5.58,
+          start: 171.9,
+          text: "also correct me if I'm wrong but",
+        },
+        {
+          duration: 5.219,
+          start: 174.66,
+          text: "not with ibi  You have a song I don't know with Ivi I don't",
+        },
+        {
+          duration: 5.58,
+          start: 177.48,
+          text: "have a song",
+        },
+        {
+          duration: 5.701,
+          start: 179.879,
+          text: "as such But I do have a version, a",
+        },
+        {
+          duration: 5.24,
+          start: 183.06,
+          text: "remix that was made that was a",
+        },
+        {
+          duration: 5.579,
+          start: 185.58,
+          text: "special remix that was made for me perreo alone",
+        },
+        {
+          duration: 6.34,
+          start: 188.3,
+          text: "that was with Ivy Queen with him And then",
+        },
+        {
+          duration: 6.121,
+          start: 191.159,
+          text: "I did that remix more  in a way of",
+        },
+        {
+          duration: 4.099,
+          start: 194.64,
+          text: "homage as well and of respect to women",
+        },
+        {
+          duration: 5.64,
+          start: 197.28,
+          text: "and",
+        },
+        {
+          duration: 4.181,
+          start: 198.739,
+          text: "to her specifically",
+        },
+        {
+          duration: 6.01,
+          start: 203.15,
+          text: "[Music]",
+        },
+        {
+          duration: 5.201,
+          start: 211.159,
+          text: "I consider that the first the last tour",
+        },
+        {
+          duration: 5.401,
+          start: 213.599,
+          text: "of the world was a little more special in the",
+        },
+        {
+          duration: 5.22,
+          start: 216.36,
+          text: "emotional sentimental term but I",
+        },
+        {
+          duration: 5.22,
+          start: 219.0,
+          text: "enjoyed the World more I",
+        },
+        {
+          duration: 4.62,
+          start: 221.58,
+          text: "enjoyed it more  I have gone out. Generally",
+        },
+        {
+          duration: 3.659,
+          start: 224.22,
+          text: "I don't go out anywhere on this",
+        },
+        {
+          duration: 4.88,
+          start: 226.2,
+          text: "tour, both in the United States and",
+        },
+        {
+          duration: 6.0,
+          start: 227.879,
+          text: "in America. I",
+        },
+        {
+          duration: 6.6,
+          start: 231.08,
+          text: "have shared it with even the club with",
+        },
+        {
+          duration: 6.061,
+          start: 233.879,
+          text: "the dancers with that very fun mess.",
+        },
+        {
+          duration: 4.66,
+          start: 237.68,
+          text: "I have gone to places. I have gone to eat in",
+        },
+        {
+          duration: 4.68,
+          start: 239.94,
+          text: "restaurants. I don't deal.  of thinking",
+        },
+        {
+          duration: 4.7,
+          start: 242.34,
+          text: "about things but rather of enjoying the",
+        },
+        {
+          duration: 5.94,
+          start: 244.62,
+          text: "moment singing with people",
+        },
+        {
+          duration: 5.5,
+          start: 247.04,
+          text: "how am I going to deal with the pressure or you You",
+        },
+        {
+          duration: 4.7,
+          start: 250.56,
+          text: "just do it I feel in",
+        },
+        {
+          duration: 5.659,
+          start: 252.54,
+          text: "control I think that right now",
+        },
+        {
+          duration: 7.12,
+          start: 255.26,
+          text: "every year",
+        },
+        {
+          duration: 5.741,
+          start: 258.199,
+          text: "is that the hell I've been there too How many six",
+        },
+        {
+          duration: 3.36,
+          start: 262.38,
+          text: "five years one  He is also gaining experience",
+        },
+        {
+          duration: 4.38,
+          start: 263.94,
+          text: "and has overcome many things,",
+        },
+        {
+          duration: 5.82,
+          start: 265.74,
+          text: "I have also healed many things in my",
+        },
+        {
+          duration: 5.159,
+          start: 268.32,
+          text: "life, etc., things that perhaps that is the",
+        },
+        {
+          duration: 5.1,
+          start: 271.56,
+          text: "turn that took, as I have always said,",
+        },
+        {
+          duration: 6.241,
+          start: 273.479,
+          text: "the turn that my entire life took is very",
+        },
+        {
+          duration: 5.46,
+          start: 276.66,
+          text: "fast, it is a process, so, well, I",
+        },
+        {
+          duration: 4.759,
+          start: 279.72,
+          text: "would say that in  This point in my life and",
+        },
+        {
+          duration: 5.28,
+          start: 282.12,
+          text: "career is where I feel most focused I",
+        },
+        {
+          duration: 5.621,
+          start: 284.479,
+          text: "feel clearer about who I",
+        },
+        {
+          duration: 5.94,
+          start: 287.4,
+          text: "am about who I am in question to the",
+        },
+        {
+          duration: 6.379,
+          start: 290.1,
+          text: "music industry And who you are Benito",
+        },
+        {
+          duration: 3.139,
+          start: 293.34,
+          text: "Mart\u00ednez son of a [ __ ]",
+        },
+        {
+          duration: 10.95,
+          start: 298.61,
+          text: "[Music]",
+        },
+        {
+          duration: 6.04,
+          start: 306.8,
+          text: "Maybe it does influence",
+        },
+        {
+          duration: 6.12,
+          start: 309.56,
+          text: "the  The fact that I come from a",
+        },
+        {
+          duration: 6.859,
+          start: 312.84,
+          text: "neighborhood in Puerto Rico from a",
+        },
+        {
+          duration: 8.38,
+          start: 315.68,
+          text: "working family that was that I was born in a",
+        },
+        {
+          duration: 6.101,
+          start: 319.699,
+          text: "rigid environment or nothing and that I",
+        },
+        {
+          duration: 3.479,
+          start: 324.06,
+          text: "had my job you understand me. I had to",
+        },
+        {
+          duration: 4.56,
+          start: 325.8,
+          text: "take my resume and my job to",
+        },
+        {
+          duration: 4.861,
+          start: 327.539,
+          text: "work at the minimum wage and I know what",
+        },
+        {
+          duration: 4.559,
+          start: 330.36,
+          text: "they have to do  get to work early and",
+        },
+        {
+          duration: 4.46,
+          start: 332.4,
+          text: "if they don't vote for you you",
+        },
+        {
+          duration: 4.081,
+          start: 334.919,
+          text: "understand me I have that discipline I",
+        },
+        {
+          duration: 2.94,
+          start: 336.86,
+          text: "had My years what do I know at the",
+        },
+        {
+          duration: 3.78,
+          start: 339.0,
+          text: "university",
+        },
+        {
+          duration: 5.02,
+          start: 339.8,
+          text: "josing around throwing the peso for",
+        },
+        {
+          duration: 4.919,
+          start: 342.78,
+          text: "gas for The toll you understand me Like I would",
+        },
+        {
+          duration: 5.939,
+          start: 344.82,
+          text: "say yes sometimes there was",
+        },
+        {
+          duration: 6.321,
+          start: 347.699,
+          text: "a shirt a  clothes were going to go out and I wanted",
+        },
+        {
+          duration: 7.861,
+          start: 350.759,
+          text: "to buy a shirt and I didn't have it I didn't have",
+        },
+        {
+          duration: 6.04,
+          start: 354.02,
+          text: "the money and it was something that wasn't even expensive it",
+        },
+        {
+          duration: 4.82,
+          start: 358.62,
+          text: "was like I don't have it I have to",
+        },
+        {
+          duration: 7.139,
+          start: 360.06,
+          text: "wear the same thing I wore yesterday and",
+        },
+        {
+          duration: 5.68,
+          start: 363.44,
+          text: "yes possibly that contributed are you going to",
+        },
+        {
+          duration: 5.581,
+          start: 367.199,
+          text: "take a break  about music or you still haven't",
+        },
+        {
+          duration: 6.6,
+          start: 369.12,
+          text: "thought about that, 2023 is for me",
+        },
+        {
+          duration: 5.94,
+          start: 372.78,
+          text: "2023 for me for my physical health",
+        },
+        {
+          duration: 5.759,
+          start: 375.72,
+          text: "for my emotional health to breathe",
+        },
+        {
+          duration: 4.5,
+          start: 378.72,
+          text: "to enjoy the achievements that I did",
+        },
+        {
+          duration: 4.861,
+          start: 381.479,
+          text: "n't even remember doing this let's",
+        },
+        {
+          duration: 5.16,
+          start: 383.22,
+          text: "celebrate whatever the hell let's go",
+        },
+        {
+          duration: 4.32,
+          start: 386.34,
+          text: "here let's go there let's go to",
+        },
+        {
+          duration: 5.099,
+          start: 388.38,
+          text: "the boat let's go to the water let's go 2023",
+        },
+        {
+          duration: 4.92,
+          start: 390.66,
+          text: "is for me What do you want to do that you",
+        },
+        {
+          duration: 5.541,
+          start: 393.479,
+          text: "haven't done right now Right now",
+        },
+        {
+          duration: 3.44,
+          start: 395.58,
+          text: "I'm at a point where whatever",
+        },
+        {
+          duration: 6.321,
+          start: 401.699,
+          text: "happens understands me Like",
+        },
+        {
+          duration: 5.821,
+          start: 404.699,
+          text: "no I'm not looking for what happens  Something,",
+        },
+        {
+          duration: 3.94,
+          start: 408.02,
+          text: "for example, that I know when that",
+        },
+        {
+          duration: 3.799,
+          start: 410.52,
+          text: "collaboration with Drake took place, it wasn't like what",
+        },
+        {
+          duration: 4.04,
+          start: 411.96,
+          text: "I was thinking, it was like everything was",
+        },
+        {
+          duration: 6.581,
+          start: 414.319,
+          text: "spontaneous,",
+        },
+        {
+          duration: 6.819,
+          start: 416.0,
+          text: "this is different now Now, now the",
+        },
+        {
+          duration: 3.78,
+          start: 420.9,
+          text: "collaborations are like everyone,",
+        },
+        {
+          duration: 4.38,
+          start: 422.819,
+          text: "everyone wants to collaborate, it doesn't",
+        },
+        {
+          duration: 4.44,
+          start: 424.68,
+          text: "matter what the biggest artist is.  that you",
+        },
+        {
+          duration: 4.921,
+          start: 427.199,
+          text: "imagine on earth",
+        },
+        {
+          duration: 4.5,
+          start: 429.12,
+          text: "wants to collaborate So I believe that the",
+        },
+        {
+          duration: 3.66,
+          start: 432.12,
+          text: "greatest artist that I imagined on",
+        },
+        {
+          duration: 4.519,
+          start: 433.62,
+          text: "earth at this moment is you That's",
+        },
+        {
+          duration: 5.039,
+          start: 435.78,
+          text: "why I always collaborate with myself",
+        },
+        {
+          duration: 4.9,
+          start: 438.139,
+          text: "so I see collaborations as",
+        },
+        {
+          duration: 4.1,
+          start: 440.819,
+          text: "very different from those of other people",
+        },
+        {
+          duration: 5.041,
+          start: 443.039,
+          text: "I see it as something special,",
+        },
+        {
+          duration: 6.28,
+          start: 444.919,
+          text: "true, for me a collaboration is almost I do",
+        },
+        {
+          duration: 4.14,
+          start: 448.08,
+          text: "n't want to do it the most but for me",
+        },
+        {
+          duration: 4.161,
+          start: 451.199,
+          text: "a collaboration Almost almost",
+        },
+        {
+          duration: 5.699,
+          start: 452.22,
+          text: "like having sex with someone like",
+        },
+        {
+          duration: 4.86,
+          start: 455.36,
+          text: "we are going to make a song and sometimes",
+        },
+        {
+          duration: 2.301,
+          start: 457.919,
+          text: "I say",
+        },
+        {
+          duration: 5.12,
+          start: 460.38,
+          text: "make a song something serious  I mean,",
+        },
+        {
+          duration: 6.96,
+          start: 463.139,
+          text: "you're saying things",
+        },
+        {
+          duration: 6.039,
+          start: 465.5,
+          text: "and you're with someone who's not going to",
+        },
+        {
+          duration: 3.72,
+          start: 470.099,
+          text: "erase it, or that's going to be there",
+        },
+        {
+          duration: 4.021,
+          start: 471.539,
+          text: "forever. I'm grateful that it was the",
+        },
+        {
+          duration: 5.301,
+          start: 473.819,
+          text: "biggest thing you saw when you",
+        },
+        {
+          duration: 6.6,
+          start: 475.56,
+          text: "started because the head in the mirror",
+        },
+        {
+          duration: 6.94,
+          start: 479.12,
+          text: "isn't, but I'm saying  because clearly you have",
+        },
+        {
+          duration: 7.2,
+          start: 482.16,
+          text: "goals and ambition No, I never dreamed in my",
+        },
+        {
+          duration: 5.039,
+          start: 486.06,
+          text: "mind there was not this thing that I want to be",
+        },
+        {
+          duration: 4.7,
+          start: 489.36,
+          text: "the greatest or I want to be number one I",
+        },
+        {
+          duration: 2.961,
+          start: 491.099,
+          text: "want to get there",
+        },
+        {
+          duration: 4.96,
+          start: 494.78,
+          text: "I simply wanted to get there and maybe they",
+        },
+        {
+          duration: 3.06,
+          start: 498.3,
+          text: "can tell this bastard I",
+        },
+        {
+          duration: 5.459,
+          start: 499.74,
+          text: "'m already talking  [ __ ] is not being",
+        },
+        {
+          duration: 7.08,
+          start: 501.36,
+          text: "sincere I invested time of my life and",
+        },
+        {
+          duration: 3.921,
+          start: 505.199,
+          text: "my youth since my [ __ ] since I was 13",
+        },
+        {
+          duration: 3.959,
+          start: 508.44,
+          text: "years old",
+        },
+        {
+          duration: 5.32,
+          start: 509.12,
+          text: "I spent most of the day making",
+        },
+        {
+          duration: 6.801,
+          start: 512.399,
+          text: "rhythm",
+        },
+        {
+          duration: 7.339,
+          start: 514.44,
+          text: "writing singing lyrics in my mind",
+        },
+        {
+          duration: 4.74,
+          start: 519.2,
+          text: "enjoying myself I never",
+        },
+        {
+          duration: 5.56,
+          start: 521.779,
+          text: "said",
+        },
+        {
+          duration: 4.54,
+          start: 523.94,
+          text: "I want to be the greatest or I never said ah",
+        },
+        {
+          duration: 3.12,
+          start: 527.339,
+          text: "with this  What am I doing? I'm going to",
+        },
+        {
+          duration: 4.44,
+          start: 528.48,
+          text: "make money. I didn't do it because I",
+        },
+        {
+          duration: 5.101,
+          start: 530.459,
+          text: "loved it and my only dream was when I",
+        },
+        {
+          duration: 4.68,
+          start: 532.92,
+          text: "hope to be able to make a living. Doing",
+        },
+        {
+          duration: 4.339,
+          start: 535.56,
+          text: "this like being successful doing",
+        },
+        {
+          duration: 5.34,
+          start: 537.6,
+          text: "whatever we do the first time",
+        },
+        {
+          duration: 4.541,
+          start: 539.899,
+          text: "I kind of saw how.  that people connected",
+        },
+        {
+          duration: 3.48,
+          start: 542.94,
+          text: "with my songs and for me it sounds",
+        },
+        {
+          duration: 4.1,
+          start: 544.44,
+          text: "great the first one that I sang in front",
+        },
+        {
+          duration: 5.52,
+          start: 546.42,
+          text: "of 50 60",
+        },
+        {
+          duration: 7.62,
+          start: 548.54,
+          text: "90 people I already felt great",
+        },
+        {
+          duration: 7.2,
+          start: 551.94,
+          text: "understand I already felt happy So",
+        },
+        {
+          duration: 4.54,
+          start: 556.16,
+          text: "I enjoyed this stadium in the",
+        },
+        {
+          duration: 3.36,
+          start: 559.14,
+          text: "same way that I enjoyed having",
+        },
+        {
+          duration: 5.52,
+          start: 560.7,
+          text: "sung  In Mayag\u00fcez there with 100",
+        },
+        {
+          duration: 5.94,
+          start: 562.5,
+          text: "people and in Vega Baja with 70 people I",
+        },
+        {
+          duration: 3.78,
+          start: 566.22,
+          text: "swear that in the same way that I",
+        },
+        {
+          duration: 4.019,
+          start: 568.44,
+          text: "enjoyed that Show I enjoyed myself I",
+        },
+        {
+          duration: 3.899,
+          start: 570.0,
+          text: "enjoyed this with 50,000 I would have had to",
+        },
+        {
+          duration: 3.361,
+          start: 572.459,
+          text: "stay with 100 people",
+        },
+        {
+          duration: 3.301,
+          start: 573.899,
+          text: "singing every weekend with",
+        },
+        {
+          duration: 2.39,
+          start: 575.82,
+          text: "that I was  real happy",
+        },
+        {
+          duration: 10.969,
+          start: 578.21,
+          text: "[Music]",
+        },
+      ],
+      videoId: "fG2Byh85FSM",
+    },
+  ],
+};
+
 // Test URL: https://youtube.com/playlist?list=PLqR0DrEFzD9ufgr22HZod71yFKMqekKwp&si=pVCsnjOVO-H1Rpk4
 export const TEST_PLAYLIST_ID_RESPONSE_0 = {
   videos: [

@@ -6,11 +6,17 @@
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 
 body {
   color: #ffffff;
   background-color: #000000;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
 }
 
 form {
@@ -20,9 +26,9 @@ form {
   max-width: 80%;
 }
 
-form>textarea,
-form>label:first-child,
-form>button {
+form > textarea,
+form > label:first-child,
+form > button {
   display: block;
   margin: 0 auto;
 }
@@ -30,9 +36,9 @@ form>button {
 textarea {
   color: white;
   background-color: #0a0a0a;
-  margin-bottom: .5rem !important;
+  margin-bottom: 0.5rem !important;
   min-width: 100%;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   box-sizing: border-box;
   height: 7rem;
   max-width: 100%;
@@ -80,9 +86,10 @@ label {
   color: black;
 }
 
-form>label:first-child {
+form > label:first-child {
   padding: 1rem 0rem 1rem 0rem;
   border-radius: 15px 15px 0px 0px;
+  font-size: 1.2rem;
 }
 
 /* Style for the video container */
@@ -143,7 +150,7 @@ form>label:first-child {
   gap: 10px;
 }
 
-.form-group>label:not(label:first-child) {
+.form-group > label:not(label:first-child) {
   margin-left: 1rem;
 }
 

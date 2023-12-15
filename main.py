@@ -58,9 +58,11 @@ def summarize_text(text, model='gpt-3.5-turbo-1106', language='en', prompt=''):
       purpose = prompt if prompt else "You summarize YouTube videos solely on the video's transcript. Explain and highlight core concepts and key points in great detail."
 
       #   translate string to 'language'
-      if language != 'en':
-          purpose = client.translate(purpose, target_language=language)
+    #   if language != 'en':
+        #   purpose = client.translate(purpose, target_language=language)
+        #   print(f"Translated prompt: {purpose}")
         #   text = client.translate(text, target_language=language)
+        #   print(f"Translated text: {text}")
       response = client.chat.completions.create(
           model=model,
           # api_key=os.environ['OPENAI_API_KEY'],  # this is also the default, it can be omitted
@@ -84,6 +86,7 @@ def get_video_metadata(video_id, USE_AI=False, model='gpt-3.5-turbo-1106', langu
       )
       response = request.execute()
       video_metadata = {
+          'language': response['items'][0]['snippet']['defaultAudioLanguage'],
           'videoId': video_id,
           'publishedAt': response['items'][0]['snippet']['publishedAt'],
           'channelId': response['items'][0]['snippet']['channelId'],
@@ -92,6 +95,8 @@ def get_video_metadata(video_id, USE_AI=False, model='gpt-3.5-turbo-1106', langu
           'description': response['items'][0]['snippet']['description'],
           'thumbnailUrl': response['items'][0]['snippet']['thumbnails']['maxres']['url'],
       }
+      print(f"language: {video_metadata['language']}")
+      print(f"chosen language: {language}")
       transcript = get_video_transcript(video_id, USE_AI, model=model, language=language)
       if transcript:
         video_metadata.update(transcript)
@@ -102,15 +107,34 @@ def get_video_metadata(video_id, USE_AI=False, model='gpt-3.5-turbo-1106', langu
 
 def get_video_transcript(video_id, USE_AI_FLAG=False, model='gpt-3.5-turbo-1106', language='en'):
   try:
-      transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=[language, 'en'])
+      transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+    #   print(f"transcript_list: {transcript_list}")
+      # you can also directly filter for the language you are looking for, using the transcript list
+    #   transcript_in_language = transcript_list.find_transcript([language, 'en'])  
+    #   print(f"transcript_in_language: x{transcript_in_language}")
+      defaultTranscript = ''
+      for transcript in transcript_list:
+          if transcript.language_code == language:
+            print(f"FOUND IN {language}!: {transcript}")
+            defaultTranscript = transcript.fetch()
+            break
+          elif transcript.is_generated:
+              print(f"NOT found in {language}!: {transcript}")
+              defaultTranscript = transcript.fetch()
+              if transcript.translate(language).fetch():
+                  defaultTranscript = transcript.translate(language).fetch()
+              
+
+    #   transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=[language, 'en'])
       full_transcript_text_only = ''
       
-      if transcript:
-        for line in transcript:
+      print(f"defaultTranscript: {defaultTranscript}")
+      if defaultTranscript != '':
+        for line in defaultTranscript:
             full_transcript_text_only += f"{line['text']} "
       
       results = {'transcript_text_only': full_transcript_text_only,
-                 'transcript_with_timestamps': transcript}
+                 'transcript_with_timestamps': defaultTranscript}
       
       if USE_AI_FLAG:
           results['AI_summary'] = summarize_text(full_transcript_text_only, model=model, language=language)
