@@ -295,24 +295,19 @@ function buildHTMLElement(type, attributes = [], content) {
 }
 
 window.onload = function () {
+  const container = document.getElementById("aiModelSelection");
   const aiSummaryCheckbox = document.getElementById("aiSummary");
   const gptModelSelect = document.getElementById("gptModel");
   const gptModelLabel = document.querySelector("label[for='gptModel']"); // assuming the label has a 'for' attribute
 
   // Disable Summary & hide the GPT model label and select initially
   aiSummaryCheckbox.checked = false;
-  gptModelLabel.style.display = "none";
-  gptModelSelect.style.display = "none";
+  container.style.display = "none";
 
   aiSummaryCheckbox.addEventListener("change", function () {
     // If the AI summary checkbox is checked, show the GPT model label and select
     // Otherwise, hide them
-    if (this.checked) {
-      gptModelLabel.style.display = "unset";
-      gptModelSelect.style.display = "unset";
-    } else {
-      gptModelLabel.style.display = "none";
-      gptModelSelect.style.display = "none";
-    }
+    if (this.checked) container.style.display = "unset";
+    else container.style.display = "none";
   });
 };

@@ -15,16 +15,19 @@
     <label for="youtubeURLs">Enter YouTube Video/Playlist URL:</label>
     <!-- form group -->
     <div class="form-group">
-      <div>
+      <div id="aiCheckbox">
         <label for="aiSummary">Enable AI Summary:</label>
         <input type="checkbox" id="aiSummary" name="aiSummary">
       </div>
+      <div id="aiModelSelection">
       <label for="gptModel">Select GPT Model:</label>
       <select id="gptModel" name="gptModel">
         <option value="gpt-3.5-turbo-1106">GPT-3</option>
         <option value="gpt-4-1106-preview">GPT-4</option>
         <!-- Add more options as needed -->
       </select>
+      </div>
+      <div id="languageSelection">
       <label for="language">Select Language:</label>
       <select id="language" name="language">
         <option value="en">English</option>
@@ -35,6 +38,7 @@
         <option value="ar">Japanese</option>
         <!-- Add more options as needed -->
       </select>
+      </div>
     </div>
 
 
