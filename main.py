@@ -75,7 +75,7 @@ def get_video_metadata(video_id, language, model, prompt):
       )
       response = request.execute()
       video_metadata = {
-          'language': response['items'][0]['snippet']['defaultAudioLanguage'],
+        #   'language': response['items'][0]['snippet']['defaultAudioLanguage'],
           'videoId': video_id,
           'publishedAt': response['items'][0]['snippet']['publishedAt'],
           'channelId': response['items'][0]['snippet']['channelId'],
@@ -84,7 +84,7 @@ def get_video_metadata(video_id, language, model, prompt):
           'description': response['items'][0]['snippet']['description'],
           'thumbnailUrl': response['items'][0]['snippet']['thumbnails']['maxres']['url'],
       }
-      print(f"language: {video_metadata['language']}")
+    #   print(f"language: {video_metadata['language']}")
       print(f"chosen language: {language}")
       transcript = get_video_transcript(video_id, language, model, prompt)
       if transcript:
