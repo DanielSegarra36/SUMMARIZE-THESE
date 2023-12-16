@@ -1,5 +1,835 @@
+// TEST URL: https://youtu.be/7h732qLxtAk?si=IWa-lrzU9vxLhvf5
+export const AI_REQUEST_WITH_PROMPT = {
+  urls: ["https://youtu.be/7h732qLxtAk?si=IWa-lrzU9vxLhvf5"],
+  language: "en",
+  model: "gpt-3.5-turbo-1106",
+  prompt: "is my job as an html/css/js bootcamp teacher at risk?",
+};
+
+export const AI_RESPONSE_WITH_PROMPT = {
+  videos: [
+    {
+      AI_summary:
+        "It's understandable that you might be feeling concerned about the potential impact of AI on the programming industry. Indeed, the rise of AI-powered code assistants and their increasing capability to generate code and provide suggestions does raise questions about the future role of programmers.\n\nHowever, it's important to consider that these AI tools are currently viewed as complementary to human developers rather than replacements. While they can aid in code generation and provide assistance, they still lack the comprehensive understanding, creativity, and problem-solving abilities that human programmers possess.\n\nFurthermore, the role of a teacher in a bootcamp setting extends beyond simply teaching the technical aspects of coding. Your role likely involves mentoring and guiding students, helping them develop problem-solving skills, critical thinking, and fostering a deep understanding of programming concepts. These are aspects that AI, at least for the foreseeable future, cannot replicate.\n\nThe advancements in AI tools may lead to changes in the industry and the skills that are in demand, but it's unlikely that the need for human expertise and guidance in the teaching and mentoring of aspiring developers will diminish significantly in the near future.\n\nIt's also worth noting that the field of programming is incredibly broad and constantly evolving. While AI may automate certain routine tasks, there will always be opportunities for skilled programmers to drive innovation and solve complex problems, particularly in areas that require human understanding, creativity, and empathy.\n\nSo, while it's important to stay informed about the developments in AI and their potential implications, it's also essential to remain optimistic about the enduring value of human expertise and the unique role of educators in the programming field.",
+      channelId: "UCsBjURrPoezykLs9EqgamOA",
+      channelTitle: "Fireship",
+      description:
+        "Learn about the latest updates to GitHub Copilot and its new GPT-4 upgrade. Also, take a first look at Google's new Duet AI and JetBrains AI Assistant. \n\n#ai #programming #thecodereport\n\n\ud83d\udcac Chat with Me on Discord\n\nhttps://discord.gg/fireship\n\n\ud83d\udd17 Resources\n\n- No programmers in 5 years https://www.reddit.com/r/singularity/comments/14pmfxx/in_five_years_there_will_be_no_programmers_left/\n- Duet AI Launch https://cloud.google.com/duet-ai\n- Google Gemini first Look https://youtu.be/q5qAVmXSecQ\n- Tech Trends 2024 https://youtu.be/vyQv563Y-fk\n\n\ud83d\udd25 Get More Content - Upgrade to PRO\n\nUpgrade at https://fireship.io/pro\nUse code YT25 for 25% off PRO access \n\n\ud83c\udfa8 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n\ud83d\udd16 Topics Covered\n\n- Updates to GitHub Copilot\n- Alternatives to GitHub Copilot\n- Does Copilot use GPT-4\n- Will programmers be obsolete in 5 years? \n- Google Duet first look\n- JetBrains AI assistant first look",
+      language: "en",
+      publishedAt: "2023-12-14T21:11:41Z",
+      thumbnailUrl: "https://i.ytimg.com/vi/7h732qLxtAk/maxresdefault.jpg",
+      title: "AI coding assistants just leveled up, again\u2026",
+      transcript_text_only:
+        "recently the founder of stability AI made an ominous prediction there are no programmers in 5 years there are no programmers in 5 years just 2 years ago nobody was using AI code assistance but 2 years after GitHub co-pilot beta was launched we're now here 41% of all code on GitHub right now is AI generated that's a crazy claim and I'd be highly skeptical of it but I'd believe it next year after looking at these crazy new updates in GitHub co-pilot the launch of Google's duet Ai and the launch of jet brains AI all of which just happened in the last few days it is December 14th 2023 and you're watching the code report before we get into this video first a disclaimer the tools we're about to look at may make you want to drop out of your computer science degree and switch your major to Plumbing but that would be dumb because they're also coming out with AI powered smart toilets but more importantly pessimism leads to weakness optimism leads to power it's possible programmers won't exist in 5 years but it's also possible that programmers will get paid five times as much in 5 years because everyone got discouraged and quit computer science in 2023 okay so now that we have that optimism out of the way what we're looking at today is the next generation of AI tooling but as of today that's all it is it's not capable of replacing any human yet the big announcement yesterday is that duet AI from Google is now generally available it can be installed into your IDE and provides access to an AI chatbot you can chat in a dedicated panel or get inline suggestions and intellisense just like Hub co-pilot but unlike co-pilot it's totally free well at least until next year before it becomes $19 per month its real killer feature though is its integration with Google Cloud it allows you to link a cloud project and then manage all the resources directly from the IDE as well as access to documentation and generate code samples for your project and it's also worth noting that Google's working on its own cloud IDE based on VSS code called project idx which is not only integrated with this AI but also has things like IOS and Android emulators built in that run on a cloud VM so you don't have to download and configure a bunch of sdks now currently its underlying AI model is not Gemini Ultra which is claimed to be the best AI programmer out there if that's true duet has the potential to be a GitHub co-pilot killer in the future but speaking of co-pilot Killers jet brain also just announced their new co-pilot killer in December it is possible to use co-pilot in Jeet brains idees but the experience has never been that great it just feels like it gets in the way more so than it does in vs code the AI assistant feels much more natural and well integrated and can do things like chat refactoring write documentation write unit tests offer companionship generate commit messages and so on but with a price tag of $10 per month it costs nearly as much as the IDE itself and the initial reviews are fairly mixed what's interesting though is that it's powered by something called Jeet brains AI service and this allows the chatbot to be powered by multiple different models there's not a ton of detail around this but it's an extremely powerful idea with co-pilot and duet you have GPT 4 and Gemini but with jet brains you could hypothetically hook up your own fine-tune model like maybe the open source code Llama Or mistol canbin with the billions of lines of code at your company allowing the AI to provide predictable responses based on your coding conventions that's pretty cool but at the same time GitHub co-pilot just leveled up big time previously it was based on GPT 3.5 but now it's using GPT 4 it now has a dedicated chat window so you basically have chat GPT in your IDE but what's really amazing is that it has this workspace command that allows you to search all the code files in your workspace to write code with the proper context in your project so far I've actually found it most useful for explaining code When jumping into an unfamiliar project in other words it makes it way easier to figure out what the hell is going on with this guy's spaghetti code it also now writes your commit messages and is also available in the terminal to explain and refactor commands but there's one big problem with these AI tools sometimes they spit out suggest sus from code and repos that you're not allowed to use and I really can't go back to jail but luckily co-pilot will now search across billions of files in GitHub and will return the licenses on any similar code and that means you can be relatively confident that you're not stealing someone's code well I mean you are stealing it but you're allowed to overall these changes are pretty amazing and extremely useful these tools still can't build complex projects out of nowhere but the big question is where are we going from here currently co-pilot doesn't run your code or create new files but I think we're going there eventually like you might be able to just take your client's requirements and say say hey build this thing in Django then co-pilot will run the commands create the files and run the unit tests required to make that a reality then you'll continue fine-tuning it with multiple shots or prompts until it builds exactly what you're looking for without ever touching a line of code another missing piece is image data there are already tools that can convert a screenshot into code and as these tools get better we'll likely see them integrated directly in the IDE now even if this stuff does get really good I wouldn't be discouraged as a programmer right now is one hell of a time to be alive code is just a means to an end even if programming becomes obsolete there will still be Engineers pushing the limits of whatever comes next like we still need to develop robots brain chips quantum computers euthanasia pods laser guns space travel time travel and all sorts of other sci-fi and it's going to take some good old-fashioned problemsolving Engineers to do that so stay optimistic this has been the code report thanks for watching and I will see you in the next one ",
+      transcript_with_timestamps: [
+        {
+          duration: 3.839,
+          start: 0.12,
+          text: "recently the founder of stability AI",
+        },
+        {
+          duration: 3.36,
+          start: 2.2,
+          text: "made an ominous prediction there are no",
+        },
+        {
+          duration: 4.161,
+          start: 3.959,
+          text: "programmers in 5 years there are no",
+        },
+        {
+          duration: 4.68,
+          start: 5.56,
+          text: "programmers in 5 years just 2 years ago",
+        },
+        {
+          duration: 3.96,
+          start: 8.12,
+          text: "nobody was using AI code assistance but",
+        },
+        {
+          duration: 4.279,
+          start: 10.24,
+          text: "2 years after GitHub co-pilot beta was",
+        },
+        {
+          duration: 4.4,
+          start: 12.08,
+          text: "launched we're now here 41% of all code",
+        },
+        {
+          duration: 3.481,
+          start: 14.519,
+          text: "on GitHub right now is AI generated",
+        },
+        {
+          duration: 3.12,
+          start: 16.48,
+          text: "that's a crazy claim and I'd be highly",
+        },
+        {
+          duration: 3.199,
+          start: 18.0,
+          text: "skeptical of it but I'd believe it next",
+        },
+        {
+          duration: 3.599,
+          start: 19.6,
+          text: "year after looking at these crazy new",
+        },
+        {
+          duration: 4.041,
+          start: 21.199,
+          text: "updates in GitHub co-pilot the launch of",
+        },
+        {
+          duration: 3.801,
+          start: 23.199,
+          text: "Google's duet Ai and the launch of jet",
+        },
+        {
+          duration: 3.84,
+          start: 25.24,
+          text: "brains AI all of which just happened in",
+        },
+        {
+          duration: 4.599,
+          start: 27.0,
+          text: "the last few days it is December 14th",
+        },
+        {
+          duration: 4.2,
+          start: 29.08,
+          text: "2023 and you're watching the code report",
+        },
+        {
+          duration: 3.12,
+          start: 31.599,
+          text: "before we get into this video first a",
+        },
+        {
+          duration: 3.08,
+          start: 33.28,
+          text: "disclaimer the tools we're about to look",
+        },
+        {
+          duration: 3.281,
+          start: 34.719,
+          text: "at may make you want to drop out of your",
+        },
+        {
+          duration: 3.519,
+          start: 36.36,
+          text: "computer science degree and switch your",
+        },
+        {
+          duration: 3.399,
+          start: 38.0,
+          text: "major to Plumbing but that would be dumb",
+        },
+        {
+          duration: 2.961,
+          start: 39.879,
+          text: "because they're also coming out with AI",
+        },
+        {
+          duration: 3.48,
+          start: 41.399,
+          text: "powered smart toilets but more",
+        },
+        {
+          duration: 3.92,
+          start: 42.84,
+          text: "importantly pessimism leads to weakness",
+        },
+        {
+          duration: 3.801,
+          start: 44.879,
+          text: "optimism leads to power it's possible",
+        },
+        {
+          duration: 3.56,
+          start: 46.76,
+          text: "programmers won't exist in 5 years but",
+        },
+        {
+          duration: 3.719,
+          start: 48.68,
+          text: "it's also possible that programmers will",
+        },
+        {
+          duration: 3.28,
+          start: 50.32,
+          text: "get paid five times as much in 5 years",
+        },
+        {
+          duration: 3.561,
+          start: 52.399,
+          text: "because everyone got discouraged and",
+        },
+        {
+          duration: 3.72,
+          start: 53.6,
+          text: "quit computer science in 2023 okay so",
+        },
+        {
+          duration: 2.68,
+          start: 55.96,
+          text: "now that we have that optimism out of",
+        },
+        {
+          duration: 3.36,
+          start: 57.32,
+          text: "the way what we're looking at today is",
+        },
+        {
+          duration: 3.719,
+          start: 58.64,
+          text: "the next generation of AI tooling but as",
+        },
+        {
+          duration: 3.519,
+          start: 60.68,
+          text: "of today that's all it is it's not",
+        },
+        {
+          duration: 3.641,
+          start: 62.359,
+          text: "capable of replacing any human yet the",
+        },
+        {
+          duration: 3.521,
+          start: 64.199,
+          text: "big announcement yesterday is that duet",
+        },
+        {
+          duration: 3.4,
+          start: 66.0,
+          text: "AI from Google is now generally",
+        },
+        {
+          duration: 4.2,
+          start: 67.72,
+          text: "available it can be installed into your",
+        },
+        {
+          duration: 4.28,
+          start: 69.4,
+          text: "IDE and provides access to an AI chatbot",
+        },
+        {
+          duration: 3.68,
+          start: 71.92,
+          text: "you can chat in a dedicated panel or get",
+        },
+        {
+          duration: 4.079,
+          start: 73.68,
+          text: "inline suggestions and intellisense just",
+        },
+        {
+          duration: 3.76,
+          start: 75.6,
+          text: "like Hub co-pilot but unlike co-pilot",
+        },
+        {
+          duration: 3.441,
+          start: 77.759,
+          text: "it's totally free well at least until",
+        },
+        {
+          duration: 3.52,
+          start: 79.36,
+          text: "next year before it becomes $19 per",
+        },
+        {
+          duration: 3.44,
+          start: 81.2,
+          text: "month its real killer feature though is",
+        },
+        {
+          duration: 3.599,
+          start: 82.88,
+          text: "its integration with Google Cloud it",
+        },
+        {
+          duration: 3.479,
+          start: 84.64,
+          text: "allows you to link a cloud project and",
+        },
+        {
+          duration: 3.441,
+          start: 86.479,
+          text: "then manage all the resources directly",
+        },
+        {
+          duration: 3.721,
+          start: 88.119,
+          text: "from the IDE as well as access to",
+        },
+        {
+          duration: 3.519,
+          start: 89.92,
+          text: "documentation and generate code samples",
+        },
+        {
+          duration: 3.319,
+          start: 91.84,
+          text: "for your project and it's also worth",
+        },
+        {
+          duration: 3.96,
+          start: 93.439,
+          text: "noting that Google's working on its own",
+        },
+        {
+          duration: 4.481,
+          start: 95.159,
+          text: "cloud IDE based on VSS code called",
+        },
+        {
+          duration: 4.561,
+          start: 97.399,
+          text: "project idx which is not only integrated",
+        },
+        {
+          duration: 4.64,
+          start: 99.64,
+          text: "with this AI but also has things like",
+        },
+        {
+          duration: 4.08,
+          start: 101.96,
+          text: "IOS and Android emulators built in that",
+        },
+        {
+          duration: 3.68,
+          start: 104.28,
+          text: "run on a cloud VM so you don't have to",
+        },
+        {
+          duration: 4.039,
+          start: 106.04,
+          text: "download and configure a bunch of sdks",
+        },
+        {
+          duration: 4.199,
+          start: 107.96,
+          text: "now currently its underlying AI model is",
+        },
+        {
+          duration: 3.841,
+          start: 110.079,
+          text: "not Gemini Ultra which is claimed to be",
+        },
+        {
+          duration: 3.681,
+          start: 112.159,
+          text: "the best AI programmer out there if",
+        },
+        {
+          duration: 4.0,
+          start: 113.92,
+          text: "that's true duet has the potential to be",
+        },
+        {
+          duration: 3.72,
+          start: 115.84,
+          text: "a GitHub co-pilot killer in the future",
+        },
+        {
+          duration: 3.199,
+          start: 117.92,
+          text: "but speaking of co-pilot Killers jet",
+        },
+        {
+          duration: 3.28,
+          start: 119.56,
+          text: "brain also just announced their new",
+        },
+        {
+          duration: 3.441,
+          start: 121.119,
+          text: "co-pilot killer in December it is",
+        },
+        {
+          duration: 3.68,
+          start: 122.84,
+          text: "possible to use co-pilot in Jeet brains",
+        },
+        {
+          duration: 3.44,
+          start: 124.56,
+          text: "idees but the experience has never been",
+        },
+        {
+          duration: 3.48,
+          start: 126.52,
+          text: "that great it just feels like it gets in",
+        },
+        {
+          duration: 3.879,
+          start: 128.0,
+          text: "the way more so than it does in vs code",
+        },
+        {
+          duration: 3.68,
+          start: 130.0,
+          text: "the AI assistant feels much more natural",
+        },
+        {
+          duration: 3.761,
+          start: 131.879,
+          text: "and well integrated and can do things",
+        },
+        {
+          duration: 4.12,
+          start: 133.68,
+          text: "like chat refactoring write",
+        },
+        {
+          duration: 4.319,
+          start: 135.64,
+          text: "documentation write unit tests offer",
+        },
+        {
+          duration: 4.36,
+          start: 137.8,
+          text: "companionship generate commit messages",
+        },
+        {
+          duration: 4.0,
+          start: 139.959,
+          text: "and so on but with a price tag of $10",
+        },
+        {
+          duration: 3.76,
+          start: 142.16,
+          text: "per month it costs nearly as much as the",
+        },
+        {
+          duration: 3.601,
+          start: 143.959,
+          text: "IDE itself and the initial reviews are",
+        },
+        {
+          duration: 3.039,
+          start: 145.92,
+          text: "fairly mixed what's interesting though",
+        },
+        {
+          duration: 3.44,
+          start: 147.56,
+          text: "is that it's powered by something called",
+        },
+        {
+          duration: 3.841,
+          start: 148.959,
+          text: "Jeet brains AI service and this allows",
+        },
+        {
+          duration: 3.12,
+          start: 151.0,
+          text: "the chatbot to be powered by multiple",
+        },
+        {
+          duration: 3.04,
+          start: 152.8,
+          text: "different models there's not a ton of",
+        },
+        {
+          duration: 3.88,
+          start: 154.12,
+          text: "detail around this but it's an extremely",
+        },
+        {
+          duration: 4.28,
+          start: 155.84,
+          text: "powerful idea with co-pilot and duet you",
+        },
+        {
+          duration: 3.68,
+          start: 158.0,
+          text: "have GPT 4 and Gemini but with jet",
+        },
+        {
+          duration: 3.6,
+          start: 160.12,
+          text: "brains you could hypothetically hook up",
+        },
+        {
+          duration: 4.32,
+          start: 161.68,
+          text: "your own fine-tune model like maybe the",
+        },
+        {
+          duration: 3.519,
+          start: 163.72,
+          text: "open source code Llama Or mistol canbin",
+        },
+        {
+          duration: 2.959,
+          start: 166.0,
+          text: "with the billions of lines of code at",
+        },
+        {
+          duration: 3.241,
+          start: 167.239,
+          text: "your company allowing the AI to provide",
+        },
+        {
+          duration: 3.401,
+          start: 168.959,
+          text: "predictable responses based on your",
+        },
+        {
+          duration: 3.92,
+          start: 170.48,
+          text: "coding conventions that's pretty cool",
+        },
+        {
+          duration: 3.72,
+          start: 172.36,
+          text: "but at the same time GitHub co-pilot",
+        },
+        {
+          duration: 4.119,
+          start: 174.4,
+          text: "just leveled up big time previously it",
+        },
+        {
+          duration: 5.079,
+          start: 176.08,
+          text: "was based on GPT 3.5 but now it's using",
+        },
+        {
+          duration: 4.601,
+          start: 178.519,
+          text: "GPT 4 it now has a dedicated chat window",
+        },
+        {
+          duration: 4.121,
+          start: 181.159,
+          text: "so you basically have chat GPT in your",
+        },
+        {
+          duration: 3.92,
+          start: 183.12,
+          text: "IDE but what's really amazing is that it",
+        },
+        {
+          duration: 3.519,
+          start: 185.28,
+          text: "has this workspace command that allows",
+        },
+        {
+          duration: 3.64,
+          start: 187.04,
+          text: "you to search all the code files in your",
+        },
+        {
+          duration: 3.8,
+          start: 188.799,
+          text: "workspace to write code with the proper",
+        },
+        {
+          duration: 3.199,
+          start: 190.68,
+          text: "context in your project so far I've",
+        },
+        {
+          duration: 3.0,
+          start: 192.599,
+          text: "actually found it most useful for",
+        },
+        {
+          duration: 3.64,
+          start: 193.879,
+          text: "explaining code When jumping into an",
+        },
+        {
+          duration: 3.321,
+          start: 195.599,
+          text: "unfamiliar project in other words it",
+        },
+        {
+          duration: 2.64,
+          start: 197.519,
+          text: "makes it way easier to figure out what",
+        },
+        {
+          duration: 2.879,
+          start: 198.92,
+          text: "the hell is going on with this guy's",
+        },
+        {
+          duration: 3.64,
+          start: 200.159,
+          text: "spaghetti code it also now writes your",
+        },
+        {
+          duration: 4.0,
+          start: 201.799,
+          text: "commit messages and is also available in",
+        },
+        {
+          duration: 3.641,
+          start: 203.799,
+          text: "the terminal to explain and refactor",
+        },
+        {
+          duration: 3.481,
+          start: 205.799,
+          text: "commands but there's one big problem",
+        },
+        {
+          duration: 3.999,
+          start: 207.44,
+          text: "with these AI tools sometimes they spit",
+        },
+        {
+          duration: 3.84,
+          start: 209.28,
+          text: "out suggest sus from code and repos that",
+        },
+        {
+          duration: 3.241,
+          start: 211.439,
+          text: "you're not allowed to use and I really",
+        },
+        {
+          duration: 3.24,
+          start: 213.12,
+          text: "can't go back to jail but luckily",
+        },
+        {
+          duration: 3.44,
+          start: 214.68,
+          text: "co-pilot will now search across billions",
+        },
+        {
+          duration: 3.599,
+          start: 216.36,
+          text: "of files in GitHub and will return the",
+        },
+        {
+          duration: 3.24,
+          start: 218.12,
+          text: "licenses on any similar code and that",
+        },
+        {
+          duration: 3.041,
+          start: 219.959,
+          text: "means you can be relatively confident",
+        },
+        {
+          duration: 3.0,
+          start: 221.36,
+          text: "that you're not stealing someone's code",
+        },
+        {
+          duration: 3.04,
+          start: 223.0,
+          text: "well I mean you are stealing it but",
+        },
+        {
+          duration: 3.72,
+          start: 224.36,
+          text: "you're allowed to overall these changes",
+        },
+        {
+          duration: 3.68,
+          start: 226.04,
+          text: "are pretty amazing and extremely useful",
+        },
+        {
+          duration: 3.159,
+          start: 228.08,
+          text: "these tools still can't build complex",
+        },
+        {
+          duration: 3.2,
+          start: 229.72,
+          text: "projects out of nowhere but the big",
+        },
+        {
+          duration: 3.321,
+          start: 231.239,
+          text: "question is where are we going from here",
+        },
+        {
+          duration: 3.319,
+          start: 232.92,
+          text: "currently co-pilot doesn't run your code",
+        },
+        {
+          duration: 3.16,
+          start: 234.56,
+          text: "or create new files but I think we're",
+        },
+        {
+          duration: 2.56,
+          start: 236.239,
+          text: "going there eventually like you might be",
+        },
+        {
+          duration: 2.64,
+          start: 237.72,
+          text: "able to just take your client's",
+        },
+        {
+          duration: 3.28,
+          start: 238.799,
+          text: "requirements and say say hey build this",
+        },
+        {
+          duration: 3.519,
+          start: 240.36,
+          text: "thing in Django then co-pilot will run",
+        },
+        {
+          duration: 3.761,
+          start: 242.079,
+          text: "the commands create the files and run",
+        },
+        {
+          duration: 3.761,
+          start: 243.879,
+          text: "the unit tests required to make that a",
+        },
+        {
+          duration: 3.72,
+          start: 245.84,
+          text: "reality then you'll continue fine-tuning",
+        },
+        {
+          duration: 3.2,
+          start: 247.64,
+          text: "it with multiple shots or prompts until",
+        },
+        {
+          duration: 3.319,
+          start: 249.56,
+          text: "it builds exactly what you're looking",
+        },
+        {
+          duration: 3.959,
+          start: 250.84,
+          text: "for without ever touching a line of code",
+        },
+        {
+          duration: 3.36,
+          start: 252.879,
+          text: "another missing piece is image data",
+        },
+        {
+          duration: 3.241,
+          start: 254.799,
+          text: "there are already tools that can convert",
+        },
+        {
+          duration: 3.441,
+          start: 256.239,
+          text: "a screenshot into code and as these",
+        },
+        {
+          duration: 3.64,
+          start: 258.04,
+          text: "tools get better we'll likely see them",
+        },
+        {
+          duration: 3.519,
+          start: 259.68,
+          text: "integrated directly in the IDE now even",
+        },
+        {
+          duration: 3.16,
+          start: 261.68,
+          text: "if this stuff does get really good I",
+        },
+        {
+          duration: 3.041,
+          start: 263.199,
+          text: "wouldn't be discouraged as a programmer",
+        },
+        {
+          duration: 3.28,
+          start: 264.84,
+          text: "right now is one hell of a time to be",
+        },
+        {
+          duration: 3.6,
+          start: 266.24,
+          text: "alive code is just a means to an end",
+        },
+        {
+          duration: 3.0,
+          start: 268.12,
+          text: "even if programming becomes obsolete",
+        },
+        {
+          duration: 3.12,
+          start: 269.84,
+          text: "there will still be Engineers pushing",
+        },
+        {
+          duration: 3.84,
+          start: 271.12,
+          text: "the limits of whatever comes next like",
+        },
+        {
+          duration: 4.32,
+          start: 272.96,
+          text: "we still need to develop robots brain",
+        },
+        {
+          duration: 4.76,
+          start: 274.96,
+          text: "chips quantum computers euthanasia pods",
+        },
+        {
+          duration: 4.28,
+          start: 277.28,
+          text: "laser guns space travel time travel and",
+        },
+        {
+          duration: 2.72,
+          start: 279.72,
+          text: "all sorts of other sci-fi and",
+        },
+        {
+          duration: 2.8,
+          start: 281.56,
+          text: "it's going to take some good",
+        },
+        {
+          duration: 3.84,
+          start: 282.44,
+          text: "old-fashioned problemsolving Engineers",
+        },
+        {
+          duration: 3.76,
+          start: 284.36,
+          text: "to do that so stay optimistic this has",
+        },
+        {
+          duration: 6.16,
+          start: 286.28,
+          text: "been the code report thanks for watching",
+        },
+        {
+          duration: 4.32,
+          start: 288.12,
+          text: "and I will see you in the next one",
+        },
+      ],
+      videoId: "7h732qLxtAk",
+    },
+  ],
+};
+
 // Test URL: https://youtu.be/fG2Byh85FSM?si=em7qvaM1CU2nObct
-// English metadata, spanish audio
+// English metadata, spanish audio & spanish generated transcript
 // spanish generated transcript translated to english
 export const TEST_EN_METADATA_ES_SUBS_AI_SUMMARY = {
   videos: [

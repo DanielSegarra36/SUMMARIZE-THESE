@@ -22,23 +22,11 @@
         stroke="white" stroke-width="3" stroke-linecap="round"></path>
     </svg>
   </a>
-  <h1>YouTube Transcript Extractor</h1>
+  <h1 id="appTitle">Sumaryze<br>That!</h1>
+  <h4 id="subtitle">Extract Video Scripts, Follow Along, and Quickly Digest YouTube Content</h4>
   <form id="youtubeForm">
-    <label for="youtubeURLs">Enter YouTube Video/Playlist URL:</label>
-    <!-- form group -->
-    <div class="form-group">
-      <div id="aiCheckbox">
-        <label for="aiSummary">Enable AI Summary:</label>
-        <input type="checkbox" id="aiSummary" name="aiSummary">
-      </div>
-      <div id="aiModelSelection">
-        <label for="gptModel">Select GPT Model:</label>
-        <select id="gptModel" name="gptModel">
-          <option value="gpt-3.5-turbo-1106">GPT-3</option>
-          <option value="gpt-4-1106-preview">GPT-4</option>
-          <!-- Add more options as needed -->
-        </select>
-      </div>
+    <label for="youtubeURLs">YouTube Link:</label>
+
       <div id="languageSelection">
         <label for="language">Select Language:</label>
         <select id="language" name="language">
@@ -77,13 +65,32 @@
           <option value="vi">Vietnamese</option>
         </select>
       </div>
-    </div>
-
 
     <textarea id="youtubeURLs" name="youtubeURLs" rows="5" cols="33"
       placeholder="https://youtu.be/hMyfy9Z_5vM&#10;https://www.youtube.com/watch?v=dQw4w9WgXcQ&#10;https://youtube.com/playlist?list=PLE0hg-LdSfycrpTtMImPSqFLle4yYNzWD"></textarea>
+
+    <!-- form group -->
+    <div class="form-group">
+      <!-- <div class="AILabels"> --> <!-- Toggle for checkbox & dropdown on same row -->
+        <div id="aiCheckbox">
+          <label for="aiSummary">Enable AI Summary:</label>
+          <input type="checkbox" id="aiSummary" name="aiSummary">
+      </div>
+      <div class="hideToggle" id="aiModelSelection">
+        <label for="gptModel">Select GPT Model:</label>
+        <select id="gptModel" name="gptModel">
+          <option value="gpt-3.5-turbo-1106">GPT-3</option>
+          <option value="gpt-4-1106-preview">GPT-4</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <!-- </div> -->
+      <textarea class="hideToggle" name="AIPrompt" id="AIPrompt" cols="32" rows="2"
+        placeholder="tell me what to do with this fam"></textarea>
+    </div>
+
     <!-- <input type="text" id="youtubeURLs" name="url" placeholder="Paste URL here" required> -->
-    <button type="submit">Get Transcript</button>
+    <button id="getTranscript" type="submit">Get Transcript</button>
   </form>
   <div id="videoResults"></div>
   <script src="static/script.js"></script>

@@ -12,11 +12,58 @@ body {
 body {
   color: #ffffff;
   background-color: #000000;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
   display: flex;
   justify-content: end;
+  padding: 1rem 5%;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration-line: none;
+  color: white;
+  font-weight: bold;
+}
+
+#appTitle {
+  font-family: "Tabac Big Sans Bold", Fallback, sans-serif;
+  margin: 3rem auto 0rem;
+
+  /* font-size: 5rem;
+  line-height: 4rem; */
+
+  font-size: 4rem;
+  line-height: 3rem;
+  font-style: italic;
+  width: fit-content;
+}
+@font-face {
+  font-family: "Tabac Big Sans Bold";
+  src: url("TabacBigSansBold.ttf") format("truetype");
+}
+
+#appTitle:hover,
+#appTitle:focus,
+#appTitle:active {
+  color: #ff0000;
+}
+
+#subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 34ch;
+  margin: 0.5rem auto 2rem;
+  font-style: italic;
+  /* font-family: "Cambria", sans-serif; */
+  /* font-family: 'Arvo'; */
+  /* font-family: 'Rockwell'; */
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Playfair Display", serif; */
+  /* font-family: "Cormorant", serif; */
+  font-weight: lighter;
 }
 
 form {
@@ -24,10 +71,11 @@ form {
   margin: 0 auto;
   width: fit-content;
   max-width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 form > textarea,
-form > label:first-child,
 form > button {
   display: block;
   margin: 0 auto;
@@ -36,7 +84,7 @@ form > button {
 textarea {
   color: white;
   background-color: #0a0a0a;
-  margin-bottom: 0.5rem !important;
+  /*   margin-bottom: 0.5rem !important; */
   min-width: 100%;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
@@ -77,6 +125,13 @@ button {
   border: none;
   border-radius: 7px;
   color: black;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: #ff0000;
+  color: white;
 }
 
 label {
@@ -143,19 +198,76 @@ form > label:first-child {
 .form-group {
   background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 0 1rem 0.5rem;
+  padding: 0.5rem 1rem;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 0.7rem;
+  border-radius: 0 0 15px 15px;
 }
 
 .form-group > label:not(label:first-child) {
   margin-left: 1rem;
 }
 
+#languageSelection {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+#AIPrompt {
+  align-self: flex-start;
+}
+
 @media screen and (max-width: 548px) {
   .form-group {
     flex-direction: column;
   }
+}
+
+.AILabels {
+  display: flex;
+  gap: 2rem;
+}
+
+#getTranscript {
+  font-size: 1rem;
+}
+
+details summary > * {
+  display: inline;
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+summary::marker,
+summary::-webkit-details-marker,
+summary::-moz-details-marker,
+summary::-ms-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: " ►";
+}
+
+details[open] summary:before {
+  content: " ▼";
+}
+
+details > #fullText {
+  padding: 0 2rem;
+  margin: 0 0 3rem;
 }

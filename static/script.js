@@ -3,36 +3,13 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Split URLs from textarea, Each non-empty line equals one URL
-    let youtubeURLs = document
-      .getElementById("youtubeURLs")
-      .value.split("\n")
-      .filter(Boolean); // Filter out empty lines
-    console.log(`Number of submitted URLs: ${youtubeURLs.length}`);
-    // console.log(`Number of TEST_URLs: ${TEST_URLS.length}`);
+    let userRequest = getRequestBody();
 
-    for (const url of youtubeURLs) {
-      console.log(`URL: ${url}`);
-
-      // if (!hasYouTubeVideoID(url) || !hasYouTubePlaylistID(url)) {
-      //   // remove from array
-      //   youtubeURLs.splice(youtubeURLs.indexOf(url), 1);
-      //   console.log(`Invalid URL ${url}`);
-      // }
-
-      if (hasYouTubeVideoID(url)) {
-        console.log(`Video ID: ${hasYouTubeVideoID(url)[1]}`);
-      } else if (hasYouTubePlaylistID(url)) {
-        console.log(`Playlist ID: ${hasYouTubePlaylistID(url)[1]}`);
-      } else {
-        youtubeURLs.splice(youtubeURLs.indexOf(url), 1);
-        console.log(`Invalid URL: ${url}`);
-      }
-    }
+    filterURLs(userRequest.urls);
 
     // console.log(`Number of URLs: ${TEST_URLS.length}`);
 
-    getTranscriptAPICall(youtubeURLs);
+    getTranscriptAPICall(userRequest);
   });
 
 /**
@@ -41,26 +18,13 @@ document
  * @returns {Array} - The array of video objects with the transcript
  * @throws {Error} - If the response is not JSON or an array of objects with the correct fields
  */
-function getTranscriptAPICall(youtubeURLs) {
-  let language = document.getElementById("language").value;
-  let gptModel = null;
-
-  // If the AI Summary checkbox is checked, include the GPT model in the API request
-  if (document.getElementById("aiSummary").checked) {
-    console.log("AI Summary checkbox is checked!!!!");
-    gptModel = document.getElementById("gptModel").value;
-    apiRequest = { urls: youtubeURLs, language, model: gptModel };
-  } else {
-    // Otherwise, exclude the GPT model from the API request
-    apiRequest = { urls: youtubeURLs, language };
-  }
-
+function getTranscriptAPICall(userRequest) {
   fetch("/get_transcript", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(apiRequest),
+    body: JSON.stringify(userRequest),
   })
     .then((response) => response.json())
     .then((data) => {
@@ -78,8 +42,90 @@ function getTranscriptAPICall(youtubeURLs) {
         // Append the new video request to the result list
         document.getElementById("videoResults").appendChild(videoContainer);
       }
+
+      handleDetailsToggle();
     })
     .catch((error) => console.error("Error:", error));
+}
+
+function handleDetailsToggle() {
+  // listener for open details elements
+  document.querySelectorAll("details").forEach((details) => {
+    console.log("got to query selector");
+    console.log(details);
+    details.addEventListener("toggle", function (event) {
+      console.log(event.target);
+      console.log("got to event listener");
+      if (!event.target.open)
+        document
+          .querySelectorAll("details:not([open]) > summary > p")
+          .forEach((p) => (p.style.display = "unset"));
+      // remove 'summary > p' from the DOM if details is open
+      else {
+        // keep in case we want to expose this feature to users, custom UI
+        // close other open details elements
+        // document
+        //   .querySelectorAll("details[open]")
+        //   .forEach(
+        //     (details) =>
+        //       details !== event.target && details.removeAttribute("open")
+        //   );
+        document
+          .querySelectorAll("details[open] > summary > p")
+          .forEach((p) => (p.style.display = "none"));
+      }
+    });
+  });
+}
+
+function getRequestBody() {
+  let language = document.getElementById("language").value;
+  let gptModel = null;
+
+  // Split URLs from textarea, Each non-empty line equals one URL
+  let youtubeURLs = document
+    .getElementById("youtubeURLs")
+    .value.split("\n")
+    .filter(Boolean); // Filter out empty lines
+  console.log(`Number of submitted URLs: ${youtubeURLs.length}`);
+
+  // If the AI Summary checkbox is checked, include the GPT model in the API request
+  if (document.getElementById("aiSummary").checked) {
+    console.log("AI Summary checkbox is checked!!!!");
+    gptModel = document.getElementById("gptModel").value;
+    if (document.querySelector("#AIPrompt").value)
+      return {
+        urls: youtubeURLs,
+        language,
+        model: gptModel,
+        prompt: document.querySelector("#AIPrompt").value,
+      };
+    else return { urls: youtubeURLs, language, model: gptModel };
+  } else {
+    // Otherwise, exclude the GPT model from the API request
+    return { urls: youtubeURLs, language };
+  }
+}
+
+function filterURLs(youtubeURLs) {
+  for (const url of youtubeURLs) {
+    console.log(`URL: ${url}`);
+
+    // if (!hasYouTubeVideoID(url) || !hasYouTubePlaylistID(url)) {
+    //   // remove from array
+    //   youtubeURLs.splice(youtubeURLs.indexOf(url), 1);
+    //   console.log(`Invalid URL ${url}`);
+    // }
+
+    if (hasYouTubeVideoID(url)) {
+      console.log(`Video ID: ${hasYouTubeVideoID(url)[1]}`);
+    } else if (hasYouTubePlaylistID(url)) {
+      console.log(`Playlist ID: ${hasYouTubePlaylistID(url)[1]}`);
+    } else {
+      youtubeURLs.splice(youtubeURLs.indexOf(url), 1);
+      console.log(`Invalid URL: ${url}`);
+    }
+  }
 }
 
 /**
@@ -194,40 +240,44 @@ function formatDataInHTML(currentVideo, videoContainer) {
 
   if (currentVideo.channelTitle) {
     let channelTitle = document.createElement("p");
-    channelTitle.textContent = "Channel: " + currentVideo.channelTitle;
+    channelTitle.textContent = "by: " + currentVideo.channelTitle;
     channelTitle.classList.add("channelTitle");
     videoContainer.appendChild(channelTitle);
   }
 
   if (currentVideo.AI_summary) {
-    let aiSummary = document.createElement("p");
-    aiSummary.textContent = currentVideo.AI_summary;
-    aiSummary.classList.add("AI_summary");
-    videoContainer.appendChild(aiSummary);
+    // let details = document.createElement("details");
+    // let summary = document.createElement("summary");
+    // let heading = document.createElement("h3");
+    // let snippet = document.createElement("p");
+
+    // heading.textContent = "AI Summary";
+    // // snippet.textContent = currentVideo.AI_summary.substring(0, 150);
+    // snippet.textContent = currentVideo.AI_summary.split(" ")
+    //   .slice(0, 50)
+    //   .join(" ");
+    // details.textContent = currentVideo.AI_summary;
+
+    // details.classList.add("AI_summary");
+
+    // summary.append(heading, snippet);
+    // details.appendChild(summary);
+    // videoContainer.appendChild(details);
+    videoContainer.appendChild(
+      createDetailsElement("AI Summary", currentVideo.AI_summary)
+    );
   }
 
   if (currentVideo.description) {
-    let container = document.createElement("div");
-    let label = document.createElement("h4");
-    let description = document.createElement("p");
-
-    container.classList.add("descriptionContainer");
-    label.classList.add("descriptionLabel");
-    description.classList.add("descriptionText");
-
-    label.textContent = "Description: ";
-    description.textContent = currentVideo.description;
-
-    container.appendChild(label);
-    container.appendChild(description);
-    videoContainer.appendChild(container);
+    videoContainer.appendChild(
+      createDetailsElement("Description", currentVideo.description)
+    );
   }
 
   if (currentVideo.transcript_text_only) {
-    let transcriptText = document.createElement("p");
-    transcriptText.classList.add("transcript-text-only");
-    transcriptText.textContent = currentVideo.transcript_text_only;
-    videoContainer.appendChild(transcriptText);
+    videoContainer.appendChild(
+      createDetailsElement("Transcript", currentVideo.transcript_text_only)
+    );
   }
 
   if (currentVideo.transcript_with_timestamps) {
@@ -260,7 +310,14 @@ function formatDataInHTML(currentVideo, videoContainer) {
     }
 
     // Append the transcript with timestamps to the video data container
-    videoContainer.appendChild(transcriptWithTimestamps);
+    // videoContainer.appendChild(transcriptWithTimestamps);
+
+    videoContainer.appendChild(
+      createDetailsElement(
+        "Transcript with Timestamps",
+        transcriptWithTimestamps
+      )
+    );
   }
 }
 
@@ -284,6 +341,32 @@ function formatDataInHTML_HELPER() {
   }
 }
 
+function createDetailsElement(title, content) {
+  let details = document.createElement("details");
+  let summary = document.createElement("summary");
+  let heading = document.createElement("h3");
+  let snippet = document.createElement("p");
+  let fullText = document.createElement("p");
+
+  heading.textContent = title;
+
+  // if content is an html node, append it to the fullText element
+  if (typeof content === "object") {
+    fullText.appendChild(content);
+  } else {
+    snippet.textContent = content.split(" ").slice(0, 50).join(" ");
+    fullText.textContent = content;
+  }
+
+  fullText.id = "fullText";
+  details.classList.add(title.toLowerCase().replaceAll(" ", "-"));
+
+  summary.append(heading, snippet);
+  details.append(summary, fullText);
+
+  return details;
+}
+
 function buildHTMLElement(type, attributes = [], content) {
   let element = document.createElement(type);
   for (prop in attributes) {
@@ -295,19 +378,18 @@ function buildHTMLElement(type, attributes = [], content) {
 }
 
 window.onload = function () {
-  const container = document.getElementById("aiModelSelection");
+  const hiddenItems = document.querySelectorAll(".hideToggle");
   const aiSummaryCheckbox = document.getElementById("aiSummary");
-  const gptModelSelect = document.getElementById("gptModel");
-  const gptModelLabel = document.querySelector("label[for='gptModel']"); // assuming the label has a 'for' attribute
 
-  // Disable Summary & hide the GPT model label and select initially
+  // Disable Summary & hide the GPT-Model 'label' and 'select' initially
   aiSummaryCheckbox.checked = false;
-  container.style.display = "none";
+  hiddenItems.forEach((item) => (item.style.display = "none"));
 
   aiSummaryCheckbox.addEventListener("change", function () {
     // If the AI summary checkbox is checked, show the GPT model label and select
     // Otherwise, hide them
-    if (this.checked) container.style.display = "unset";
-    else container.style.display = "none";
+    if (this.checked)
+      hiddenItems.forEach((item) => (item.style.display = "unset"));
+    else hiddenItems.forEach((item) => (item.style.display = "none"));
   });
 };
