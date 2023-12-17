@@ -34,13 +34,15 @@ function getTranscriptAPICall(userRequest) {
       for (let video in videoList) {
         // Create a container for the video information
         let videoContainer = document.createElement("div");
-        videoContainer.classList.add("video-container");
+        videoContainer.classList.add("full-text");
 
         // Layout Video Data in HTML
         formatDataInHTML(videoList[video], videoContainer);
 
         // Append the new video request to the result list
-        document.getElementById("videoResults").appendChild(videoContainer);
+        document
+          .getElementById("videoResults")
+          .appendChild(createVideoHeader(videoList[video], videoContainer));
       }
 
       handleDetailsToggle();
@@ -58,8 +60,10 @@ function handleDetailsToggle() {
       console.log("got to event listener");
       if (!event.target.open)
         document
-          .querySelectorAll("details:not([open]) > summary > p")
-          .forEach((p) => (p.style.display = "unset"));
+          .querySelectorAll(
+            "details:not([open]) > summary > p, details:not([open]) > summary .video-preview"
+          )
+          .forEach((element) => (element.style.display = "inherit"));
       // remove 'summary > p' from the DOM if details is open
       else {
         // keep in case we want to expose this feature to users, custom UI
@@ -71,8 +75,11 @@ function handleDetailsToggle() {
         //       details !== event.target && details.removeAttribute("open")
         //   );
         document
-          .querySelectorAll("details[open] > summary > p")
-          .forEach((p) => (p.style.display = "none"));
+          // select all details[open] > summary > p and divs
+          .querySelectorAll(
+            "details[open] > summary > p, details[open] > summary .video-preview"
+          )
+          .forEach((element) => (element.style.display = "none"));
       }
     });
   });
@@ -341,6 +348,47 @@ function formatDataInHTML_HELPER() {
   }
 }
 
+function createVideoHeader(currentVideo, content) {
+  let details = document.createElement("details");
+  details.classList.add("video-container");
+  let summary = document.createElement("summary");
+
+  let container = document.createElement("div");
+  container.classList.add("video-preview");
+  let img = document.createElement("img");
+  img.src = currentVideo.thumbnailUrl;
+  img.alt = currentVideo.title || "Video Thumbnail";
+  img.classList.add("preview-thumbnail");
+
+  // if ai summary is present, add summary to the video preview
+  // if (currentVideo.AI_summary) {
+  //   let summary = document.createElement("p");
+  //   summary.textContent = currentVideo.AI_summary.split(" ")
+  //     .slice(0, 50)
+  //     .join(" ");
+  //   container.appendChild(summary);
+  // }
+
+  let label = document.createElement("div");
+  let heading = document.createElement("h3");
+  heading.textContent = currentVideo.title;
+  let channel = document.createElement("p");
+  channel.textContent = currentVideo.channelTitle;
+
+  label.append(heading, channel);
+  // if ai summary is present, add prompt to the video preview
+  if (currentVideo.AI_summary) {
+    let prompt = document.createElement("p");
+    prompt.textContent = document.querySelector("#AIPrompt").value;
+    container.appendChild(prompt);
+    label.append(prompt);
+  }
+  container.append(img, label);
+  summary.append(container);
+  details.append(summary, content);
+
+  return details;
+}
 function createDetailsElement(title, content) {
   let details = document.createElement("details");
   let summary = document.createElement("summary");
@@ -358,8 +406,8 @@ function createDetailsElement(title, content) {
     fullText.textContent = content;
   }
 
-  fullText.id = "fullText";
-  details.classList.add(title.toLowerCase().replaceAll(" ", "-"));
+  fullText.classList.add("fullText");
+  details.classList.add(title.toLowerCase().replaceAll(" ", "-"), "draggable");
 
   summary.append(heading, snippet);
   details.append(summary, fullText);

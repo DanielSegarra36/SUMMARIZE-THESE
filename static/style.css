@@ -45,6 +45,9 @@ nav a {
   src: url("TabacBigSansBold.ttf") format("truetype");
 }
 
+nav a:hover,
+nav a:focus,
+nav a:active,
 #appTitle:hover,
 #appTitle:focus,
 #appTitle:active {
@@ -152,6 +155,7 @@ form > label:first-child {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 20px auto;
+  max-width: 900px;
 }
 
 /* Style for the thumbnail image */
@@ -240,6 +244,10 @@ form > label:first-child {
   font-size: 1rem;
 }
 
+details {
+  margin: 0 0 1rem;
+}
+
 details summary > * {
   display: inline;
 }
@@ -250,6 +258,9 @@ details > summary {
   display: flex;
   align-items: center;
   gap: 1rem;
+  border: #676775 3px solid;
+  /*! margin-bottom: 1rem; */
+  padding: 0 1rem;
 }
 
 summary::marker,
@@ -265,9 +276,27 @@ summary::before {
 
 details[open] summary:before {
   content: " ▼";
+  padding: 0.5rem 0 1rem;
 }
 
-details > #fullText {
-  padding: 0 2rem;
+details > .fullText {
+  padding: 1rem 2rem;
   margin: 0 0 3rem;
+  border: #676775 3px solid;
+  border-top: none;
+  white-space: pre-wrap;
+}
+.video-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.preview-thumbnail {
+  height: 150px;
+}
+
+.video-container[open] > summary {
+  border: none;
 }
