@@ -2,6 +2,14 @@
 
 This is a Flask application that uses the YouTube Transcript API and Google API client to fetch and process video transcripts. If enabled, it can also use OpenAI for summarization.
 
+## Live
+
+https://danielsegarra36.pythonanywhere.com/  
+https://replit.com/@DanielSegarra36/SUMMARIZE-THESE
+
+Feel free to try it out on REPLIT!  
+Fork your own copy and make sure to set your own API keys in REPLIT's secret manager.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
