@@ -1,6 +1,29 @@
-# SUMMARIZE THESE!
+# SUMMARIZE THAT!
 
-This is a Flask application that uses the YouTube Transcript API and Google API client to fetch and process video transcripts. If enabled, it can also use OpenAI for summarization.
+<!-- <div style="display: flex; justify-content: space-around;">
+   <img src="/static/exampleRequest.png" alt="Example Request" width="45%">
+   <img src="/static/exampleResponse.png" alt="Example Response" width="45%">
+</div> -->
+
+<!-- add image in mardown-->
+<!-- ![Example Request](/static/exampleRequest.png)
+![Example Response](/static/exampleResponse.png) -->
+
+<div style="display: flex; justify-content: space-around;">
+   <img src="./static/assets/exampleRequest.png" alt="Example Request" width="45%">
+   <img src="./static/assets/exampleResponse.png" alt="Example Response" width="45%">
+</div>
+
+**"SUMMARIZE THAT!"** is a powerful Flask application designed to streamline your video content consumption.  
+Leveraging the capabilities of the YouTube Transcript API and Google API client, it fetches and processes video transcripts with ease.
+
+But it doesn't stop there!
+
+If enabled, it can also utilize OpenAI's advanced technology to provide concise and accurate summaries of the video content.
+
+Whether you're a student trying to review lecture videos, a professional catching up on the latest industry talks, or just someone who loves to learn, "SUMMARIZE THAT!" can help you save time and focus on the key points.
+
+Try it out now and experience a new way of consuming video content!
 
 ## Live
 
@@ -65,11 +88,13 @@ A step by step series of examples that tell you how to get a development environ
 
 #### Using pipx & poetry
 
-[pipx](https://github.com/pypa/pipx#on-macos) is used to install Python CLI applications globally while still isolating them in virtual environments.  
-[Poetry](https://python-poetry.org/docs/#installation) is a tool for dependency management and packaging in Python.  
-It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. Poetry offers a lockfile to ensure repeatable installs, and can build your project for distribution.
+[pipx](https://github.com/pypa/pipx#on-macos) is used to install Python CLI applications globally while still **_isolating them in virtual environments_**.
 
-2. [install pipx](https://github.com/pypa/pipx#install-pipx) using brew / apt / pip
+[Poetry](https://python-poetry.org/docs/#installation) is a tool for dependency management and packaging in Python.  
+It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.  
+Poetry offers a lockfile to ensure **_repeatable installs_**, and can build your project for distribution.
+
+2. [install pipx](https://github.com/pypa/pipx#install-pipx) using `brew` / `apt` / `pip` / `scoop`
 
    ##### On macOS
 
@@ -123,7 +148,7 @@ It allows you to declare the libraries your project depends on and it will manag
    pipx install poetry
    ```
 
-4. Ensure poetry uses a python version allowed by `pyproject.toml` _(i.e. python = ">=3.10.0,<3.11")_
+4. Ensure poetry uses a python version allowed by `pyproject.toml` _(i.e. `python = ">=3.10.0,<3.11"`)_
 
    ```
    which python3
@@ -132,7 +157,7 @@ It allows you to declare the libraries your project depends on and it will manag
    use the path from there to
 
    ```
-   poetry env use /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.10
+   poetry env use /PATH/TO/python3
    ```
 
 5. install app dependencies
