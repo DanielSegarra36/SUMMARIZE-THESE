@@ -9,7 +9,7 @@
 <!-- ![Example Request](/static/exampleRequest.png)
 ![Example Response](/static/exampleResponse.png) -->
 
-<div style="display: flex; justify-content: space-around;">
+<div style="display: flex; justify-content: space-around; align-items: center;">
    <img src="./static/assets/exampleRequest.png" alt="Example Request" width="45%">
    <img src="./static/assets/exampleResponse.png" alt="Example Response" width="45%">
 </div>
