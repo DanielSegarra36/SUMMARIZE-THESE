@@ -31,7 +31,12 @@ https://danielsegarra36.pythonanywhere.com/
 https://replit.com/@DanielSegarra36/SUMMARIZE-THESE
 
 Feel free to try it out on REPLIT!  
-Fork your own copy and make sure to set your own API keys in REPLIT's secret manager.
+Fork your own copy and make sure to set your own API keys in [REPLIT's secret manager](https://docs.replit.com/programming-ide/workspace-features/secrets).
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+   <img src="./static/assets/replitFork.png" alt="Example Request" width="45%">
+   <img src="./static/assets/replitSecrets.png" alt="Example Response" width="45%">
+</div>
 
 ## Getting Started
 
@@ -86,7 +91,7 @@ A step by step series of examples that tell you how to get a development environ
    python main.py
    ```
 
-#### Using pipx & poetry
+#### Using pipx & poetry _(recommended)_
 
 [pipx](https://github.com/pypa/pipx#on-macos) is used to install Python CLI applications globally while still **_isolating them in virtual environments_**.
 
