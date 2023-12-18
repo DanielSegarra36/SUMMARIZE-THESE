@@ -35,11 +35,11 @@ Feel free to try it out on REPLIT!
 <div style="display: flex; justify-content: space-around; align-items: center;">
    <div style="display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
       <p style="display: inline;">Fork your own copy and</p>
-      <img style="display: inline;" src="./static/assets/replitFork.png" alt="Example Request" width="45%">
+      <img style="display: inline;" src="./static/assets/replitFork.png" alt="Example Request" width="20%"/>
    </div>
    <div style="display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
       <p style="display: inline;">Make sure to set your own API keys in <a href="https://docs.replit.com/programming-ide/workspace-features/secrets">REPLIT's secret manager.</a></p>
-      <img style="display: inline;" src="./static/assets/replitSecrets.png" alt="Example Response" width="45%">
+      <img style="display: inline;" src="./static/assets/replitSecrets.png" alt="Example Response" width="20%"/>
    </div>
 </div>
 
