@@ -54,7 +54,7 @@ What things you need to install the software and how to install them:
 
 ### Set Your API Keys
 
-_make sure you set this in the same shell you'll use to run the flask server_
+_Make sure you set these in the same shell BEFORE you run the app, as they need to be in the same virtual environment (`venv` or `pipx/poetry`)_
 
 1. Set your YouTube API key as an environment variable:
    ```
