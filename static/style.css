@@ -253,6 +253,7 @@ details summary > * {
 }
 
 details > summary {
+  position: relative;
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -299,4 +300,28 @@ details > .fullText {
 
 .video-container[open] > summary {
   border: none;
+}
+
+.preview-tags {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.preview-tags > * {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0.2rem 0.5rem;
+  background-color: red;
+}
+
+.preview-language {
+  background-color: aqua;
+  color: black;
+}
+.preview-model {
+  background-color: yellow;
+  color: black;
 }

@@ -40,9 +40,15 @@ function getTranscriptAPICall(userRequest) {
         formatDataInHTML(videoList[video], videoContainer);
 
         // Append the new video request to the result list
+        // document
+        //   .getElementById("videoResults")
+        //   .appendChild(createVideoHeader(videoList[video], videoContainer));
+        // add new video to the top of the list
         document
           .getElementById("videoResults")
-          .appendChild(createVideoHeader(videoList[video], videoContainer));
+          .prepend(
+            createVideoHeader(videoList[video], videoContainer, userRequest)
+          );
       }
 
       handleDetailsToggle();
@@ -348,13 +354,21 @@ function formatDataInHTML_HELPER() {
   }
 }
 
-function createVideoHeader(currentVideo, content) {
+function createVideoHeader(currentVideo, content, userRequest) {
   let details = document.createElement("details");
   details.classList.add("video-container");
   let summary = document.createElement("summary");
 
   let container = document.createElement("div");
   container.classList.add("video-preview");
+
+  let previewTags = document.createElement("div");
+  previewTags.classList.add("preview-tags");
+  let language = document.createElement("h4");
+  language.textContent = userRequest.language;
+  language.classList.add("preview-language");
+  previewTags.appendChild(language);
+
   let img = document.createElement("img");
   img.src = currentVideo.thumbnailUrl;
   img.alt = currentVideo.title || "Video Thumbnail";
@@ -379,12 +393,19 @@ function createVideoHeader(currentVideo, content) {
   // if ai summary is present, add prompt to the video preview
   if (currentVideo.AI_summary) {
     let prompt = document.createElement("p");
-    prompt.textContent = document.querySelector("#AIPrompt").value;
+    prompt.textContent = userRequest.prompt;
+
+    let gptModel = document.createElement("h4");
+    gptModel.textContent = userRequest.model;
+    gptModel.classList.add("preview-model");
+
+    previewTags.appendChild(gptModel);
+
     container.appendChild(prompt);
     label.append(prompt);
   }
   container.append(img, label);
-  summary.append(container);
+  summary.append(container, previewTags);
   details.append(summary, content);
 
   return details;

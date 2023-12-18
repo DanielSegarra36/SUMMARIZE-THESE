@@ -1,3 +1,1732 @@
+// https://youtu.be/72pUm4tQesw?si=RWhHmAfL_ucxvhJp
+export const AI_REQUEST_EN_TO_ES_REAL_QUESTION = {
+  urls: ["https://youtu.be/72pUm4tQesw?si=RWhHmAfL_ucxvhJp"],
+  language: "es",
+  model: "gpt-3.5-turbo-1106",
+  prompt: "what are the two better alternatives to 'overflow: hidden'?",
+};
+
+export const AI_RESPONSE_EN_TO_ES_REAL_QUESTION = {
+  videos: [
+    {
+      AI_summary:
+        "Dos alternativas mejores a 'overflow: hidden' son las siguientes:\n\n1. clip-path: Esta propiedad permite recortar un elemento seg\u00fan una forma especificada, lo que te permite controlar con precisi\u00f3n c\u00f3mo se muestra el contenido.\n2. contain: La propiedad 'contain' tiene diferentes valores como 'contain: layout' o 'contain: paint', que pueden limitar la forma en que el navegador maneja el pintado de los elementos secundarios, potencialmente mejorando el rendimiento. Por ejemplo, 'contain: paint' permite evitar el pintado de elementos secundarios si el elemento contenedor est\u00e1 fuera de la vista.",
+      channelId: "UCJZv4d5rbIKd4QHMPkcABCw",
+      channelTitle: "Kevin Powell",
+      description:
+        "Looking to up your CSS Game? Free & Premium courses \ud83d\udc49 https://kevinpowell.co/courses?utm_campaign=general&utm_source=youtube&utm_medium=nomorehidden\n\nOverflow hidden is one of those features that seems like it should work in a very specific way, but it comes with a few strange side effects that can be incredibly frustrating and hard to fix. \n\nThe powers who be have realized that there should probably be a better solution, and we have one with `overflow: clip`, which is basically a better version of `overflow: hidden`. I honestly don\u2019t know if we need to bother with hidden at all anymore.\n\nDepending on the use case, we might want to use `contain: paint` instead though, which comes with some extra limitations, but also potential improvements to performance.\n\n\ud83d\udd17 Links\n\u2705 Polypane: https://polypane.app/?ref=kevin (this is an affiliate link, so if you do purchase after visiting through this link, it would also help support my channel)\n\u2705 Killian\u2019s article on overflow: clip: https://kilianvalkhof.com/2022/css-html/do-you-know-about-overflow-clip/\n\u2705 Browser support for clip: https://caniuse.com/mdn-css_types_overflow_clip\n\u2705 Browser support for contain: paint: https://caniuse.com/mdn-css_types_overflow_clip\n\u2705 My CSS-only parallax video: https://youtu.be/Qj0Qx8HpNUo\n\u2705 My courses: https://kevinpowell.co/courses?utm_campaign=general&utm_source=youtube&utm_medium=nomorehidden\n\n\u231a Timestamps\n00:00 - Introduction\n00:10 - The problems overflow: hidden can cause\n01:15 - Target what\u2019s causing the overflow first\n04:40 - overflow: clip\n06:20 - overflow-clip-margin\n07:52 - courses!\n08:20 - contain: paint\n\n#css\n\n--\n\nCome hang out with other dev's in my Discord Community\n\ud83d\udcac https://discord.gg/nTYCvrK\n\nKeep up to date with everything I'm up to\n\u2709 https://www.kevinpowell.co/newsletter\n\nCome hang out with me live every Monday on Twitch!\n\ud83d\udcfa https://www.twitch.tv/kevinpowellcss\n\n---\n\nHelp support my channel\n\ud83d\udc68\u200d\ud83c\udf93 Get a course: https://www.kevinpowell.co/courses\n\ud83d\udc55 Buy a shirt: https://teespring.com/stores/making-the-internet-awesome\n\ud83d\udc96 Support me on Patreon: https://www.patreon.com/kevinpowell\n\n---\n\nMy editor: VS Code - https://code.visualstudio.com/\n\n---\n\nI'm on some other places on the internet too!\n\nIf you'd like a behind the scenes and previews of what's coming up on my YouTube channel, make sure to follow me on Instagram and Twitter.\n\nTwitter: https://twitter.com/KevinJPowell\nCodepen: https://codepen.io/kevinpowell/\nGithub: https://github.com/kevin-powell\n\n---\n\nAnd whatever you do, don't forget to keep on making your corner of the internet just a little bit more awesome!",
+      publishedAt: "2023-12-14T14:05:29Z",
+      thumbnailUrl: "https://i.ytimg.com/vi/72pUm4tQesw/maxresdefault.jpg",
+      title: "2 better alternatives to overflow: hidden",
+      transcript_text_only:
+        "Hola, mis amigos del front-end se desbordan oculto es una de esas cosas CSS que simplemente necesitamos, pero en realidad pueden causar todo tipo de problemas, como en esta situaci\u00f3n. Quiero que esta imagen llegue al borde, pero me est\u00e1 llevando a tener  un poco de desbordamiento, as\u00ed que simplemente hago el cl\u00e1sico desbordamiento X de oculto y eso es genial, supongo, pero \u00bfpor qu\u00e9 tengo dos barras de desplazamiento ahora? Eso es un poco extra\u00f1o. Est\u00e1 bien, hm, y con esta que realmente no desplaza mi encabezado fijo.  funciona, pero en este que en realidad se desplaza hacia abajo en la p\u00e1gina, mi encabezado adhesivo ni siquiera muestra lo que est\u00e1 sucediendo aqu\u00ed. Afortunadamente para nosotros, ahora tenemos dos soluciones mejores que las que sol\u00edamos tener con el desbordamiento de una de ellas oculta, que es b\u00e1sicamente solo la  mejor versi\u00f3n de desbordamiento oculta hasta el punto de que ni siquiera estoy seguro de si hay una buena raz\u00f3n para usar la versi\u00f3n oculta y la segunda opci\u00f3n que voy a explorar contigo es en realidad un poco m\u00e1s limitada en c\u00f3mo funciona, pero tiene la gran ventaja de poder mejorar el rendimiento, por lo que en la situaci\u00f3n correcta definitivamente es una mejor alternativa, as\u00ed que volvamos a este dise\u00f1o aqu\u00ed donde podemos explorar las cosas un poco y he desactivado el  Desbordamiento oculto porque nos estaba dando esa barra de desplazamiento doble y vamos a identificar la mejor manera de abordar el desbordamiento oculto, pero tambi\u00e9n las mejores formas de hacerlo, uh, y antes que nada, es posible que notes que en realidad estoy  en un navegador diferente aqu\u00ed, esto es Polyan, que es como un desarrollador para navegadores. Es realmente genial. Hay un enlace abajo en la descripci\u00f3n. Si quieres comprobarlo, puedes abrir varias vistas diferentes al mismo tiempo.  Simu Scroll y hay herramientas de desarrollo, todo est\u00e1 integrado, es realmente agradable y en este caso la raz\u00f3n por la que estoy usando esto en lugar de solo en Chrome es porque una de las cosas que es molesta es que cuando tienes este tipo de desbordamiento es dif\u00edcil de entender. A veces descubren qu\u00e9 lo est\u00e1 causando y tienen este peque\u00f1o y pr\u00e1ctico bot\u00f3n hasta el fondo que resaltar\u00e1 la cosa en un color rojo y si esto no fuera una imagen, en realidad tendr\u00eda un fondo que har\u00eda  Es un poco m\u00e1s f\u00e1cil de ver, eso te muestra qu\u00e9 es realmente lo que se desborda y este es solo uno de esos realmente peque\u00f1os, solo cosas de experiencia de desarrollador que Killian ha creado al crear Polyan. Aqu\u00ed es un navegador realmente genial, puedes probarlo gratis.  pero si terminas compr\u00e1ndolo y usas el enlace a continuaci\u00f3n, no tendr\u00e1 costo adicional para ti, pero tambi\u00e9n me ayudar\u00e1 a respaldar mi canal, as\u00ed que solo quiero descartarlo, pero apaguemos esto y bueno, en realidad.  volvamos a activarlo por un segundo porque lo principal que quiero ver aqu\u00ed es que una vez que hayas identificado lo que se est\u00e1 desbordando, eso es a lo que quieres apuntar en lugar de hacer esto porque el cuerpo HTML desborda una curita sobre una situaci\u00f3n.  donde probablemente eso no sea lo que realmente quieres hacer, como lo mostr\u00e9, puede causar barras de desplazamiento de herramientas, lo cual es extra\u00f1o, puede evitar que se peguen t\u00edtulos fijos, hay todo tipo de problemas, as\u00ed que lo que vamos a hacer en este caso es  vamos a encontrar la pieza que realmente est\u00e1 causando el desbordamiento y en este caso se est\u00e1 desbordando de mi h\u00e9roe. Tengo a mi h\u00e9roe. Tengo este h\u00e9roe dise\u00f1ando el contenido de mi h\u00e9roe y todo eso. Quiero apuntar al h\u00e9roe mismo y hacer  Estoy seguro de que nada puede salir de all\u00ed, as\u00ed que es agradable y f\u00e1cil de hacer. Puedo simplemente venir aqu\u00ed y hacer un desbordamiento de guardado de hits ocultos, pero eso no es lo que quer\u00eda. Hay muchas cosas malas sucediendo ahora cuando hago esto y la raz\u00f3n por la que est\u00e1n sucediendo muchas cosas malas es porque tan pronto como lo hago tengo estas bonitas sombras y otras cosas y bueno, estoy perdiendo esas sombras y apartemos un poco mi cara del camino.  Entonces puedes ver que si vengo aqu\u00ed tengo una sombra que se muestra un poco, pero \u00bfd\u00f3nde est\u00e1 el resto de mi sombra? Y esto es lo que quiero. Quiero esta cosa que puede desbordarse un poco pero luego entra.  de esta manera, oh, s\u00e9 cu\u00e1l es la soluci\u00f3n, probablemente todos me est\u00e9n gritando. No quiero un desbordamiento en ambos. Quiero hacer un desbordamiento X de oculto y, si bien eso podr\u00eda parecer que funciona, el problema es que en realidad ha causado otro.  problema en el que obtengo una barra de desplazamiento adicional dentro de mi elemento, por lo que puedo desplazarme aqu\u00ed ahora y abramos esta en Chrome solo porque Chrome no usa las barras de desplazamiento ocultas, y ahora nos puede gustar bastante. Veo claramente que tenemos esta barra de desplazamiento adicional aqu\u00ed. Dije oculta, deber\u00eda ser flotante. S\u00e9 que muchos navegadores en estos d\u00edas usan las flotantes, pero obviamente Chrome en Windows no lo hace, por lo que es m\u00e1s f\u00e1cil. Mira, pero estamos obteniendo esta barra de desplazamiento adicional que aparece porque cuando hacemos un desbordamiento de oculto en algo, incluso si solo estamos haciendo un eje, lo que realmente queremos es un desbordamiento oculto de esta manera y quiero un desbordamiento de visible. cierto, esto es imposible, no podemos hacer esto, puedes configurarlo, puedes declararlo si miras en las herramientas de desarrollo, incluso podr\u00eda decir que est\u00e1 funcionando, pero te garantizo que no es lo que realmente est\u00e1 sucediendo. Est\u00e1s recibiendo un desbordamiento de Auto.  en esta direcci\u00f3n y es solo uno de esos efectos secundarios del desbordamiento oculto es que el otro eje no puede permanecer configurado como visible y simplemente ser m\u00e1s o menos lo que sol\u00eda ser, por lo que la soluci\u00f3n aqu\u00ed es que en lugar de usar un oculto, cambiamos esto a recortar y  Cuando hago el clip aqu\u00ed, se ve exactamente igual que lo que ten\u00edamos, pero ahora puedo cambiar este a visible y notar\u00e1s que el desbordamiento sale por arriba y por abajo y aqu\u00ed vamos a poner un borde como  tres p\u00edxeles de color rojo fijo aqu\u00ed solo para que realmente podamos ver, uh, tenemos que puedes ver que se desborda en la parte superior e inferior, pero no se desborda por el lado derecho. Si cambio esto a oculto, obtenemos esto con ese peque\u00f1o y molesto. elemento de desplazamiento de desplazamiento adicional dentro de aqu\u00ed que no quer\u00edamos, as\u00ed que ac\u00e9rquese al rescate. Esta es una propiedad nueva. Su soporte es de poco m\u00e1s del 90% en el momento de la grabaci\u00f3n. Pondr\u00e9 un enlace de soporte del navegador en la descripci\u00f3n. es simplemente fant\u00e1stico, est\u00e1 exactamente como oculto, excepto que te permite hacer visible y en realidad te permite hacer otra cosa que es realmente genial, uh, tambi\u00e9n vamos a ver um, pero es bueno que pueda recortar en One Direction mantener visible en el  otro y no necesito poner el visible, ese es el valor predeterminado, simplemente funciona, uh, y todo est\u00e1 bien, y lo bueno de eso es que tambi\u00e9n mantiene mi sombra que quer\u00eda, as\u00ed que todav\u00eda tengo mi bonita y suave sombra que viene hacia abajo.  a continuaci\u00f3n y todas esas cosas y de hecho rob\u00e9 este tipo de ejemplo de Killian, quien cre\u00f3 el navegador Poly Pane en su blog real, as\u00ed que no en el blog de Poplane, pero en su blog real vincular\u00e9 al art\u00edculo a continuaci\u00f3n donde habla sobre  un poco ten\u00eda un tipo de configuraci\u00f3n similar que era un poco m\u00e1s elegante, para el problema con el que se hab\u00eda topado y por qu\u00e9 el clip funcion\u00f3 aqu\u00ed, pero con el clip simplemente funciona, mantenemos nuestra sombra, todo funciona, desbordamos la parte superior y la  En la parte inferior, todo funciona y eso es todo, no hay nada oculto excepto, como dije, hay otra propiedad que realmente obtenemos con esto, que es, vamos a hacer un clip en todas las direcciones, as\u00ed que digamos clip de desbordamiento para que quede recortado.  en todas partes y luego obtenemos algo que es realmente genial, que es un margen de clip desbordado ooh, \u00bfqu\u00e9 es eso? Digamos una R y mira, voy a sacar una R por arriba, una R por abajo y en este caso tambi\u00e9n te voy a ti. Realmente no puedo verlo, pero estamos provocando que Sid se desplace un poco al hacerlo, como puedes ver, solo porque lo estamos recortando en ambas direcciones o el margen del clip lo estamos expandiendo en uno o dos o lo que sea.  As\u00ed que puedes elegir cu\u00e1nto te desbordas. Eso para m\u00ed es realmente genial e incre\u00edble. Sabes, es una posibilidad tan interesante que puedes decir cu\u00e1nto quieres desbordar. Ahora hay un problema.  con margen de clip de desbordamiento, aunque se supone que funciona si solo declaras un eje que puedes ver en Chrome, simplemente hace que todo deje de funcionar, esto es un no y un error, simplemente no funciona correctamente y el margen de clip de desbordamiento no es compatible con Safari, \u00bf verdad?  ahora, pero el clip de desbordamiento es compatible con los tres principales motores de navegador, es solo que el margen del clip es un poco limitado, pero es algo que esperamos en el futuro, porque creo que es realmente genial que podamos controlar un poco nuestro desbordamiento.  bit um realmente genial ah\u00ed vamos problema resuelto no uses desbordamiento oculto usa clip de desbordamiento en su lugar y tu problema est\u00e1 resuelto uh solo de nuevo no hagas esto en tu cuerpo o en tu HTML generalmente ah\u00ed no es donde realmente te importa el desbordamiento de todos modos  desea apuntar a lo que realmente est\u00e1 causando el desbordamiento y limitarlo a eso, simplemente hace la vida mucho m\u00e1s f\u00e1cil en general y no tiene consecuencias no deseadas en el camino, y el pr\u00f3ximo que veremos es resolver esto. problema donde tengo estos elementos desplaz\u00e1ndose hacia abajo aqu\u00ed con este genial efecto de paralelismo del auto que he hecho y este es algo que potencialmente podr\u00eda ayudar con el rendimiento, lo cual es realmente bueno, pero muy r\u00e1pido antes de llegar a eso, quiero dejarles  Sepa que si est\u00e1 buscando su juego CSS, tengo un mont\u00f3n de cursos gratuitos y pagos que cubren una variedad de temas y niveles de experiencia, principalmente enfocados en el mundo de CSS y en c\u00f3mo mejorar, puede encontrarlos en mi sitio Kevin powell.  cursos, por supuesto, el enlace tambi\u00e9n est\u00e1 en la descripci\u00f3n, pero con eso solucionemos este problema que tenemos aqu\u00ed. Les har\u00e9 saber que el clip de desbordamiento en este caso funcionar\u00eda desbordado. uh, hagamos el y esta vez del clip y estamos.  Voy a ver que resuelve el problema y eso es incre\u00edble y pueden ver si me escondiera aqu\u00ed, en realidad no lo resolver\u00eda porque arruina mi efecto de parallx y hay otras formas en que podemos solucionarlo, pero es tan  Es mucho m\u00e1s f\u00e1cil simplemente hacer un clip y simplemente funciona, pero existe uno que potencialmente puede ayudar con el rendimiento, as\u00ed que en lugar de hacer el desbordamiento del clip, voy a hacer un contenido de pintura y en este caso tambi\u00e9n funciona, mira eso.  contener es parte de la especificaci\u00f3n de contenci\u00f3n, tenemos otras opciones aqu\u00ed, como contener dise\u00f1o, contener tama\u00f1o, contener tama\u00f1o en l\u00ednea, los usamos para consultas de contenedores, por ejemplo, pero lo que contiene pintura le dice al navegador es que ninguno de los elementos secundarios nunca ser\u00e1 pintado afuera. de ese elemento principal y la raz\u00f3n por la que puede ser bueno para el rendimiento es que si el elemento est\u00e1 fuera de la pantalla, sabe que todos los elementos secundarios tambi\u00e9n est\u00e1n fuera de la pantalla y no intentar\u00e1 pintarlos ahora, es un poco m\u00e1s limitado que el desbordamiento porque  No puedo especificar un eje u otro si estoy haciendo pintura contenida, est\u00e1 tanto en el AIS X como en el Y, no hay otros controles sobre \u00e9l. No tengo ese margen de recorte que puedo hacer, as\u00ed que es un poco complicado.  Hay un factor limitante, pero si es una de esas cosas en las que no tienes que preocuparte por el eje, realmente no hay ning\u00fan inconveniente en usar esto, simplemente funcionar\u00e1 y, como dije, potencialmente tambi\u00e9n ayuda con el rendimiento y hay otras situaciones como si  Tengo una barra de navegaci\u00f3n como la que tengo en este caso, con diapositivas similares hacia adentro y hacia afuera cuando la p\u00e1gina se carga por primera vez. Si est\u00e1 fuera de la pantalla, el navegador sabe que est\u00e1 fuera de la pantalla, as\u00ed que en su lista de navegaci\u00f3n aqu\u00ed puedo contener pintura y lo sabe.  no tiene que pintar nada hasta que se necesite ese elemento, todos los ni\u00f1os incluidos en eso ahora tiene potencialmente algunos efectos secundarios para que sepas, uno de ellos es que crea un nuevo bloque contenedor, as\u00ed que si has colocado elementos absolutos  se colocar\u00e1n en cualquier lugar que contenga pintura, uh, y luego, si tiene elementos fijos de posici\u00f3n fija dentro de all\u00ed, tampoco funcionar\u00eda, solo estar\u00eda dentro de ese elemento, probablemente no tendr\u00eda ese, sino uno de  esos efectos secundarios surgen con un contenido de pintura y, como mencion\u00e9, no se puede especificar contenido en un AIS y no en el otro, pero la compatibilidad del navegador supera el 95% en este punto, pero una vez m\u00e1s pondr\u00e9 un enlace a  \u00bf Puedo usarlo para la compatibilidad actualizada con el navegador uh en caso de que est\u00e9s viendo esto en el futuro? Ahora, volviendo r\u00e1pidamente a este ejemplo aqu\u00ed, si deseas ver c\u00f3mo cre\u00e9 este efecto de parallx que vemos aqu\u00ed y que en realidad es se hace sin ning\u00fan tipo de JavaScript, todo esto es solo CSS puro, en realidad es bastante f\u00e1cil de hacer y cubr\u00ed c\u00f3mo hacerlo en este video aqu\u00ed mismo y con eso me gustar\u00eda agradecer a mis facilitadores de la incre\u00edble web bajo demanda Andrew Simon Tim.  y a Johnny, as\u00ed como a todos mis dem\u00e1s patrocinadores, por su apoyo mensual y, por supuesto, hasta la pr\u00f3xima, no olviden hacer que su rinc\u00f3n de Internet sea un poco m\u00e1s incre\u00edble. ",
+      transcript_with_timestamps: [
+        {
+          duration: 3.839,
+          start: 0.04,
+          text: "Hola, mis amigos del front-end se desbordan",
+        },
+        {
+          duration: 4.64,
+          start: 1.88,
+          text: "oculto es una de esas cosas CSS que",
+        },
+        {
+          duration: 5.68,
+          start: 3.879,
+          text: "simplemente necesitamos, pero en",
+        },
+        {
+          duration: 4.96,
+          start: 6.52,
+          text: "realidad pueden causar todo tipo de problemas, como",
+        },
+        {
+          duration: 3.441,
+          start: 9.559,
+          text: "en esta situaci\u00f3n. Quiero que esta imagen",
+        },
+        {
+          duration: 2.92,
+          start: 11.48,
+          text: "llegue al borde, pero",
+        },
+        {
+          duration: 3.279,
+          start: 13.0,
+          text: "me est\u00e1 llevando a tener  un poco de",
+        },
+        {
+          duration: 4.719,
+          start: 14.4,
+          text: "desbordamiento, as\u00ed que simplemente hago el cl\u00e1sico",
+        },
+        {
+          duration: 5.92,
+          start: 16.279,
+          text: "desbordamiento X de oculto y eso es genial,",
+        },
+        {
+          duration: 6.841,
+          start: 19.119,
+          text: "supongo, pero \u00bfpor qu\u00e9 tengo dos barras de desplazamiento",
+        },
+        {
+          duration: 6.041,
+          start: 22.199,
+          text: "ahora? Eso es un poco extra\u00f1o. Est\u00e1 bien, hm,",
+        },
+        {
+          duration: 5.04,
+          start: 25.96,
+          text: "y con esta que realmente no",
+        },
+        {
+          duration: 4.519,
+          start: 28.24,
+          text: "desplaza mi encabezado fijo.  funciona, pero en",
+        },
+        {
+          duration: 4.16,
+          start: 31.0,
+          text: "este que en realidad se desplaza hacia abajo en",
+        },
+        {
+          duration: 4.921,
+          start: 32.759,
+          text: "la p\u00e1gina, mi encabezado adhesivo ni siquiera",
+        },
+        {
+          duration: 4.68,
+          start: 35.16,
+          text: "muestra lo que est\u00e1 sucediendo aqu\u00ed.",
+        },
+        {
+          duration: 4.12,
+          start: 37.68,
+          text: "Afortunadamente para nosotros, ahora tenemos dos",
+        },
+        {
+          duration: 4.28,
+          start: 39.84,
+          text: "soluciones mejores que las que sol\u00edamos",
+        },
+        {
+          duration: 4.599,
+          start: 41.8,
+          text: "tener con el desbordamiento de una de ellas oculta,",
+        },
+        {
+          duration: 4.68,
+          start: 44.12,
+          text: "que es b\u00e1sicamente solo la  mejor",
+        },
+        {
+          duration: 4.521,
+          start: 46.399,
+          text: "versi\u00f3n de desbordamiento oculta hasta el punto",
+        },
+        {
+          duration: 4.16,
+          start: 48.8,
+          text: "de que ni siquiera estoy seguro de si hay una",
+        },
+        {
+          duration: 4.36,
+          start: 50.92,
+          text: "buena raz\u00f3n para usar la versi\u00f3n oculta",
+        },
+        {
+          duration: 4.04,
+          start: 52.96,
+          text: "y la segunda opci\u00f3n",
+        },
+        {
+          duration: 3.439,
+          start: 55.28,
+          text: "que voy a explorar contigo es",
+        },
+        {
+          duration: 3.28,
+          start: 57.0,
+          text: "en realidad un poco m\u00e1s limitada en",
+        },
+        {
+          duration: 3.201,
+          start: 58.719,
+          text: "c\u00f3mo funciona, pero tiene la gran",
+        },
+        {
+          duration: 3.279,
+          start: 60.28,
+          text: "ventaja de poder mejorar el",
+        },
+        {
+          duration: 3.84,
+          start: 61.92,
+          text: "rendimiento, por lo que en la situaci\u00f3n correcta",
+        },
+        {
+          duration: 3.961,
+          start: 63.559,
+          text: "definitivamente es una mejor alternativa, as\u00ed que",
+        },
+        {
+          duration: 3.08,
+          start: 65.76,
+          text: "volvamos a este dise\u00f1o aqu\u00ed",
+        },
+        {
+          duration: 2.8,
+          start: 67.52,
+          text: "donde podemos explorar las cosas un poco",
+        },
+        {
+          duration: 2.72,
+          start: 68.84,
+          text: "y he desactivado el  Desbordamiento oculto",
+        },
+        {
+          duration: 2.76,
+          start: 70.32,
+          text: "porque nos estaba dando esa",
+        },
+        {
+          duration: 3.48,
+          start: 71.56,
+          text: "barra de desplazamiento doble y vamos a",
+        },
+        {
+          duration: 3.8,
+          start: 73.08,
+          text: "identificar la mejor manera de abordar el",
+        },
+        {
+          duration: 3.96,
+          start: 75.04,
+          text: "desbordamiento oculto, pero tambi\u00e9n las mejores",
+        },
+        {
+          duration: 3.36,
+          start: 76.88,
+          text: "formas de hacerlo, uh, y antes que nada, es",
+        },
+        {
+          duration: 3.04,
+          start: 79.0,
+          text: "posible que notes que en realidad estoy  en un",
+        },
+        {
+          duration: 3.4,
+          start: 80.24,
+          text: "navegador diferente aqu\u00ed, esto es Polyan,",
+        },
+        {
+          duration: 3.52,
+          start: 82.04,
+          text: "que es como un desarrollador para navegadores.",
+        },
+        {
+          duration: 3.2,
+          start: 83.64,
+          text: "Es realmente genial. Hay un enlace abajo en",
+        },
+        {
+          duration: 2.4,
+          start: 85.56,
+          text: "la descripci\u00f3n. Si quieres",
+        },
+        {
+          duration: 2.88,
+          start: 86.84,
+          text: "comprobarlo, puedes abrir",
+        },
+        {
+          duration: 4.88,
+          start: 87.96,
+          text: "varias vistas diferentes al mismo",
+        },
+        {
+          duration: 4.88,
+          start: 89.72,
+          text: "tiempo.  Simu Scroll y",
+        },
+        {
+          duration: 3.559,
+          start: 92.84,
+          text: "hay herramientas de desarrollo, todo est\u00e1 integrado, es",
+        },
+        {
+          duration: 3.44,
+          start: 94.6,
+          text: "realmente agradable y en este caso la",
+        },
+        {
+          duration: 3.281,
+          start: 96.399,
+          text: "raz\u00f3n por la que estoy usando esto en lugar de solo en",
+        },
+        {
+          duration: 3.359,
+          start: 98.04,
+          text: "Chrome es porque una de las cosas",
+        },
+        {
+          duration: 3.64,
+          start: 99.68,
+          text: "que es molesta es que cuando tienes este",
+        },
+        {
+          duration: 4.201,
+          start: 101.399,
+          text: "tipo de desbordamiento es dif\u00edcil de entender.",
+        },
+        {
+          duration: 3.88,
+          start: 103.32,
+          text: "A veces descubren qu\u00e9 lo est\u00e1 causando y",
+        },
+        {
+          duration: 3.28,
+          start: 105.6,
+          text: "tienen este peque\u00f1o y pr\u00e1ctico bot\u00f3n",
+        },
+        {
+          duration: 3.959,
+          start: 107.2,
+          text: "hasta el fondo que",
+        },
+        {
+          duration: 3.72,
+          start: 108.88,
+          text: "resaltar\u00e1 la cosa en un color rojo",
+        },
+        {
+          duration: 2.56,
+          start: 111.159,
+          text: "y si esto no fuera una imagen, en",
+        },
+        {
+          duration: 3.08,
+          start: 112.6,
+          text: "realidad tendr\u00eda un fondo que",
+        },
+        {
+          duration: 3.521,
+          start: 113.719,
+          text: "har\u00eda  Es un poco m\u00e1s f\u00e1cil de ver,",
+        },
+        {
+          duration: 3.079,
+          start: 115.68,
+          text: "eso te muestra qu\u00e9",
+        },
+        {
+          duration: 3.28,
+          start: 117.24,
+          text: "es realmente lo que se desborda y este es solo uno",
+        },
+        {
+          duration: 3.601,
+          start: 118.759,
+          text: "de esos realmente peque\u00f1os, solo",
+        },
+        {
+          duration: 3.8,
+          start: 120.52,
+          text: "cosas de experiencia de desarrollador que Killian ha",
+        },
+        {
+          duration: 3.52,
+          start: 122.36,
+          text: "creado al crear Polyan. Aqu\u00ed es un",
+        },
+        {
+          duration: 2.96,
+          start: 124.32,
+          text: "navegador realmente genial, puedes probarlo",
+        },
+        {
+          duration: 3.159,
+          start: 125.88,
+          text: "gratis.  pero si terminas compr\u00e1ndolo",
+        },
+        {
+          duration: 3.759,
+          start: 127.28,
+          text: "y usas el enlace a continuaci\u00f3n,",
+        },
+        {
+          duration: 3.601,
+          start: 129.039,
+          text: "no tendr\u00e1 costo adicional para ti, pero tambi\u00e9n me ayudar\u00e1 a",
+        },
+        {
+          duration: 3.081,
+          start: 131.039,
+          text: "respaldar mi canal, as\u00ed que solo",
+        },
+        {
+          duration: 3.52,
+          start: 132.64,
+          text: "quiero descartarlo, pero",
+        },
+        {
+          duration: 3.36,
+          start: 134.12,
+          text: "apaguemos esto y bueno, en realidad.  volvamos a activarlo",
+        },
+        {
+          duration: 3.04,
+          start: 136.16,
+          text: "por un segundo porque lo",
+        },
+        {
+          duration: 3.32,
+          start: 137.48,
+          text: "principal que quiero ver aqu\u00ed es que",
+        },
+        {
+          duration: 3.16,
+          start: 139.2,
+          text: "una vez que hayas identificado lo que se est\u00e1",
+        },
+        {
+          duration: 4.28,
+          start: 140.8,
+          text: "desbordando, eso es a lo que quieres",
+        },
+        {
+          duration: 5.84,
+          start: 142.36,
+          text: "apuntar en lugar de hacer esto porque el",
+        },
+        {
+          duration: 5.36,
+          start: 145.08,
+          text: "cuerpo HTML desborda una curita sobre una",
+        },
+        {
+          duration: 4.72,
+          start: 148.2,
+          text: "situaci\u00f3n.  donde probablemente eso no sea lo que",
+        },
+        {
+          duration: 4.28,
+          start: 150.44,
+          text: "realmente quieres hacer, como lo mostr\u00e9,",
+        },
+        {
+          duration: 3.72,
+          start: 152.92,
+          text: "puede causar barras de desplazamiento de herramientas,",
+        },
+        {
+          duration: 3.32,
+          start: 154.72,
+          text: "lo cual es extra\u00f1o, puede evitar que se peguen",
+        },
+        {
+          duration: 3.36,
+          start: 156.64,
+          text: "t\u00edtulos fijos, hay",
+        },
+        {
+          duration: 3.6,
+          start: 158.04,
+          text: "todo tipo de problemas, as\u00ed que lo que",
+        },
+        {
+          duration: 3.44,
+          start: 160.0,
+          text: "vamos a hacer en este caso es  vamos a",
+        },
+        {
+          duration: 3.679,
+          start: 161.64,
+          text: "encontrar la pieza que realmente est\u00e1",
+        },
+        {
+          duration: 3.719,
+          start: 163.44,
+          text: "causando el desbordamiento y en este caso se est\u00e1",
+        },
+        {
+          duration: 3.601,
+          start: 165.319,
+          text: "desbordando de mi h\u00e9roe.",
+        },
+        {
+          duration: 3.921,
+          start: 167.159,
+          text: "Tengo a mi h\u00e9roe. Tengo este h\u00e9roe dise\u00f1ando el",
+        },
+        {
+          duration: 4.28,
+          start: 168.92,
+          text: "contenido de mi h\u00e9roe y todo eso. Quiero",
+        },
+        {
+          duration: 4.239,
+          start: 171.08,
+          text: "apuntar al h\u00e9roe mismo y hacer  Estoy seguro de que",
+        },
+        {
+          duration: 4.319,
+          start: 173.2,
+          text: "nada puede salir de all\u00ed,",
+        },
+        {
+          duration: 4.481,
+          start: 175.319,
+          text: "as\u00ed que es agradable y f\u00e1cil de hacer. Puedo simplemente",
+        },
+        {
+          duration: 5.841,
+          start: 177.519,
+          text: "venir aqu\u00ed y hacer un desbordamiento de",
+        },
+        {
+          duration: 6.88,
+          start: 179.8,
+          text: "guardado de hits ocultos, pero eso no es lo que",
+        },
+        {
+          duration: 4.92,
+          start: 183.36,
+          text: "quer\u00eda. Hay muchas",
+        },
+        {
+          duration: 4.479,
+          start: 186.68,
+          text: "cosas malas sucediendo ahora cuando",
+        },
+        {
+          duration: 4.76,
+          start: 188.28,
+          text: "hago esto y la raz\u00f3n por la que est\u00e1n",
+        },
+        {
+          duration: 3.36,
+          start: 191.159,
+          text: "sucediendo muchas cosas malas es porque tan pronto como lo hago",
+        },
+        {
+          duration: 3.479,
+          start: 193.04,
+          text: "tengo estas bonitas sombras",
+        },
+        {
+          duration: 3.961,
+          start: 194.519,
+          text: "y otras cosas y bueno, estoy perdiendo",
+        },
+        {
+          duration: 4.121,
+          start: 196.519,
+          text: "esas sombras y apartemos",
+        },
+        {
+          duration: 4.88,
+          start: 198.48,
+          text: "un poco mi cara del camino.  Entonces",
+        },
+        {
+          duration: 4.599,
+          start: 200.64,
+          text: "puedes ver que si vengo aqu\u00ed tengo una",
+        },
+        {
+          duration: 3.2,
+          start: 203.36,
+          text: "sombra que se muestra un",
+        },
+        {
+          duration: 2.521,
+          start: 205.239,
+          text: "poco, pero \u00bfd\u00f3nde est\u00e1 el resto de mi sombra?",
+        },
+        {
+          duration: 2.64,
+          start: 206.56,
+          text: "Y esto es lo que quiero. Quiero esta",
+        },
+        {
+          duration: 3.559,
+          start: 207.76,
+          text: "cosa que puede desbordarse un",
+        },
+        {
+          duration: 3.48,
+          start: 209.2,
+          text: "poco pero luego entra.  de esta manera, oh, s\u00e9",
+        },
+        {
+          duration: 2.64,
+          start: 211.319,
+          text: "cu\u00e1l es la soluci\u00f3n,",
+        },
+        {
+          duration: 2.68,
+          start: 212.68,
+          text: "probablemente todos me est\u00e9n gritando. No quiero un",
+        },
+        {
+          duration: 3.961,
+          start: 213.959,
+          text: "desbordamiento en ambos. Quiero hacer un",
+        },
+        {
+          duration: 4.0,
+          start: 215.36,
+          text: "desbordamiento X de oculto y, si bien eso",
+        },
+        {
+          duration: 3.519,
+          start: 217.92,
+          text: "podr\u00eda parecer que funciona, el",
+        },
+        {
+          duration: 4.56,
+          start: 219.36,
+          text: "problema es que en realidad ha causado",
+        },
+        {
+          duration: 5.481,
+          start: 221.439,
+          text: "otro.  problema en el que obtengo una",
+        },
+        {
+          duration: 5.519,
+          start: 223.92,
+          text: "barra de desplazamiento adicional dentro de mi elemento, por lo que",
+        },
+        {
+          duration: 3.8,
+          start: 226.92,
+          text: "puedo desplazarme aqu\u00ed ahora y",
+        },
+        {
+          duration: 2.561,
+          start: 229.439,
+          text: "abramos esta en Chrome",
+        },
+        {
+          duration: 3.799,
+          start: 230.72,
+          text: "solo porque Chrome no usa las",
+        },
+        {
+          duration: 4.68,
+          start: 232.0,
+          text: "barras de desplazamiento ocultas, y ahora nos puede gustar bastante.",
+        },
+        {
+          duration: 4.56,
+          start: 234.519,
+          text: "Veo claramente que tenemos esta",
+        },
+        {
+          duration: 4.04,
+          start: 236.68,
+          text: "barra de desplazamiento adicional aqu\u00ed. Dije oculta,",
+        },
+        {
+          duration: 3.0,
+          start: 239.079,
+          text: "deber\u00eda ser flotante. S\u00e9 que",
+        },
+        {
+          duration: 3.2,
+          start: 240.72,
+          text: "muchos navegadores en estos d\u00edas usan las",
+        },
+        {
+          duration: 3.321,
+          start: 242.079,
+          text: "flotantes, pero obviamente Chrome",
+        },
+        {
+          duration: 3.92,
+          start: 243.92,
+          text: "en Windows no lo hace, por lo que es m\u00e1s f\u00e1cil.",
+        },
+        {
+          duration: 4.399,
+          start: 245.4,
+          text: "Mira, pero estamos obteniendo esta",
+        },
+        {
+          duration: 4.28,
+          start: 247.84,
+          text: "barra de desplazamiento adicional que aparece porque cuando",
+        },
+        {
+          duration: 4.36,
+          start: 249.799,
+          text: "hacemos un desbordamiento de oculto en algo,",
+        },
+        {
+          duration: 3.88,
+          start: 252.12,
+          text: "incluso si solo estamos haciendo un eje, lo que",
+        },
+        {
+          duration: 5.241,
+          start: 254.159,
+          text: "realmente queremos es un desbordamiento oculto de esta",
+        },
+        {
+          duration: 6.04,
+          start: 256.0,
+          text: "manera y quiero un desbordamiento de visible.",
+        },
+        {
+          duration: 4.239,
+          start: 259.4,
+          text: "cierto, esto es imposible, no podemos hacer",
+        },
+        {
+          duration: 2.84,
+          start: 262.04,
+          text: "esto, puedes configurarlo, puedes declararlo",
+        },
+        {
+          duration: 2.761,
+          start: 263.639,
+          text: "si miras en las herramientas de desarrollo,",
+        },
+        {
+          duration: 3.08,
+          start: 264.88,
+          text: "incluso podr\u00eda decir que est\u00e1 funcionando, pero te",
+        },
+        {
+          duration: 3.4,
+          start: 266.4,
+          text: "garantizo que no es lo que realmente est\u00e1",
+        },
+        {
+          duration: 4.44,
+          start: 267.96,
+          text: "sucediendo. Est\u00e1s recibiendo un",
+        },
+        {
+          duration: 3.959,
+          start: 269.8,
+          text: "desbordamiento de Auto.  en esta direcci\u00f3n y es",
+        },
+        {
+          duration: 4.079,
+          start: 272.4,
+          text: "solo uno de esos efectos secundarios del",
+        },
+        {
+          duration: 4.801,
+          start: 273.759,
+          text: "desbordamiento oculto es que el otro eje no puede",
+        },
+        {
+          duration: 4.641,
+          start: 276.479,
+          text: "permanecer configurado como visible y simplemente ser m\u00e1s o menos lo que",
+        },
+        {
+          duration: 4.72,
+          start: 278.56,
+          text: "sol\u00eda ser, por lo que la soluci\u00f3n aqu\u00ed",
+        },
+        {
+          duration: 4.84,
+          start: 281.12,
+          text: "es que en lugar de usar un oculto, cambiamos",
+        },
+        {
+          duration: 4.32,
+          start: 283.28,
+          text: "esto a recortar y  Cuando hago el clip",
+        },
+        {
+          duration: 3.56,
+          start: 285.96,
+          text: "aqu\u00ed, se ve exactamente igual que lo que",
+        },
+        {
+          duration: 3.72,
+          start: 287.6,
+          text: "ten\u00edamos, pero ahora puedo cambiar",
+        },
+        {
+          duration: 3.56,
+          start: 289.52,
+          text: "este a visible y",
+        },
+        {
+          duration: 3.28,
+          start: 291.32,
+          text: "notar\u00e1s que el desbordamiento sale por",
+        },
+        {
+          duration: 4.32,
+          start: 293.08,
+          text: "arriba y por abajo y aqu\u00ed vamos a",
+        },
+        {
+          duration: 5.2,
+          start: 294.6,
+          text: "poner un borde como  tres p\u00edxeles de",
+        },
+        {
+          duration: 3.4,
+          start: 297.4,
+          text: "color rojo fijo aqu\u00ed solo para que realmente podamos ver, uh, tenemos",
+        },
+        {
+          duration: 2.64,
+          start: 299.8,
+          text: "que puedes ver que se",
+        },
+        {
+          duration: 3.44,
+          start: 300.8,
+          text: "desborda en la parte superior e inferior,",
+        },
+        {
+          duration: 4.36,
+          start: 302.44,
+          text: "pero no se desborda por el",
+        },
+        {
+          duration: 4.519,
+          start: 304.24,
+          text: "lado derecho. Si cambio esto a oculto,",
+        },
+        {
+          duration: 4.44,
+          start: 306.8,
+          text: "obtenemos esto con ese peque\u00f1o y molesto.",
+        },
+        {
+          duration: 4.88,
+          start: 308.759,
+          text: "elemento de desplazamiento de desplazamiento adicional dentro de",
+        },
+        {
+          duration: 5.519,
+          start: 311.24,
+          text: "aqu\u00ed que no quer\u00edamos, as\u00ed que ac\u00e9rquese al",
+        },
+        {
+          duration: 5.4,
+          start: 313.639,
+          text: "rescate. Esta es una propiedad nueva. Su soporte",
+        },
+        {
+          duration: 3.921,
+          start: 316.759,
+          text: "es de poco m\u00e1s del 90% en el momento de la",
+        },
+        {
+          duration: 3.801,
+          start: 319.039,
+          text: "grabaci\u00f3n. Pondr\u00e9 un enlace de soporte del navegador",
+        },
+        {
+          duration: 4.16,
+          start: 320.68,
+          text: "en la descripci\u00f3n.",
+        },
+        {
+          duration: 3.96,
+          start: 322.84,
+          text: "es simplemente fant\u00e1stico, est\u00e1 exactamente como",
+        },
+        {
+          duration: 3.04,
+          start: 324.84,
+          text: "oculto, excepto que te permite hacer visible y en",
+        },
+        {
+          duration: 2.8,
+          start: 326.8,
+          text: "realidad te permite hacer otra cosa",
+        },
+        {
+          duration: 3.759,
+          start: 327.88,
+          text: "que es realmente genial, uh, tambi\u00e9n vamos a",
+        },
+        {
+          duration: 4.08,
+          start: 329.6,
+          text: "ver um, pero es bueno",
+        },
+        {
+          duration: 3.481,
+          start: 331.639,
+          text: "que pueda recortar en One Direction mantener",
+        },
+        {
+          duration: 3.12,
+          start: 333.68,
+          text: "visible en el  otro y no necesito",
+        },
+        {
+          duration: 3.84,
+          start: 335.12,
+          text: "poner el visible, ese es el valor predeterminado,",
+        },
+        {
+          duration: 3.56,
+          start: 336.8,
+          text: "simplemente funciona, uh, y todo est\u00e1 bien, y",
+        },
+        {
+          duration: 3.359,
+          start: 338.96,
+          text: "lo bueno de eso es que tambi\u00e9n mantiene mi",
+        },
+        {
+          duration: 4.399,
+          start: 340.36,
+          text: "sombra que quer\u00eda, as\u00ed que todav\u00eda",
+        },
+        {
+          duration: 4.32,
+          start: 342.319,
+          text: "tengo mi bonita y suave sombra que viene hacia",
+        },
+        {
+          duration: 4.361,
+          start: 344.759,
+          text: "abajo.  a continuaci\u00f3n y todas esas cosas",
+        },
+        {
+          duration: 4.761,
+          start: 346.639,
+          text: "y de hecho rob\u00e9 este tipo de",
+        },
+        {
+          duration: 5.639,
+          start: 349.12,
+          text: "ejemplo de Killian, quien cre\u00f3 el",
+        },
+        {
+          duration: 4.96,
+          start: 351.4,
+          text: "navegador Poly Pane en su blog real,",
+        },
+        {
+          duration: 3.0,
+          start: 354.759,
+          text: "as\u00ed que no en el blog de Poplane, pero en su",
+        },
+        {
+          duration: 3.32,
+          start: 356.36,
+          text: "blog real vincular\u00e9 al art\u00edculo a",
+        },
+        {
+          duration: 3.401,
+          start: 357.759,
+          text: "continuaci\u00f3n donde habla sobre  un poco ten\u00eda",
+        },
+        {
+          duration: 4.359,
+          start: 359.68,
+          text: "un tipo de configuraci\u00f3n similar que era un poco m\u00e1s",
+        },
+        {
+          duration: 6.08,
+          start: 361.16,
+          text: "elegante, para el problema con el que se hab\u00eda",
+        },
+        {
+          duration: 4.961,
+          start: 364.039,
+          text: "topado y por qu\u00e9 el clip funcion\u00f3 aqu\u00ed, pero",
+        },
+        {
+          duration: 3.76,
+          start: 367.24,
+          text: "con el clip simplemente funciona, mantenemos nuestra",
+        },
+        {
+          duration: 3.639,
+          start: 369.0,
+          text: "sombra, todo funciona, desbordamos la parte",
+        },
+        {
+          duration: 3.28,
+          start: 371.0,
+          text: "superior y la  En la parte inferior, todo funciona y eso es todo, no hay",
+        },
+        {
+          duration: 4.0,
+          start: 372.639,
+          text: "nada",
+        },
+        {
+          duration: 4.12,
+          start: 374.28,
+          text: "oculto excepto, como dije, hay",
+        },
+        {
+          duration: 4.56,
+          start: 376.639,
+          text: "otra propiedad que realmente obtenemos con",
+        },
+        {
+          duration: 4.4,
+          start: 378.4,
+          text: "esto, que es, vamos a hacer un",
+        },
+        {
+          duration: 3.961,
+          start: 381.199,
+          text: "clip en todas las direcciones, as\u00ed que digamos",
+        },
+        {
+          duration: 3.6,
+          start: 382.8,
+          text: "clip de desbordamiento para que quede recortado.  en todas partes",
+        },
+        {
+          duration: 3.56,
+          start: 385.16,
+          text: "y luego obtenemos algo",
+        },
+        {
+          duration: 5.72,
+          start: 386.4,
+          text: "que es realmente genial, que es un",
+        },
+        {
+          duration: 6.24,
+          start: 388.72,
+          text: "margen de clip desbordado ooh, \u00bfqu\u00e9 es eso?",
+        },
+        {
+          duration: 5.04,
+          start: 392.12,
+          text: "Digamos una R y mira, voy a sacar una R por",
+        },
+        {
+          duration: 3.959,
+          start: 394.96,
+          text: "arriba, una R por abajo y en",
+        },
+        {
+          duration: 3.12,
+          start: 397.16,
+          text: "este caso tambi\u00e9n te voy a ti.",
+        },
+        {
+          duration: 2.801,
+          start: 398.919,
+          text: "Realmente no puedo verlo, pero estamos provocando",
+        },
+        {
+          duration: 3.16,
+          start: 400.28,
+          text: "que Sid se desplace un poco al hacerlo, como puedes ver,",
+        },
+        {
+          duration: 3.52,
+          start: 401.72,
+          text: "solo porque",
+        },
+        {
+          duration: 3.96,
+          start: 403.44,
+          text: "lo estamos recortando en ambas direcciones o",
+        },
+        {
+          duration: 3.959,
+          start: 405.24,
+          text: "el margen del clip lo estamos expandiendo",
+        },
+        {
+          duration: 3.239,
+          start: 407.4,
+          text: "en uno o dos o lo que sea.  As\u00ed que puedes",
+        },
+        {
+          duration: 5.081,
+          start: 409.199,
+          text: "elegir cu\u00e1nto te",
+        },
+        {
+          duration: 6.521,
+          start: 410.639,
+          text: "desbordas. Eso para m\u00ed es realmente",
+        },
+        {
+          duration: 4.52,
+          start: 414.28,
+          text: "genial e incre\u00edble.",
+        },
+        {
+          duration: 3.12,
+          start: 417.16,
+          text: "Sabes, es una posibilidad tan interesante que",
+        },
+        {
+          duration: 3.32,
+          start: 418.8,
+          text: "puedes decir cu\u00e1nto",
+        },
+        {
+          duration: 4.28,
+          start: 420.28,
+          text: "quieres desbordar. Ahora hay un",
+        },
+        {
+          duration: 3.88,
+          start: 422.12,
+          text: "problema.  con margen de clip de desbordamiento, aunque se",
+        },
+        {
+          duration: 3.28,
+          start: 424.56,
+          text: "supone que funciona si solo",
+        },
+        {
+          duration: 3.599,
+          start: 426.0,
+          text: "declaras un eje que puedes ver en Chrome,",
+        },
+        {
+          duration: 3.799,
+          start: 427.84,
+          text: "simplemente hace que todo deje de",
+        },
+        {
+          duration: 4.241,
+          start: 429.599,
+          text: "funcionar, esto es un no y un error, simplemente",
+        },
+        {
+          duration: 4.801,
+          start: 431.639,
+          text: "no funciona correctamente y el",
+        },
+        {
+          duration: 5.32,
+          start: 433.84,
+          text: "margen de clip de desbordamiento no es compatible con Safari, \u00bf",
+        },
+        {
+          duration: 4.36,
+          start: 436.44,
+          text: "verdad?  ahora, pero el clip de desbordamiento es compatible",
+        },
+        {
+          duration: 3.319,
+          start: 439.16,
+          text: "con los tres principales",
+        },
+        {
+          duration: 2.88,
+          start: 440.8,
+          text: "motores de navegador, es solo que el margen del clip es un",
+        },
+        {
+          duration: 2.921,
+          start: 442.479,
+          text: "poco limitado, pero es algo que",
+        },
+        {
+          duration: 2.919,
+          start: 443.68,
+          text: "esperamos en el futuro, porque",
+        },
+        {
+          duration: 4.479,
+          start: 445.4,
+          text: "creo que es realmente genial que podamos",
+        },
+        {
+          duration: 5.241,
+          start: 446.599,
+          text: "controlar un poco nuestro desbordamiento.  bit um",
+        },
+        {
+          duration: 3.921,
+          start: 449.879,
+          text: "realmente genial ah\u00ed vamos problema resuelto",
+        },
+        {
+          duration: 5.24,
+          start: 451.84,
+          text: "no uses desbordamiento oculto usa",
+        },
+        {
+          duration: 5.04,
+          start: 453.8,
+          text: "clip de desbordamiento en su lugar y tu problema est\u00e1 resuelto",
+        },
+        {
+          duration: 4.16,
+          start: 457.08,
+          text: "uh solo de nuevo no hagas esto en tu cuerpo",
+        },
+        {
+          duration: 3.639,
+          start: 458.84,
+          text: "o en tu HTML generalmente ah\u00ed no es donde",
+        },
+        {
+          duration: 2.84,
+          start: 461.24,
+          text: "realmente te importa el",
+        },
+        {
+          duration: 3.28,
+          start: 462.479,
+          text: "desbordamiento de todos modos  desea apuntar a",
+        },
+        {
+          duration: 3.959,
+          start: 464.08,
+          text: "lo que realmente est\u00e1 causando el",
+        },
+        {
+          duration: 4.16,
+          start: 465.759,
+          text: "desbordamiento y limitarlo a eso, simplemente",
+        },
+        {
+          duration: 3.6,
+          start: 468.039,
+          text: "hace la vida mucho m\u00e1s f\u00e1cil en general y",
+        },
+        {
+          duration: 3.12,
+          start: 469.919,
+          text: "no tiene consecuencias no deseadas",
+        },
+        {
+          duration: 2.921,
+          start: 471.639,
+          text: "en el camino, y el pr\u00f3ximo que",
+        },
+        {
+          duration: 3.081,
+          start: 473.039,
+          text: "veremos es resolver esto.",
+        },
+        {
+          duration: 3.4,
+          start: 474.56,
+          text: "problema donde tengo estos elementos",
+        },
+        {
+          duration: 3.72,
+          start: 476.12,
+          text: "desplaz\u00e1ndose hacia abajo aqu\u00ed con este",
+        },
+        {
+          duration: 3.16,
+          start: 477.96,
+          text: "genial efecto de paralelismo del auto que he hecho",
+        },
+        {
+          duration: 2.72,
+          start: 479.84,
+          text: "y este es algo que",
+        },
+        {
+          duration: 2.96,
+          start: 481.12,
+          text: "potencialmente podr\u00eda ayudar con el rendimiento, lo cual",
+        },
+        {
+          duration: 2.759,
+          start: 482.56,
+          text: "es realmente bueno, pero muy r\u00e1pido antes de",
+        },
+        {
+          duration: 3.0,
+          start: 484.08,
+          text: "llegar a eso, quiero dejarles  Sepa",
+        },
+        {
+          duration: 3.84,
+          start: 485.319,
+          text: "que si est\u00e1 buscando su juego CSS,",
+        },
+        {
+          duration: 3.799,
+          start: 487.08,
+          text: "tengo un mont\u00f3n de cursos gratuitos y pagos que",
+        },
+        {
+          duration: 4.0,
+          start: 489.159,
+          text: "cubren una variedad de temas y",
+        },
+        {
+          duration: 4.201,
+          start: 490.879,
+          text: "niveles de experiencia, principalmente enfocados en el",
+        },
+        {
+          duration: 3.561,
+          start: 493.159,
+          text: "mundo de CSS y en c\u00f3mo mejorar,",
+        },
+        {
+          duration: 2.72,
+          start: 495.08,
+          text: "puede encontrarlos en mi sitio",
+        },
+        {
+          duration: 3.72,
+          start: 496.72,
+          text: "Kevin",
+        },
+        {
+          duration: 4.359,
+          start: 497.8,
+          text: "powell.  cursos, por supuesto, el enlace",
+        },
+        {
+          duration: 3.36,
+          start: 500.44,
+          text: "tambi\u00e9n est\u00e1 en la descripci\u00f3n, pero con eso",
+        },
+        {
+          duration: 3.281,
+          start: 502.159,
+          text: "solucionemos este problema que tenemos",
+        },
+        {
+          duration: 3.76,
+          start: 503.8,
+          text: "aqu\u00ed. Les har\u00e9 saber que el",
+        },
+        {
+          duration: 4.879,
+          start: 505.44,
+          text: "clip de desbordamiento en este caso funcionar\u00eda",
+        },
+        {
+          duration: 4.359,
+          start: 507.56,
+          text: "desbordado. uh, hagamos el y esta vez del",
+        },
+        {
+          duration: 3.881,
+          start: 510.319,
+          text: "clip y estamos.  Voy a ver que",
+        },
+        {
+          duration: 4.0,
+          start: 511.919,
+          text: "resuelve el problema y eso es incre\u00edble",
+        },
+        {
+          duration: 2.92,
+          start: 514.2,
+          text: "y pueden ver si me escondiera",
+        },
+        {
+          duration: 3.201,
+          start: 515.919,
+          text: "aqu\u00ed, en realidad no",
+        },
+        {
+          duration: 3.399,
+          start: 517.12,
+          text: "lo resolver\u00eda porque arruina mi efecto de parallx",
+        },
+        {
+          duration: 3.599,
+          start: 519.12,
+          text: "y hay otras formas en que podemos solucionarlo,",
+        },
+        {
+          duration: 4.44,
+          start: 520.519,
+          text: "pero es tan  Es mucho m\u00e1s f\u00e1cil simplemente hacer",
+        },
+        {
+          duration: 4.401,
+          start: 522.719,
+          text: "un clip y simplemente funciona, pero existe",
+        },
+        {
+          duration: 3.88,
+          start: 524.959,
+          text: "uno que potencialmente puede ayudar con el",
+        },
+        {
+          duration: 3.6,
+          start: 527.12,
+          text: "rendimiento, as\u00ed que en lugar de hacer el",
+        },
+        {
+          duration: 5.12,
+          start: 528.839,
+          text: "desbordamiento del clip, voy a hacer un",
+        },
+        {
+          duration: 5.36,
+          start: 530.72,
+          text: "contenido de pintura y en este caso",
+        },
+        {
+          duration: 4.481,
+          start: 533.959,
+          text: "tambi\u00e9n funciona, mira eso.  contener es",
+        },
+        {
+          duration: 4.199,
+          start: 536.08,
+          text: "parte de la especificaci\u00f3n de contenci\u00f3n, tenemos",
+        },
+        {
+          duration: 4.28,
+          start: 538.44,
+          text: "otras opciones aqu\u00ed, como contener dise\u00f1o,",
+        },
+        {
+          duration: 4.481,
+          start: 540.279,
+          text: "contener tama\u00f1o, contener tama\u00f1o en l\u00ednea,",
+        },
+        {
+          duration: 4.04,
+          start: 542.72,
+          text: "los usamos para consultas de contenedores, por",
+        },
+        {
+          duration: 3.68,
+          start: 544.76,
+          text: "ejemplo, pero lo que contiene pintura le",
+        },
+        {
+          duration: 4.16,
+          start: 546.76,
+          text: "dice al navegador es que ninguno de los elementos",
+        },
+        {
+          duration: 4.639,
+          start: 548.44,
+          text: "secundarios nunca ser\u00e1 pintado afuera.",
+        },
+        {
+          duration: 4.28,
+          start: 550.92,
+          text: "de ese elemento principal y la raz\u00f3n por la",
+        },
+        {
+          duration: 4.681,
+          start: 553.079,
+          text: "que puede ser bueno para el rendimiento es que si",
+        },
+        {
+          duration: 4.52,
+          start: 555.2,
+          text: "el elemento est\u00e1 fuera de la pantalla, sabe que",
+        },
+        {
+          duration: 3.68,
+          start: 557.76,
+          text: "todos los elementos secundarios tambi\u00e9n est\u00e1n fuera de la pantalla y",
+        },
+        {
+          duration: 3.44,
+          start: 559.72,
+          text: "no intentar\u00e1 pintarlos ahora,",
+        },
+        {
+          duration: 3.88,
+          start: 561.44,
+          text: "es un poco m\u00e1s limitado que el",
+        },
+        {
+          duration: 3.84,
+          start: 563.16,
+          text: "desbordamiento porque  No puedo especificar un",
+        },
+        {
+          duration: 4.079,
+          start: 565.32,
+          text: "eje u otro si estoy haciendo",
+        },
+        {
+          duration: 3.92,
+          start: 567.0,
+          text: "pintura contenida, est\u00e1 tanto en el AIS X como en el Y, no hay",
+        },
+        {
+          duration: 3.0,
+          start: 569.399,
+          text: "otros controles sobre \u00e9l.",
+        },
+        {
+          duration: 4.159,
+          start: 570.92,
+          text: "No tengo ese margen de recorte que puedo",
+        },
+        {
+          duration: 3.841,
+          start: 572.399,
+          text: "hacer, as\u00ed que es un poco complicado.  Hay un factor limitante,",
+        },
+        {
+          duration: 2.241,
+          start: 575.079,
+          text: "pero si es una de esas cosas en las",
+        },
+        {
+          duration: 2.96,
+          start: 576.24,
+          text: "que no tienes que preocuparte por el",
+        },
+        {
+          duration: 3.36,
+          start: 577.32,
+          text: "eje, realmente no hay ning\u00fan inconveniente en",
+        },
+        {
+          duration: 3.28,
+          start: 579.2,
+          text: "usar esto, simplemente funcionar\u00e1 y,",
+        },
+        {
+          duration: 3.32,
+          start: 580.68,
+          text: "como dije, potencialmente tambi\u00e9n ayuda con el",
+        },
+        {
+          duration: 3.4,
+          start: 582.48,
+          text: "rendimiento y hay otras situaciones",
+        },
+        {
+          duration: 3.959,
+          start: 584.0,
+          text: "como si  Tengo una barra de navegaci\u00f3n como la que tengo",
+        },
+        {
+          duration: 5.199,
+          start: 585.88,
+          text: "en este caso, con diapositivas similares hacia adentro y hacia",
+        },
+        {
+          duration: 4.841,
+          start: 587.959,
+          text: "afuera cuando la p\u00e1gina se carga por primera vez. Si",
+        },
+        {
+          duration: 3.88,
+          start: 591.079,
+          text: "est\u00e1 fuera de la pantalla, el navegador sabe que",
+        },
+        {
+          duration: 3.84,
+          start: 592.8,
+          text: "est\u00e1 fuera de la pantalla, as\u00ed que en su lista de navegaci\u00f3n aqu\u00ed",
+        },
+        {
+          duration: 3.361,
+          start: 594.959,
+          text: "puedo contener pintura y",
+        },
+        {
+          duration: 3.759,
+          start: 596.64,
+          text: "lo sabe.  no tiene que pintar nada hasta que se",
+        },
+        {
+          duration: 4.24,
+          start: 598.32,
+          text: "necesite ese elemento, todos los ni\u00f1os",
+        },
+        {
+          duration: 4.481,
+          start: 600.399,
+          text: "incluidos en eso ahora",
+        },
+        {
+          duration: 3.959,
+          start: 602.56,
+          text: "tiene potencialmente algunos efectos secundarios para que sepas,",
+        },
+        {
+          duration: 3.24,
+          start: 604.88,
+          text: "uno de ellos es que crea",
+        },
+        {
+          duration: 3.081,
+          start: 606.519,
+          text: "un nuevo bloque contenedor, as\u00ed que si has",
+        },
+        {
+          duration: 3.04,
+          start: 608.12,
+          text: "colocado elementos absolutos  se",
+        },
+        {
+          duration: 3.76,
+          start: 609.6,
+          text: "colocar\u00e1n en cualquier lugar que",
+        },
+        {
+          duration: 4.6,
+          start: 611.16,
+          text: "contenga pintura, uh, y luego, si",
+        },
+        {
+          duration: 4.479,
+          start: 613.36,
+          text: "tiene elementos fijos de posici\u00f3n fija",
+        },
+        {
+          duration: 3.44,
+          start: 615.76,
+          text: "dentro de all\u00ed, tampoco",
+        },
+        {
+          duration: 3.361,
+          start: 617.839,
+          text: "funcionar\u00eda, solo estar\u00eda dentro de ese",
+        },
+        {
+          duration: 3.639,
+          start: 619.2,
+          text: "elemento, probablemente no tendr\u00eda ese,",
+        },
+        {
+          duration: 3.8,
+          start: 621.2,
+          text: "sino uno de  esos efectos secundarios",
+        },
+        {
+          duration: 4.161,
+          start: 622.839,
+          text: "surgen con un contenido de pintura y, como",
+        },
+        {
+          duration: 3.44,
+          start: 625.0,
+          text: "mencion\u00e9, no se puede especificar contenido en",
+        },
+        {
+          duration: 3.8,
+          start: 627.0,
+          text: "un AIS y no en el otro, pero la",
+        },
+        {
+          duration: 3.72,
+          start: 628.44,
+          text: "compatibilidad del navegador supera el 95% en este",
+        },
+        {
+          duration: 3.719,
+          start: 630.8,
+          text: "punto, pero una vez m\u00e1s pondr\u00e9 un enlace a  \u00bf",
+        },
+        {
+          duration: 3.88,
+          start: 632.16,
+          text: "Puedo usarlo para la compatibilidad actualizada con el navegador uh",
+        },
+        {
+          duration: 3.081,
+          start: 634.519,
+          text: "en caso de que est\u00e9s viendo esto en",
+        },
+        {
+          duration: 2.919,
+          start: 636.04,
+          text: "el futuro? Ahora, volviendo r\u00e1pidamente a",
+        },
+        {
+          duration: 3.0,
+          start: 637.6,
+          text: "este ejemplo aqu\u00ed, si deseas ver",
+        },
+        {
+          duration: 3.0,
+          start: 638.959,
+          text: "c\u00f3mo cre\u00e9 este efecto de parallx que",
+        },
+        {
+          duration: 3.0,
+          start: 640.6,
+          text: "vemos aqu\u00ed y que en realidad es",
+        },
+        {
+          duration: 3.521,
+          start: 641.959,
+          text: "se hace sin ning\u00fan tipo de JavaScript, todo",
+        },
+        {
+          duration: 4.08,
+          start: 643.6,
+          text: "esto es solo CSS puro, en realidad es",
+        },
+        {
+          duration: 4.24,
+          start: 645.48,
+          text: "bastante f\u00e1cil de hacer y cubr\u00ed",
+        },
+        {
+          duration: 3.32,
+          start: 647.68,
+          text: "c\u00f3mo hacerlo en este video aqu\u00ed mismo",
+        },
+        {
+          duration: 3.48,
+          start: 649.72,
+          text: "y con eso me gustar\u00eda agradecer a mis",
+        },
+        {
+          duration: 4.24,
+          start: 651.0,
+          text: "facilitadores de la incre\u00edble web bajo demanda Andrew",
+        },
+        {
+          duration: 3.48,
+          start: 653.2,
+          text: "Simon Tim.  y a Johnny, as\u00ed como a todos",
+        },
+        {
+          duration: 3.599,
+          start: 655.24,
+          text: "mis dem\u00e1s patrocinadores, por su",
+        },
+        {
+          duration: 3.159,
+          start: 656.68,
+          text: "apoyo mensual y, por supuesto, hasta la pr\u00f3xima,",
+        },
+        {
+          duration: 3.281,
+          start: 658.839,
+          text: "no olviden hacer que su rinc\u00f3n",
+        },
+        {
+          duration: 4.481,
+          start: 659.839,
+          text: "de Internet sea un poco m\u00e1s",
+        },
+        {
+          duration: 2.2,
+          start: 662.12,
+          text: "incre\u00edble.",
+        },
+      ],
+      videoId: "72pUm4tQesw",
+    },
+  ],
+};
+
 // TEST URL: https://youtu.be/7h732qLxtAk?si=IWa-lrzU9vxLhvf5
 export const AI_REQUEST_WITH_PROMPT = {
   urls: ["https://youtu.be/7h732qLxtAk?si=IWa-lrzU9vxLhvf5"],
