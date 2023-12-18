@@ -35,7 +35,7 @@ Fork your own copy and make sure to set your own API keys in [REPLIT's secret ma
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
    <img src="./static/assets/replitFork.png" alt="Example Request" width="45%">
-   <img src="./static/assets/replitSecrets.png" alt="Example Response" width="45%">
+   <img src="./static/assets/replitSecres.png" alt="Example Response" width="45%">
 </div>
 
 ## Getting Started
