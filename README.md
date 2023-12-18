@@ -69,11 +69,52 @@ A step by step series of examples that tell you how to get a development environ
 [Poetry](https://python-poetry.org/docs/#installation) is a tool for dependency management and packaging in Python.  
 It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. Poetry offers a lockfile to ensure repeatable installs, and can build your project for distribution.
 
-2. install pipx
+2. [install pipx](https://github.com/pypa/pipx#install-pipx) using brew / apt / pip
+
+   ##### On macOS
 
    ```
    brew install pipx
    pipx ensurepath
+   ```
+
+   Upgrade pipx with `brew update && brew upgrade pipx`.
+
+   ##### On Linux
+
+   - Ubuntu 23.04 or above
+
+   ```
+   sudo apt update
+   sudo apt install pipx
+   pipx ensurepath
+   ```
+
+   - Ubuntu 22.04 or below
+
+   ```
+   python3 -m pip install --user pipx
+   python3 -m pipx ensurepath
+   ```
+
+   Upgrade pipx with `python3 -m pip install --user --upgrade pipx`.
+
+   ##### On Windows
+
+   - install via [Scoop](https://scoop.sh/)
+
+   ```
+   scoop install pipx
+   pipx ensurepath
+   ```
+
+   Upgrade pipx with `scoop update pipx`.
+
+   - install via pip (requires pip 19.0 or later)
+
+   ```
+   # If you installed python using Microsoft Store, replace `py` with `python3` in the next line.
+   py -m pip install --user pipx
    ```
 
 3. install poetry
