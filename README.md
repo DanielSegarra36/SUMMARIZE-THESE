@@ -30,17 +30,12 @@ Try it out now and experience a new way of consuming video content!
 https://danielsegarra36.pythonanywhere.com/  
 https://replit.com/@DanielSegarra36/SUMMARIZE-THESE
 
-Feel free to try it out on REPLIT!
+Feel free to try it out on REPLIT!  
+Fork your own copy and make sure to set your own API keys in [REPLIT's secret manager](https://docs.replit.com/programming-ide/workspace-features/secrets).
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-   <div style="display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
-      <p style="display: inline;">Fork your own copy and</p>
-      <img style="display: inline;" src="./static/assets/replitFork.png" alt="Example Request" width="20%"/>
-   </div>
-   <div style="display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
-      <p style="display: inline;">Make sure to set your own API keys in <a href="https://docs.replit.com/programming-ide/workspace-features/secrets">REPLIT's secret manager.</a></p>
-      <img style="display: inline;" src="./static/assets/replitSecrets.png" alt="Example Response" width="20%"/>
-   </div>
+   <img src="./static/assets/replitFork.png" alt="Example Request" width="45%">
+   <img src="./static/assets/replitSecrets.png" alt="Example Response" width="45%">
 </div>
 
 ## Getting Started
