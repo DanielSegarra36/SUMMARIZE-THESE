@@ -206,12 +206,12 @@ def index():
     return render_template('index.html')
 
 # TOGGLE IF YOU WANT TO RUN ON REPL.IT
-# if __name__ == "__main__":  # Makes sure this is the main process
-#     app.run( # Starts the site
-#       host='0.0.0.0',  # EStablishes the host, required for repl to detect the site
-#       port=random.randint(2000, 9000)  # Randomly select the port the machine hosts on.
-#     )
+if __name__ == "__main__":  # Makes sure this is the main process
+    app.run( # Starts the site
+      host='0.0.0.0',  # EStablishes the host, required for repl to detect the site
+      port=random.randint(2000, 9000)  # Randomly select the port the machine hosts on.
+    )
 
 # TOGGLE IF YOU WANT TO RUN LOCALLY
-if __name__ == "__main__":
-    app.run(debug=True)  # Starts the site in debug mode (auto-reloads when code changes)
+# if __name__ == "__main__":
+#     app.run(debug=True)  # Starts the site in debug mode (auto-reloads when code changes)
