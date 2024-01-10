@@ -81,9 +81,9 @@ A step by step series of examples that tell you how to get a development environ
    python3 -m venv .venv
    . .venv/bin/activate
    ```
-3. Install the dependencies using pip:
+3. Install the dependencies using requirements.txt:
    ```
-   pip install Flask youtube_transcript_api google-api-python-client openai
+   pip install -r requirements.txt
    ```
 4. Run the Flask application:
    ```
